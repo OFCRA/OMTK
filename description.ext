@@ -1,0 +1,29 @@
+/////////////////////////////////////////
+//Intro
+/////////////////////////////////////////
+
+author = "OFCRA";
+onLoadName = "OFCRA: NOM_DE_MISSION";
+onLoadMission = "www.ofcra.org";
+loadScreen = "ofcra\img\overview.jpg";
+
+enableDebugConsole = 2;
+
+class Header
+{
+	gameType=TDM;
+	minPlayers = 1;
+	maxPlayers = 60;
+};
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Viewdistance
+////////////////////////////////////////////////////////////////////////////////
+
+// #include "taw_vd\dialog.hpp"
+
+// class CfgFunctions
+// {
+//  #include "taw_vd\CfgFunctions.hpp"
+// };
