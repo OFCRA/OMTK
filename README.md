@@ -1,6 +1,6 @@
 # mission_pack
 
-## Generalites
+## G&eacute;neralites
 Le mission_pack [OFCRA](http://ofcrav2.org) permet de construire les missions officielles de l'OFCRA, en rendant la tache facile:
 
 1. Creez une mission vide avec l'editeur du jeu (_pensez a lancer Arma3 avec tous les add-on du repo officiel OFCRA avec ArmaSync_)
@@ -25,6 +25,7 @@ Le mission_pack se compose de differents modules independants:
 Les modules du mission_pack indique les erreurs generalement dans 2 endroits:
 
 * System chat: des messages importants sont affiches directement dans le chat in-game, afin que le createur ou les joueurs aient connaissance de ces informations.
-* fichier de log .rpt Arma3: dans C:\Users\_username_\AppData\Local\Arma3\ figurent un ensemble de log provenant du mission_pack, formattees de la facon suivante: __[OFCRA] {ERROR|WARNING|INFO}: contenu_du_message__
+* fichier de log .rpt Arma3: dans C:\Users\_username_\AppData\Local\Arma3\ figurent un ensemble de log provenant du mission_pack, formattees de la facon suivante: 
+__[OFCRA] {ERROR|WARNING|INFO}: contenu_du_message__
 
 
