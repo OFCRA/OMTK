@@ -1,11 +1,13 @@
 _handle = execVM  "ofcra\gears\redfor.sqf";
 waitUntil {isNull _handle};
 
-//execVM "ofcra\gears\bluefor.sqf";
-//waitUntil {isNull _handle};
+_handle = execVM "ofcra\gears\bluefor.sqf";
+waitUntil {isNull _handle};
 
-systemChat "Setting gears for playable units";
-diag_log "[OFCRA] INFO: settings gears...";
+
+diag_log "[OFCRA] INFO: setting infantry gears ...";
+systemChat "Setting gears for infantry";
+
 
 ofcra_fnc_get_camp = {
 	private ["_side", "_result"];
@@ -71,6 +73,4 @@ ofcra_fnc_clear_gear = {
 	
 }  forEach playableUnits; //allUnits;
 
-
-
-
+diag_log "[OFCRA] INFO: infantry gears done.";
