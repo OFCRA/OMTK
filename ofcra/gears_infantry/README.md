@@ -1,4 +1,4 @@
-# MODULE GEARS_VEHICULES
+# MODULE GEARS_INFANTRY
 
 Ce module permet de d&eacute;finir de mani&egrave;re automatis&eacute;e l'&eacute;quippement complet (le _"stuff"_) des unit&eacute;s d'infanterie jouable par les humains.
 L'id&eacute;e est d'&eacute;viter de devoir le sp&eacute;cifier pour chacune des infanteries dans le champ __"init"__ de l'&eacute;diteur pr&eacute;vu &agrave; cet effet.
