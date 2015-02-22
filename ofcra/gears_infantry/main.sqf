@@ -71,6 +71,6 @@ ofcra_fnc_clear_gear = {
     	};
 	};
 	
-}  forEach allUnits; //playableUnits; //allUnits;
+}  forEach playableUnits; //allUnits;
 
 diag_log "[OFCRA] INFO: infantry gears done.";
