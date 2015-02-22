@@ -1,7 +1,7 @@
-_handle = execVM  "ofcra\gears\redfor.sqf";
+_handle = execVM  "ofcra\gears_infantry\redfor.sqf";
 waitUntil {isNull _handle};
 
-_handle = execVM "ofcra\gears\bluefor.sqf";
+_handle = execVM "ofcra\gears_infantry\bluefor.sqf";
 waitUntil {isNull _handle};
 
 
@@ -71,6 +71,6 @@ ofcra_fnc_clear_gear = {
     	};
 	};
 	
-}  forEach playableUnits; //allUnits;
+}  forEach allUnits; //playableUnits; //allUnits;
 
 diag_log "[OFCRA] INFO: infantry gears done.";
