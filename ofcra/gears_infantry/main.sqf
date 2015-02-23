@@ -25,7 +25,7 @@ ofcra_fnc_get_camp = {
 	
 		default
 		{
-		_result = "inconnu";
+			_result = "inconnu";
 		};
 	};
 	_result;
@@ -71,6 +71,6 @@ ofcra_fnc_clear_gear = {
 		};
 	};
 	
-} forEach playableUnits; //allUnits;
+} forEach playableUnits; //use allUnits for tests;
 
 diag_log "[OFCRA] INFO: infantry gears done.";
