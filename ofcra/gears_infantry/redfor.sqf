@@ -34,7 +34,7 @@ ofcra_fnc_redfor_cdc = {
 ofcra_fnc_redfor_cdg = {
 	private ["_unit"];
 	_unit = _this select 0;
-
+	
 	_unit addVest "rhs_6b23_digi_6sh92_headset_mapcase";
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
@@ -239,8 +239,8 @@ ofcra_fnc_redfor_rifleman = {
 cdc_redfor_classes = [
 	"rhs_msv_officer",			// Russia (MSV)\Officer
 	"rhs_msv_officer_armored",	// Russia (MSV)\Officer (Armored)
-	"rhs_vdv_officer", 		 	// Russia (VDV)\Officer
-	"rhs_vdv_officer_armored", 	// Russia (VDV)\Officer (Armored)
+	"rhs_vdv_officer",			// Russia (VDV)\Officer
+	"rhs_vdv_officer_armored",	// Russia (VDV)\Officer (Armored)
 	"O_officer_F"				// CSAT\Officer
 ];
 
@@ -252,53 +252,53 @@ cdg_redfor_classes = [
 ];
 
 cde_redfor_classes = [
-	"rhs_msv_junior_sergeant", // Russia (MSV)\Junior Sergeant
-	"rhs_vdv_junior_sergeant", // Russia (VDV)\Junior Sergeant
-	"O_Soldier_SL_F" 		   // CSAT\Squad Leader
+	"rhs_msv_junior_sergeant",	// Russia (MSV)\Junior Sergeant
+	"rhs_vdv_junior_sergeant",	// Russia (VDV)\Junior Sergeant
+	"O_Soldier_SL_F" 			// CSAT\Squad Leader
 ];
 
 medic_redfor_classes = [
-	"rhs_msv_medic", // Russia (MSV)\Medic
-	"rhs_vdv_medic", // Russia (VDV)\Medic
-	"O_medic_F"		 // CSAT\Combat Life Saver
+	"rhs_msv_medic",	// Russia (MSV)\Medic
+	"rhs_vdv_medic",	// Russia (VDV)\Medic
+	"O_medic_F"			// CSAT\Combat Life Saver
 ];
 
 grenadier_redfor_classes = [
-	"rhs_msv_grenadier", // Russia (MSV)\Grenadier
-	"rhs_msv_at",		 // Russia (MSV)\Grenadier (RPG-7V2)
-	"rhs_vdv_grenadier", // Russia (VDV)\Grenadier
-	"rhs_vdv_at",		 // Russia (VDV)\Grenadier (RPG-7V2)
-	"O_Soldier_GL_F"	 // CSAT\Grenadier
+	"rhs_msv_grenadier",	// Russia (MSV)\Grenadier
+	"rhs_msv_at",			// Russia (MSV)\Grenadier (RPG-7V2)
+	"rhs_vdv_grenadier",	// Russia (VDV)\Grenadier
+	"rhs_vdv_at",			// Russia (VDV)\Grenadier (RPG-7V2)
+	"O_Soldier_GL_F"		// CSAT\Grenadier
 ];
 
 grenadier_assistant_redfor_classes = [
-	"rhs_msv_strelok_rpg_assist", // Russia (MSV)\Grenadier Assistant
-	"rhs_vdv_strelok_rpg_assist", // Russia (VDV)\Grenadier Assistant
-	"O_Soldier_A_F"				  // CSAT\Ammo Bearer
+	"rhs_msv_strelok_rpg_assist",	// Russia (MSV)\Grenadier Assistant
+	"rhs_vdv_strelok_rpg_assist",	// Russia (VDV)\Grenadier Assistant
+	"O_Soldier_A_F"					// CSAT\Ammo Bearer
 ];
 
 autorifleman_redfor_classes = [
-	"rhs_msv_machinegunner", // Russia (MSV)\Machine Gunner Assistant
-	"rhs_vdv_machinegunner", // Russia (VDV)\Machine Gunner Assistant
-	"O_Soldier_AR_F"	 	 // CSAT\Asst. Autorifleman
+	"rhs_msv_machinegunner",	// Russia (MSV)\Machine Gunner Assistant
+	"rhs_vdv_machinegunner",	// Russia (VDV)\Machine Gunner Assistant
+	"O_Soldier_AR_F"			// CSAT\Asst. Autorifleman
 ];
 
 autorifleman_assistant_redfor_classes = [
-	"rhs_msv_machinegunner_assistant", // Russia (MSV)\Machine Gunner Assistant
-	"rhs_vdv_machinegunner_assistant", // Russia (VDV)\Machine Gunner Assistant
-	"O_Soldier_AAR_F"	 			   // CSAT\Assit. Autorifleman
+	"rhs_msv_machinegunner_assistant",	// Russia (MSV)\Machine Gunner Assistant
+	"rhs_vdv_machinegunner_assistant",	// Russia (VDV)\Machine Gunner Assistant
+	"O_Soldier_AAR_F"					// CSAT\Assit. Autorifleman
 ];
 
 antitank_redfor_classes = [
-	"rhs_msv_LAT",	 // Russia (MSV)\Rifleman (RPG-26)
-	"rhs_msv_RShG2", // Russia (MSV)\Rifleman (RShG-2)
-	"rhs_vdv_LAT",	 // Russia (VDV)\Rifleman (RPG-26)
-	"rhs_vdv_RShG2", // Russia (VDV)\Rifleman (RShG-2)
-	"O_Soldier_AT_F" // CSAT\Missile Specialist (AT)
+	"rhs_msv_LAT",		// Russia (MSV)\Rifleman (RPG-26)
+	"rhs_msv_RShG2",	// Russia (MSV)\Rifleman (RShG-2)
+	"rhs_vdv_LAT",		// Russia (VDV)\Rifleman (RPG-26)
+	"rhs_vdv_RShG2",	// Russia (VDV)\Rifleman (RShG-2)
+	"O_Soldier_AT_F"	// CSAT\Missile Specialist (AT)
 ];
 
 antitank_assistant_redfor_classes = [
-	"O_Soldier_AAT_F"	 	 // CSAT\Asst. Missile Specialist (AT)
+	"O_Soldier_AAT_F"	// CSAT\Asst. Missile Specialist (AT)
 ];
 
 marksman_redfor_classes = [
@@ -330,7 +330,7 @@ ground_crew_redfor_classes = [
 air_crew_redfor_classes = [
 	"rhs_pilot",				// Russia (VVS - Grey)\Pilot
 	"rhs_pilot_combat_heli",	// Russia (VVS - Grey)\Pilot (Combat Helicopter)
-	"rhs_pilot_transport_heli", // Russia (VVS - Grey)\Pilot (Transport)
+	"rhs_pilot_transport_heli",	// Russia (VVS - Grey)\Pilot (Transport)
 	"O_helicrew_F",				// CSAT\Helicopter Crew
 	"O_helipilot_F",			// CSAT\Helicopter Pilot
 	"O_Pilot_F"					// CSAT\Pilot
@@ -341,11 +341,11 @@ explosive_specialist_redfor_classes = [
 ];
 
 rifleman_redfor_classes = [
-	"rhs_msv_rifleman",   // Russia (MSV)\Rifleman
-	"rhs_vdv_rifleman",   // Russia (VDV)\Rifleman
-	"O_Soldier_F",		  // CSAT\Rifleman
-	"O_Soldier_lite_F",	  // CSAT\Rifleman (Light)
-	"o_soldier_unarmed_f" // CSAT\Rifleman (Unarmed)
+	"rhs_msv_rifleman",		// Russia (MSV)\Rifleman
+	"rhs_vdv_rifleman",		// Russia (VDV)\Rifleman
+	"O_Soldier_F",			// CSAT\Rifleman
+	"O_Soldier_lite_F",		// CSAT\Rifleman (Light)
+	"o_soldier_unarmed_f"	// CSAT\Rifleman (Unarmed)
 ];
 
 
@@ -375,9 +375,9 @@ ofcra_fnc_set_redfor_gears = {
 
 	if (_found<1) then  {
 		_log_line = "classe inconnue '" + _class + "', gears REDFOR par default";
-  		systemChat _log_line;
-  		_log_line = '[OFCRA] ERROR: ' + _log_line;
-  		diag_log  _log_line;
-  	};
-  	_found;
+		systemChat _log_line;
+		_log_line = '[OFCRA] ERROR: ' + _log_line;
+		diag_log  _log_line;
+	};
+	_found;
 };

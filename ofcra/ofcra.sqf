@@ -1,5 +1,5 @@
 if (isServer) then {
-	
+
 	// Check difficulty
 	execVM "ofcra\difficulty_check\main.sqf"
 
@@ -15,5 +15,5 @@ if (isServer) then {
 	// Set objectives
 
 	// Load modules
-	
+
 };

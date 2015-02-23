@@ -24,9 +24,9 @@ ofcra_fnc_get_camp = {
 		};
 	
 		default
-    	{
-	    	_result = "inconnu";
-    	};
+		{
+		_result = "inconnu";
+		};
 	};
 	_result;
 };
@@ -57,20 +57,20 @@ ofcra_fnc_clear_gear = {
 	// Add side's gears
 	switch (_side) do {
 		case east:
-    	{  	
-    	   	[_x, _class] call ofcra_fnc_set_redfor_gears;
-    	};
+		{	
+			[_x, _class] call ofcra_fnc_set_redfor_gears;
+		};
 		case west:
-    	{    		
-    		[_x, _class] call ofcra_fnc_set_bluefor_gears;
-	    };
-	    default
-	    {
-    		_log_line = "Camp inconnu pour l'unité '" + (name _x) + "'";
-    		systemChat _log_line;
-    	};
+		{
+			[_x, _class] call ofcra_fnc_set_bluefor_gears;
+		};
+		default
+		{
+			_log_line = "Camp inconnu pour l'unité '" + (name _x) + "'";
+			systemChat _log_line;
+		};
 	};
 	
-}  forEach playableUnits; //allUnits;
+} forEach playableUnits; //allUnits;
 
 diag_log "[OFCRA] INFO: infantry gears done.";
