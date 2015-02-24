@@ -256,6 +256,14 @@ ofcra_fnc_redfor_explosive_specialist = {
 	//TODO
 };
 
+// SPOTTER
+ofcra_fnc_redfor_explosive_spotter = {
+	private ["_unit"];
+	_unit = _this select 0;
+		
+	//TODO
+};
+
 // RIFLEMAN:
 ofcra_fnc_redfor_rifleman = {
 	private ["_unit"];
@@ -384,6 +392,10 @@ explosive_specialist_redfor_classes = [
 	"O_soldier_exp_F"	// CSAT\Explosive Specialist
 ];
 
+spotter_redfor_classes = [
+	"O_spotter_F"	// CSAT\Spotter
+];
+
 rifleman_redfor_classes = [
 	"rhs_msv_rifleman",		// Russia (MSV)\Rifleman
 	"rhs_vdv_rifleman",		// Russia (VDV)\Rifleman
@@ -415,6 +427,7 @@ ofcra_fnc_set_redfor_gears = {
 	if (_class in ground_crew_redfor_classes)				then { [_unit] call ofcra_fnc_redfor_ground_crew; _found=1; };
 	if (_class in air_crew_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_air_crew; _found=1; };
 	if (_class in explosive_specialist_redfor_classes)		then { [_unit] call ofcra_fnc_redfor_explosive_specialist; _found=1; };
+	if (_class in spotter_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_spotter; _found=1; };
 	if (_class in cde_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cde; _found=1; };
 	if (_class in cdg_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cdg; _found=1; };
 	if (_class in cdc_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cdc; _found=1; };
