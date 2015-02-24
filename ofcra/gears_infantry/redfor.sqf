@@ -1,5 +1,5 @@
-// DEFAUT REDFOR
-ofcra_fnc_redfor_camp = {
+// COMMUN
+ofcra_fnc_redfor_common = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
@@ -139,6 +139,33 @@ ofcra_fnc_redfor_autorifleman_assistant = {
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 };
 
+// GUNNER
+ofcra_fnc_redfor_gunner = {
+	private ["_unit"];
+	_unit = _this select 0;
+	
+	_unit addVest "rhs_6b23_digi_rifleman";
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
+	_unit addItemToVest "rhs_100Rnd_762x54mmR";
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
+	_unit addWeapon "rhs_weap_pkp";
+};
+
+// GUNNER ASSISTANT
+ofcra_fnc_redfor_gunner_assistant = {
+	private ["_unit"];
+	_unit = _this select 0;
+	
+	_unit addVest "rhs_6b23_digi_6sh92";
+	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
+	this addWeapon "rhs_weap_ak74m";
+	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+};
+
 // ANTI-TANK
 ofcra_fnc_redfor_antitank = {
 	private ["_unit"];
@@ -192,8 +219,8 @@ ofcra_fnc_redfor_marksman = {
 ofcra_fnc_redfor_sniper = {
 	private ["_unit"];
 	_unit = _this select 0;
-		
-	[_unit] call ofcra_fnc_redfor_marksman;
+	
+	[_unit] call ofcra_fnc_redfor_marksman; // same as marksman
 };
 
 // GROUND CREW
@@ -210,6 +237,15 @@ ofcra_fnc_redfor_air_crew = {
 	_unit = _this select 0;
 		
 	// TODO
+	removeUniform _unit;
+	_unit forceAddUniform "rhs_uniform_df15";
+	removeHeadgear _unit;
+	_unit addHeadgear "rhs_zsh7a";
+	
+	for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_rdg2_white";};
+	this addWeapon "rhs_weap_ak74m";
+	for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N10_AK";};
 };
 
 // EXPLOSIVE SPECIALIST
@@ -226,8 +262,8 @@ ofcra_fnc_redfor_rifleman = {
 	_unit = _this select 0;
 	
 	_unit addVest "rhs_6b23_digi_6sh92";
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 	_unit addWeapon "rhs_weap_ak74m";
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
@@ -279,16 +315,23 @@ grenadier_assistant_redfor_classes = [
 ];
 
 autorifleman_redfor_classes = [
-	"rhs_msv_machinegunner",	// Russia (MSV)\Machine Gunner Assistant
-	"rhs_vdv_machinegunner",	// Russia (VDV)\Machine Gunner Assistant
 	"O_Soldier_AR_F"			// CSAT\Asst. Autorifleman
 ];
 
 autorifleman_assistant_redfor_classes = [
-	"rhs_msv_machinegunner_assistant",	// Russia (MSV)\Machine Gunner Assistant
-	"rhs_vdv_machinegunner_assistant",	// Russia (VDV)\Machine Gunner Assistant
 	"O_Soldier_AAR_F"					// CSAT\Assit. Autorifleman
 ];
+
+gunner_redfor_classes = [
+	"rhs_msv_machinegunner",	// Russia (MSV)\Machine Gunner
+	"rhs_vdv_machinegunner"		// Russia (VDV)\Machine Gunner
+];
+
+gunner_assistant_redfor_classes = [
+	"rhs_msv_machinegunner_assistant",	// Russia (MSV)\Machine Gunner Assistant
+	"rhs_vdv_machinegunner_assistant"	// Russia (VDV)\Machine Gunner Assistant
+];
+
 
 antitank_redfor_classes = [
 	"rhs_msv_LAT",		// Russia (MSV)\Rifleman (RPG-26)
@@ -356,13 +399,15 @@ ofcra_fnc_set_redfor_gears = {
 	_class = _this select 1;
 	_found = 0;
 	
-	[_unit] call ofcra_fnc_redfor_camp;
+	[_unit] call ofcra_fnc_redfor_common;
 	if (_class in rifleman_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_rifleman; _found=1; };
 	if (_class in medic_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_medic; _found=1; };
 	if (_class in grenadier_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_grenadier; _found=1; };
 	if (_class in grenadier_assistant_redfor_classes)		then { [_unit] call ofcra_fnc_redfor_grenadier_assistant; _found=1; };
 	if (_class in autorifleman_redfor_classes)				then { [_unit] call ofcra_fnc_redfor_autorifleman; _found=1; };
 	if (_class in autorifleman_assistant_redfor_classes)	then { [_unit] call ofcra_fnc_redfor_autorifleman_assistant; _found=1; };
+	if (_class in gunner_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_gunner; _found=1; };
+	if (_class in gunner_assistant_redfor_classes)			then { [_unit] call ofcra_fnc_redfor_gunner_assistant; _found=1; };
 	if (_class in antitank_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_antitank; _found=1; };
 	if (_class in antitank_assistant_redfor_classes)		then { [_unit] call ofcra_fnc_redfor_antitank_assistant; _found=1; };
 	if (_class in marksman_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_marksman; _found=1; };
@@ -375,10 +420,11 @@ ofcra_fnc_set_redfor_gears = {
 	if (_class in cdc_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cdc; _found=1; };
 
 	if (_found<1) then  {
-		_log_line = "classe inconnue '" + _class + "', gears REDFOR par default";
+		_log_line = "classe inconnue '" + _class + "'";
 		systemChat _log_line;
 		_log_line = '[OFCRA] ERROR: ' + _log_line;
 		diag_log  _log_line;
+		[_unit] call ofcra_fnc_clear_gear;
 	};
 	_found;
 };
