@@ -16,4 +16,7 @@ if (isServer) then {
 
 	// Load modules
 
+	// Add kill logs
+	execVM "ofcra\kill_log\main.sqf"
+
 };

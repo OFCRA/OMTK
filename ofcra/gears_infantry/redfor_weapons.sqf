@@ -1,9 +1,11 @@
+_clothes = nil;
+
 // COMMUN
-ofcra_fnc_redfor_common = {
+_ofcra_fnc_redfor_common = {
 	private ["_unit"];
 	_unit = _this select 0;
-	
-	_unit forceAddUniform "rhs_uniform_vdv_mflora";
+
+	[_unit, 0, _clothes] call ofcra_fn_set_clothes;
 	_unit addItemToUniform "cse_bandage_basic";
 	_unit addItemToUniform "cse_bandage_basic";
 	_unit addItemToUniform "cse_bandage_basic";
@@ -14,27 +16,24 @@ ofcra_fnc_redfor_common = {
 	_unit linkItem "ItemRadio";
 	_unit linkItem "tf_microdagr";
 	
-	_unit addBackpack "rhs_assault_umbts";
-	_unit addHeadgear "rhs_6b27m_green";
-	
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
 };
 
 // CDC
-ofcra_fnc_redfor_cdc = {
+_ofcra_fnc_redfor_cdc = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	[_unit] call ofcra_fnc_redfor_cdg;  // Same as CDG
+	[_unit] call _ofcra_fnc_redfor_cdg;  // Same as CDG
 };
 
 // CDG
-ofcra_fnc_redfor_cdg = {
+_ofcra_fnc_redfor_cdg = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_6sh92_headset_mapcase";
+	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 	_unit addWeapon "Binocular";
@@ -46,11 +45,11 @@ ofcra_fnc_redfor_cdg = {
 };
 
 // CDE
-ofcra_fnc_redfor_cde = {
+_ofcra_fnc_redfor_cde = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_6sh92_headset";
+	[_unit, 3, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 	_unit addWeapon "rhs_weap_ak74m_gp25";
@@ -60,11 +59,11 @@ ofcra_fnc_redfor_cde = {
 };
 
 // MEDIC
-ofcra_fnc_redfor_medic = {
+_ofcra_fnc_redfor_medic = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_medic";
+	[_unit, 4, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
@@ -79,11 +78,11 @@ ofcra_fnc_redfor_medic = {
 };
 
 // GRENADIER
-ofcra_fnc_redfor_grenadier = {
+_ofcra_fnc_redfor_grenadier = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_6sh92_headset";
+	[_unit, 5, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 	_unit addWeapon "rhs_weap_ak74m_gp25";
@@ -96,11 +95,11 @@ ofcra_fnc_redfor_grenadier = {
 };
 
 // GRENADIER ASSISTANT
-ofcra_fnc_redfor_grenadier_assistant = {
+_ofcra_fnc_redfor_grenadier_assistant = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_6sh92_headset";
+	[_unit, 6, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 	_unit addWeapon "rhs_weap_ak74m"; 
@@ -113,11 +112,11 @@ ofcra_fnc_redfor_grenadier_assistant = {
 };
 
 // AUTORIFLEMAN
-ofcra_fnc_redfor_autorifleman = {
+_ofcra_fnc_redfor_autorifleman = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_rifleman";
+	[_unit, 7, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 	_unit addItemToVest "rhs_100Rnd_762x54mmR";
@@ -126,11 +125,11 @@ ofcra_fnc_redfor_autorifleman = {
 };
 
 // AUTORIFLEMAN ASSISTANT
-ofcra_fnc_redfor_autorifleman_assistant = {
+_ofcra_fnc_redfor_autorifleman_assistant = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_6sh92";
+	[_unit, 8, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
@@ -140,11 +139,11 @@ ofcra_fnc_redfor_autorifleman_assistant = {
 };
 
 // GUNNER
-ofcra_fnc_redfor_gunner = {
+_ofcra_fnc_redfor_gunner = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_rifleman";
+	[_unit, 9, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 	_unit addItemToVest "rhs_100Rnd_762x54mmR";
@@ -153,11 +152,11 @@ ofcra_fnc_redfor_gunner = {
 };
 
 // GUNNER ASSISTANT
-ofcra_fnc_redfor_gunner_assistant = {
+_ofcra_fnc_redfor_gunner_assistant = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_6sh92";
+	[_unit, 10, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
@@ -167,45 +166,33 @@ ofcra_fnc_redfor_gunner_assistant = {
 };
 
 // ANTI-TANK
-ofcra_fnc_redfor_antitank = {
+_ofcra_fnc_redfor_antitank = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	removeBackpack _unit;
-	_unit addBackpack "rhs_rpg";
-	
-	removeHeadgear _unit;
-	_unit addHeadgear "rhs_6b27m_green_ess";
-	
-	_unit addVest "rhs_6b23_digi_6sh92";
+	[_unit, 11, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
 		
 };
 
 // ANTI-TANK ASSISTANT
-ofcra_fnc_redfor_antitank_assistant = {
+_ofcra_fnc_redfor_antitank_assistant = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	removeBackpack _unit;
-	_unit addBackpack "rhs_rpg";
-	
-	_unit addVest "rhs_6b23_digi_6sh92";
+	[_unit, 12, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
 	_unit addWeapon "rhs_weap_rshg2";
 };
 
 // MARKSMAN
-ofcra_fnc_redfor_marksman = {
+_ofcra_fnc_redfor_marksman = {
 	private ["_unit"];
 	_unit = _this select 0;
 		
-	removeHeadgear _unit;
-	_unit addHeadgear "rhs_6b27m_green_bala";
-	
-	_unit addVest "rhs_6b23_digi_6sh92";
+	[_unit, 13, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
 	_unit addWeapon "rhs_weap_svds_pso1";
@@ -216,32 +203,28 @@ ofcra_fnc_redfor_marksman = {
 };
 
 // SNIPER
-ofcra_fnc_redfor_sniper = {
+_ofcra_fnc_redfor_sniper = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	[_unit] call ofcra_fnc_redfor_marksman; // same as marksman
+	[_unit] call _ofcra_fnc_redfor_marksman; // same as marksman
 };
 
 // GROUND CREW
-ofcra_fnc_redfor_ground_crew = {
+_ofcra_fnc_redfor_ground_crew = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
+	[_unit, 18, _clothes] call ofcra_fn_set_clothes;
 	// TODO
 };
 
 // AIR CREW
-ofcra_fnc_redfor_air_crew = {
+_ofcra_fnc_redfor_air_crew = {
 	private ["_unit"];
 	_unit = _this select 0;
-		
-	// TODO
-	removeUniform _unit;
-	_unit forceAddUniform "rhs_uniform_df15";
-	removeHeadgear _unit;
-	_unit addHeadgear "rhs_zsh7a";
 	
+	[_unit, 19, _clothes] call ofcra_fn_set_clothes;	
 	for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_rdg2_white";};
 	this addWeapon "rhs_weap_ak74m";
@@ -249,27 +232,27 @@ ofcra_fnc_redfor_air_crew = {
 };
 
 // EXPLOSIVE SPECIALIST
-ofcra_fnc_redfor_explosive_specialist = {
+_ofcra_fnc_redfor_explosive_specialist = {
 	private ["_unit"];
 	_unit = _this select 0;
 		
-	//TODO
+	[_unit, 16, _clothes] call ofcra_fn_set_clothes;
 };
 
 // SPOTTER
-ofcra_fnc_redfor_explosive_spotter = {
+_ofcra_fnc_redfor_explosive_spotter = {
 	private ["_unit"];
 	_unit = _this select 0;
 		
-	//TODO
+	[_unit, 15, _clothes] call ofcra_fn_set_clothes;
 };
 
 // RIFLEMAN:
-ofcra_fnc_redfor_rifleman = {
+_ofcra_fnc_redfor_rifleman = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addVest "rhs_6b23_digi_6sh92";
+	[_unit, 17, _clothes] call ofcra_fn_set_clothes;
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 	_unit addWeapon "rhs_weap_ak74m";
@@ -405,39 +388,42 @@ rifleman_redfor_classes = [
 ];
 
 
+////////// NE PAS TOUCHER EN DESSOUS
+
 ofcra_fnc_set_redfor_gears = {
 	private ["_unit", "_class","_found"];
 	_unit  = _this select 0;
 	_class = _this select 1;
+	_clothes = _this select 2;
 	_found = 0;
 	
-	[_unit] call ofcra_fnc_redfor_common;
-	if (_class in rifleman_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_rifleman; _found=1; };
-	if (_class in medic_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_medic; _found=1; };
-	if (_class in grenadier_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_grenadier; _found=1; };
-	if (_class in grenadier_assistant_redfor_classes)		then { [_unit] call ofcra_fnc_redfor_grenadier_assistant; _found=1; };
-	if (_class in autorifleman_redfor_classes)				then { [_unit] call ofcra_fnc_redfor_autorifleman; _found=1; };
-	if (_class in autorifleman_assistant_redfor_classes)	then { [_unit] call ofcra_fnc_redfor_autorifleman_assistant; _found=1; };
-	if (_class in gunner_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_gunner; _found=1; };
-	if (_class in gunner_assistant_redfor_classes)			then { [_unit] call ofcra_fnc_redfor_gunner_assistant; _found=1; };
-	if (_class in antitank_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_antitank; _found=1; };
-	if (_class in antitank_assistant_redfor_classes)		then { [_unit] call ofcra_fnc_redfor_antitank_assistant; _found=1; };
-	if (_class in marksman_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_marksman; _found=1; };
-	if (_class in sniper_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_sniper; _found=1; };
-	if (_class in ground_crew_redfor_classes)				then { [_unit] call ofcra_fnc_redfor_ground_crew; _found=1; };
-	if (_class in air_crew_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_air_crew; _found=1; };
-	if (_class in explosive_specialist_redfor_classes)		then { [_unit] call ofcra_fnc_redfor_explosive_specialist; _found=1; };
-	if (_class in spotter_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_spotter; _found=1; };
-	if (_class in cde_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cde; _found=1; };
-	if (_class in cdg_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cdg; _found=1; };
-	if (_class in cdc_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cdc; _found=1; };
+	[_unit] call _ofcra_fnc_redfor_common;
+	if (_class in rifleman_redfor_classes)					then { [_unit] call _ofcra_fnc_redfor_rifleman; _found=1; };
+	if (_class in medic_redfor_classes)						then { [_unit] call _ofcra_fnc_redfor_medic; _found=1; };
+	if (_class in grenadier_redfor_classes)					then { [_unit] call _ofcra_fnc_redfor_grenadier; _found=1; };
+	if (_class in grenadier_assistant_redfor_classes)		then { [_unit] call _ofcra_fnc_redfor_grenadier_assistant; _found=1; };
+	if (_class in autorifleman_redfor_classes)				then { [_unit] call _ofcra_fnc_redfor_autorifleman; _found=1; };
+	if (_class in autorifleman_assistant_redfor_classes)	then { [_unit] call _ofcra_fnc_redfor_autorifleman_assistant; _found=1; };
+	if (_class in gunner_redfor_classes)					then { [_unit] call _ofcra_fnc_redfor_gunner; _found=1; };
+	if (_class in gunner_assistant_redfor_classes)			then { [_unit] call _ofcra_fnc_redfor_gunner_assistant; _found=1; };
+	if (_class in antitank_redfor_classes)					then { [_unit] call _ofcra_fnc_redfor_antitank; _found=1; };
+	if (_class in antitank_assistant_redfor_classes)		then { [_unit] call _ofcra_fnc_redfor_antitank_assistant; _found=1; };
+	if (_class in marksman_redfor_classes)					then { [_unit] call _ofcra_fnc_redfor_marksman; _found=1; };
+	if (_class in sniper_redfor_classes)					then { [_unit] call _ofcra_fnc_redfor_sniper; _found=1; };
+	if (_class in ground_crew_redfor_classes)				then { [_unit] call _ofcra_fnc_redfor_ground_crew; _found=1; };
+	if (_class in air_crew_redfor_classes)					then { [_unit] call _ofcra_fnc_redfor_air_crew; _found=1; };
+	if (_class in explosive_specialist_redfor_classes)		then { [_unit] call _ofcra_fnc_redfor_explosive_specialist; _found=1; };
+	if (_class in spotter_redfor_classes)					then { [_unit] call _ofcra_fnc_redfor_spotter; _found=1; };
+	if (_class in cde_redfor_classes)						then { [_unit] call _ofcra_fnc_redfor_cde; _found=1; };
+	if (_class in cdg_redfor_classes)						then { [_unit] call _ofcra_fnc_redfor_cdg; _found=1; };
+	if (_class in cdc_redfor_classes)						then { [_unit] call _ofcra_fnc_redfor_cdc; _found=1; };
 
 	if (_found<1) then  {
 		_log_line = "classe inconnue '" + _class + "'";
 		systemChat _log_line;
 		_log_line = '[OFCRA] ERROR: ' + _log_line;
 		diag_log  _log_line;
-		[_unit] call ofcra_fnc_clear_gear;
+		[_unit] call ofcra_fnc_remove_all_gears;
 	};
 	_found;
 };

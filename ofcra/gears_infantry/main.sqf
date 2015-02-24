@@ -1,53 +1,39 @@
-_UNITES_CIBLES = "HUMAINS+IA"; // parmi {HUMAINS+IA|HUMAINS}
-_LISTE_EXCEPTIONS = []; // tableau de noms d'unités à ne pas toucher, ex: ["nom1", "nom2"]
+_OFCRA_UNITES_CIBLES = "HUMAINS+IA";	// parmi {HUMAINS+IA|HUMAINS}
+_OFCRA_LISTE_EXCEPTIONS = [];			// tableau de noms d'unités à ne pas toucher, ex: ["nom1", "nom2"]
+_OFCRA_TENUES_BLUEFOR = "UCP";			// parmi {UCP|OCP}
+_OFCRA_TENUES_REDFOR = "VDV";			// parmi {VDV|VDV-M|MSV}
+
 
 ////////// NE PAS TOUCHER EN DESSOUS
-_handle = execVM  "ofcra\gears_infantry\redfor.sqf";
-waitUntil {isNull _handle};
 
-_handle = execVM "ofcra\gears_infantry\bluefor.sqf";
+_handle = execVM  "ofcra\gears_infantry\library.sqf";
 waitUntil {isNull _handle};
-
+_handle = execVM  "ofcra\gears_infantry\redfor_weapons.sqf";
+waitUntil {isNull _handle};
+_handle = execVM  "ofcra\gears_infantry\redfor_clothes.sqf";
+waitUntil {isNull _handle};
+_handle = execVM "ofcra\gears_infantry\bluefor_weapons.sqf";
+waitUntil {isNull _handle};
+_handle = execVM "ofcra\gears_infantry\bluefor_clothes.sqf";
+waitUntil {isNull _handle};
 
 diag_log "[OFCRA] INFO: setting infantry gears ...";
 systemChat "Setting gears for infantry";
 
+
 _targeted_units = nil;
-
 switch(_UNITES_CIBLES) do {
-		case "HUMAINS+IA":
-		{
-			_targeted_units = allUnits;
-		};
-	
-		case "HUMAINS":
-		{
-			_targeted_units = playableUnits;
-		};
-	
-		default
-		{
-			_log_line = "param _UNITES_CIBLES incorrect: '" + _UNITES_CIBLES + "'";
-			systemChat _log_line;
-			_log_line = '[OFCRA] ERROR: ' + _log_line;
-			diag_log _log_line;
-			
-			_targeted_units = [];
-		};
+	case "HUMAINS+IA":	{ _targeted_units = allUnits; };
+	case "HUMAINS":		{ _targeted_units = playableUnits; };
+	default	{
+		_log_line = "param _UNITES_CIBLES incorrect: '" + _UNITES_CIBLES + "'";
+		systemChat _log_line;
+		_log_line = '[OFCRA] ERROR: ' + _log_line;
+		diag_log _log_line;
+		_targeted_units = [];
+	};
 };
 
-ofcra_fnc_clear_gear = {
-	private ["_unit"];
-	_unit = _this select 0;
-	removeAllWeapons _unit;
-	removeAllItems _unit;
-	removeAllAssignedItems _unit;
-	removeUniform _unit;
-	removeVest _unit;
-	removeBackpack _unit;
-	removeHeadgear _unit;
-	removeGoggles _unit;
-};
 
 {
 	_name = str _x;
@@ -55,24 +41,22 @@ ofcra_fnc_clear_gear = {
 	_class = typeOf _x;
 	
 	if (!(_name in _LISTE_EXCEPTIONS)) then {
+		[_x] call ofcra_fnc_remove_all_gears;
 	
-		// Remove all gears
-		[_x] call ofcra_fnc_clear_gear;
-
-		// Add side's gears
 		switch (_side) do {
-			case east:
-			{	
-				[_x, _class] call ofcra_fnc_set_redfor_gears;
+			case east: {
+				_clothes = [_OFCRA_TENUES_REDFOR] call ofcra_fnc_get_redfor_clothes;
+				[_x, _class, _clothes] call ofcra_fnc_set_redfor_gears;
 			};
-			case west:
-			{
-				[_x, _class] call ofcra_fnc_set_bluefor_gears;
+			case west: {
+				_clothes = [_OFCRA_TENUES_BLUEFOR] call ofcra_fnc_get_bluefor_clothes;
+				[_x, _class, _clothes] call ofcra_fnc_set_bluefor_gears;
 			};
-			default
-			{
-				_log_line = "Camp inconnu pour l'unité '" + (name _x) + "'";
+			default {
+				_log_line = "camp inconnu pour l'unité '" + (name _x) + "'";
 				systemChat _log_line;
+				_log_line = '[OFCRA] ERROR: ' + _log_line;
+				diag_log  _log_line;
 			};
 		};
 	};
