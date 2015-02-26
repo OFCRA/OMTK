@@ -6,11 +6,13 @@ _ofcra_fnc_redfor_common = {
 	_unit = _this select 0;
 
 	[_unit, 0, _clothes] call ofcra_fn_set_clothes;
+
 	_unit addItemToUniform "cse_bandage_basic";
 	_unit addItemToUniform "cse_bandage_basic";
 	_unit addItemToUniform "cse_bandage_basic";
 	_unit addItemToUniform "cse_morphine";
 	_unit addItemToUniform "cse_epinephrine";
+
 	_unit linkItem "ItemMap";
 	_unit linkItem "ItemCompass";
 	_unit linkItem "ItemRadio";
@@ -34,14 +36,17 @@ _ofcra_fnc_redfor_cdg = {
 	_unit = _this select 0;
 	
 	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
-	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
+
 	_unit addWeapon "rhs_weap_ak74m_gp25";
 	_unit addPrimaryWeaponItem "rhs_acc_1p29";
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
+
+	_unit addWeapon "Binocular";
+	_unit linkItem "ItemGPS";
 };
 
 // CDE
@@ -50,12 +55,20 @@ _ofcra_fnc_redfor_cde = {
 	_unit = _this select 0;
 	
 	[_unit, 3, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
+
 	_unit addWeapon "rhs_weap_ak74m_gp25";
 	_unit addPrimaryWeaponItem "rhs_acc_1p29";
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
-	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
+	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_VOG25";};
+	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_VOG25P";};
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_VOG25";};
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_VOG25P";};
+	for "_i" from 1 to 6 do {_unit addItemToBackpack "rhs_VG40OP_white";};
+
+	_unit addItemToVest "rhs_mag_rgd5";
+	_unit addItemToBackpack "rhs_mine_pmn2_mag";
 };
 
 // MEDIC
@@ -64,17 +77,18 @@ _ofcra_fnc_redfor_medic = {
 	_unit = _this select 0;
 	
 	[_unit, 4, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
-	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
-	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
-	for "_i" from 1 to 50 do {_unit addItemToBackpack "cse_bandage_basic";};
-	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_morphine";};
-	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_epinephrine";};
+
 	_unit addWeapon "rhs_weap_ak74m";
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
 
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
+
+	for "_i" from 1 to 50 do {_unit addItemToBackpack "cse_bandage_basic";};
+	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_morphine";};
+	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_epinephrine";};
+	
 };
 
 // GRENADIER
@@ -83,15 +97,21 @@ _ofcra_fnc_redfor_grenadier = {
 	_unit = _this select 0;
 	
 	[_unit, 5, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
+
 	_unit addWeapon "rhs_weap_ak74m_gp25";
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_VOG25";};
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_VOG25P";};
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_VG40OP_white";};
+
 	_unit addWeapon "rhs_weap_rshg2";
+	_unit addItemToVest "rhs_rshg2_mag";
+
+	_unit addItemToBackpack "rhs_mine_pmn2_mag";
+
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
 };
 
 // GRENADIER ASSISTANT
@@ -117,11 +137,11 @@ _ofcra_fnc_redfor_autorifleman = {
 	_unit = _this select 0;
 	
 	[_unit, 7, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
-	_unit addItemToVest "rhs_100Rnd_762x54mmR";
-	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
-	_unit addWeapon "rhs_weap_pkp";
+
+	this addWeapon "rhs_weap_pkp"; // TODO replace by RPK-74
+	this addPrimaryWeaponItem "rhs_acc_1p29"; // TODO let optic ??
+	this addItemToVest "rhs_100Rnd_762x54mmR";
+	for "_i" from 1 to 2 do {this addItemToBackpack "rhs_100Rnd_762x54mmR";};
 };
 
 // AUTORIFLEMAN ASSISTANT
@@ -130,12 +150,20 @@ _ofcra_fnc_redfor_autorifleman_assistant = {
 	_unit = _this select 0;
 	
 	[_unit, 8, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
-	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
-	this addWeapon "rhs_weap_ak74m";
-	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
+	_unit addWeapon "rhs_weap_ak74m";
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
+	_unit addWeapon "rhs_weap_rshg2";
+	_unit addItemToBackpack "rhs_rshg2_mag";
+
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
+
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";}; // TODO change for RPK loads
 };
 
 // GUNNER
@@ -144,11 +172,11 @@ _ofcra_fnc_redfor_gunner = {
 	_unit = _this select 0;
 	
 	[_unit, 9, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
-	_unit addItemToVest "rhs_100Rnd_762x54mmR";
-	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
-	_unit addWeapon "rhs_weap_pkp";
+
+	this addWeapon "rhs_weap_pkp";
+	this addPrimaryWeaponItem "rhs_acc_1p29"; // TODO let optic ??
+	this addItemToVest "rhs_100Rnd_762x54mmR";
+	for "_i" from 1 to 2 do {this addItemToBackpack "rhs_100Rnd_762x54mmR";};
 };
 
 // GUNNER ASSISTANT
@@ -157,12 +185,20 @@ _ofcra_fnc_redfor_gunner_assistant = {
 	_unit = _this select 0;
 	
 	[_unit, 10, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
-	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
-	this addWeapon "rhs_weap_ak74m";
-	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
+	_unit addWeapon "rhs_weap_ak74m";
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
+	_unit addWeapon "rhs_weap_rshg2";
+	_unit addItemToBackpack "rhs_rshg2_mag";
+
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
+
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";}; // TODO change for PKP loads
 };
 
 // ANTI-TANK
@@ -171,9 +207,15 @@ _ofcra_fnc_redfor_antitank = {
 	_unit = _this select 0;
 	
 	[_unit, 11, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
-		
+
+	_unit addWeapon "rhs_weap_ak74m";
+	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 7 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+
+	_unit addWeapon "rhs_weap_rpg7";
+	_unit addSecondaryWeaponItem "rhs_acc_pgo7v";
+	_unit addItemToBackpack "rhs_rpg7_PG7VR_mag";
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};	
 };
 
 // ANTI-TANK ASSISTANT
@@ -182,10 +224,37 @@ _ofcra_fnc_redfor_antitank_assistant = {
 	_unit = _this select 0;
 	
 	[_unit, 12, _clothes] call ofcra_fn_set_clothes;
+	
+	_unit addWeapon "rhs_weap_ak74m";
+	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+
+	_unit addWeapon "rhs_weap_rpg26";
+	_unit addItemToBackpack "rhs_rpg26_mag";
+
+	_unit addItemToBackpack "rhs_rpg7_TBG7V_mag";
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};
+	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+};
+
+// ANTI-TANK LIGHT
+_ofcra_fnc_redfor_antitank_light = {
+	private ["_unit"];
+	_unit = _this select 0;
+	
+	[_unit, 11, _clothes] call ofcra_fn_set_clothes;
+
+	_unit addWeapon "rhs_weap_ak74m";
+	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 7 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+
+	_unit addWeapon "rhs_weap_rpg26";
+	_unit addItemToBackpack "rhs_rpg26_mag";
+
+
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
-	_unit addWeapon "rhs_weap_rshg2";
 };
+
 
 // MARKSMAN
 _ofcra_fnc_redfor_marksman = {
@@ -193,13 +262,14 @@ _ofcra_fnc_redfor_marksman = {
 	_unit = _this select 0;
 		
 	[_unit, 13, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
+
 	_unit addWeapon "rhs_weap_svds_pso1";
 	_unit addPrimaryWeaponItem "rhs_acc_pso1m2";
 	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_10Rnd_762x54mmR_7N1";};
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_10Rnd_762x54mmR_7N1";};
-	
+
+	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_rgd5";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
 };
 
 // SNIPER
@@ -253,11 +323,13 @@ _ofcra_fnc_redfor_rifleman = {
 	_unit = _this select 0;
 	
 	[_unit, 17, _clothes] call ofcra_fn_set_clothes;
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rgd5";};
-	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
-	_unit addWeapon "rhs_weap_ak74m";
+
+_unit addWeapon "rhs_weap_ak74m";
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_rgd5";};
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
 };
 
 
