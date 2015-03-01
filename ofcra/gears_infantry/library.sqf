@@ -16,13 +16,16 @@ ofcra_fnc_remove_all_gears = {
 
 
 ofcra_fn_set_clothes = {
-	private ["_unit", "_index", "_clothes"];
+	private ["_unit", "_index", "_clothes","_bg"];
 	_unit  = _this select 0;
 	_index = _this select 1;
 	_clothes = _this select 2;
 
-	_unit forceAddUniform _clothes[_index][0];
-	_unit addVest _clothes[_index][1]
-	_unit addHeadgear _clothes[_index][2];
-	_unit addBackpack _clothes[_index][3];
+	_unit forceAddUniform ((_clothes select _index) select 0);
+	_unit addVest ((_clothes select _index) select 1);
+	_unit addHeadgear ((_clothes select _index) select 2);
+	_bg = ((_clothes select _index) select 3);
+	if (!isNil "_bg" ) then {
+	_unit addBackpack _bg;
+	};
 };

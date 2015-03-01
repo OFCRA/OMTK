@@ -22,14 +22,12 @@ systemChat "Setting gears for infantry";
 
 
 _targeted_units = nil;
-switch(_UNITES_CIBLES) do {
+switch(_OFCRA_UNITES_CIBLES) do {
 	case "HUMAINS+IA":	{ _targeted_units = allUnits; };
 	case "HUMAINS":		{ _targeted_units = playableUnits; };
 	default	{
-		_log_line = "param _UNITES_CIBLES incorrect: '" + _UNITES_CIBLES + "'";
-		systemChat _log_line;
-		_log_line = '[OFCRA] ERROR: ' + _log_line;
-		diag_log _log_line;
+		_log = "param _UNITES_CIBLES incorrect: '" + _UNITES_CIBLES + "'";
+		[_log, "ERROR"] call ofcra_fnc_log;
 		_targeted_units = [];
 	};
 };
@@ -40,7 +38,7 @@ switch(_UNITES_CIBLES) do {
 	_side = side _x;
 	_class = typeOf _x;
 	
-	if (!(_name in _LISTE_EXCEPTIONS)) then {
+	if (!(_name in _OFCRA_LISTE_EXCEPTIONS)) then {
 		[_x] call ofcra_fnc_remove_all_gears;
 	
 		switch (_side) do {
@@ -53,10 +51,8 @@ switch(_UNITES_CIBLES) do {
 				[_x, _class, _clothes] call ofcra_fnc_set_bluefor_gears;
 			};
 			default {
-				_log_line = "camp inconnu pour l'unité '" + (name _x) + "'";
-				systemChat _log_line;
-				_log_line = '[OFCRA] ERROR: ' + _log_line;
-				diag_log  _log_line;
+				_log = "camp inconnu pour l'unité '" + (name _x) + "'";
+				[_log, "ERROR"] call ofcra_fnc_log;
 			};
 		};
 	};

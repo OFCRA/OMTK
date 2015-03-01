@@ -1,5 +1,8 @@
 if (isServer) then {
 
+	// main lib
+	execVM "ofcra\library.sqf"
+
 	// Check difficulty
 	execVM "ofcra\difficulty_check\main.sqf"
 
@@ -17,6 +20,6 @@ if (isServer) then {
 	// Load modules
 
 	// Add kill logs
-	execVM "ofcra\kill_log\main.sqf"
+	execVM "ofcra\kill_logger\main.sqf"
 
 };
