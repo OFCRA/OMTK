@@ -1,7 +1,7 @@
 _OFCRA_UNITES_CIBLES = "HUMAINS+IA";	// parmi {HUMAINS+IA|HUMAINS}
 _OFCRA_LISTE_EXCEPTIONS = [];			// tableau de noms d'unités à ne pas toucher, ex: ["nom1", "nom2"]
 _OFCRA_TENUES_BLUEFOR = "UCP";			// parmi {UCP|OCP}
-_OFCRA_TENUES_REDFOR = "VDV";			// parmi {VDV|VDV-M|MSV}
+_OFCRA_TENUES_REDFOR = "VDV";			// parmi {VDV|VDV-M|MSV|SPETZ|SOC}
 
 
 ////////// NE PAS TOUCHER EN DESSOUS
