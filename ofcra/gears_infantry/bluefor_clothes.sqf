@@ -52,6 +52,31 @@ ofcra_bluefor_clothes_ocp = [
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil] // AIR CREW
 ];
 
+// SOC
+ofcra_bluefor_clothes_soc = [
+	["U_SOC_G3_WDL","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // 0. COMMON
+	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB",nil], // CDC
+	["U_SOC_G3_WDL_03","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB",nil], // CDG
+	["U_SOC_G3_WDL_04","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // CDE
+	["U_SOC_G3_WDL","V_SOC_LV_MBAV","rhs_assault_umbts"], // MEDIC
+	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // GRENADIER
+	["U_SOC_G3_WDL_03","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // GRENADIER ASSISTANT
+	["U_SOC_G3_WDL_04","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // AUTORIFLEMAN
+	["U_SOC_G3_WDL","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // AUTORIFLEMAN ASSISTANT
+	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // GUNNER
+	["U_SOC_G3_WDL_03","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // 10. GUNNER ASSISTANT
+	["U_SOC_G3_WDL_04","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // ANTI-TANK
+	["U_SOC_G3_WDL","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // ANTI-TANK ASSISTANT
+	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // MARKSMAN
+	["U_SOC_G3_WDL_03","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // SNIPER
+	["U_SOC_G3_WDL_04","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // SPOTTER
+	["U_SOC_G3_WDL","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // EXPLOSIVE SPECIALIST
+	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // RIFLEMAN
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet",nil], // DRIVER
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet",nil], // GROUND CREW
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil], // 20. PILOT
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil] // AIR CREW
+];
 
 
 ////////// NE PAS TOUCHER EN DESSOUS
@@ -67,6 +92,9 @@ ofcra_fnc_get_bluefor_clothes = {
 		};
 		case "OCP":	{
 			_result = ofcra_bluefor_clothes_ocp;
+		};
+		case "SOC":	{
+			_result = ofcra_bluefor_clothes_soc;
 		};
 		default {
 			_log = "tenue BLUEFOR inconnue '" + _param + "'";

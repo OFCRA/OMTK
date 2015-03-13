@@ -319,7 +319,7 @@ ofcra_fnc_redfor_ground_crew = {
 };
 
 // PILOT
-ofcra_fnc_redfor_air_crew = {
+ofcra_fnc_redfor_pilot = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
