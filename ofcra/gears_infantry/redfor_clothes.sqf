@@ -15,14 +15,15 @@ ofcra_redfor_clothes_vdv = [
 	["rhs_uniform_vdv_flora","rhs_6b23_rifleman","rhs_6b28_flora","rhs_assault_umbts"], // 10. GUNNER ASSISTANT
 	["rhs_uniform_vdv_flora","rhs_6b23_rifleman","rhs_6b28_flora","rhs_rpg"], // ANTI-TANK
 	["rhs_uniform_vdv_flora","rhs_6b23_rifleman","rhs_6b28_flora","rhs_rpg"], // ANTI-TANK ASSISTANT
-	["rhs_uniform_vdv_flora","rhs_6b23_rifleman","rhs_6b28_flora","rhs_assault_umbts"], // MARKSMAN
+	["rhs_uniform_vdv_flora","rhs_6b23_rifleman","rhs_6b28_flora","rhs_assault_umbts"], // ANTI-TANK LIGHT
+	["rhs_uniform_vdv_flora","rhs_6b23_rifleman","rhs_6b28_flora",nil], // MARKSMAN
 	["rhs_uniform_vdv_flora","rhs_6b23_sniper","rhs_6b28_flora","rhs_assault_umbts"], // SNIPER
 	["rhs_uniform_vdv_flora","rhs_6b23_sniper","rhs_6b28_flora","rhs_assault_umbts"], // SPOTTER
 	["rhs_uniform_vdv_flora","rhs_6b23_engineer","rhs_6b28_flora","rhs_assault_umbts"], // EXPLOSIVE SPECIALIST
 	["rhs_uniform_vdv_flora","rhs_6b23_rifleman","rhs_6b28_flora","rhs_assault_umbts"], // RIFLEMAN
 	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // DRIVER
-	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // GROUND CREW
-	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // 20. PILOT
+	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // PILOT
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
 ];
 
@@ -41,14 +42,15 @@ ofcra_redfor_clothes_vdvm = [
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"], // 10. GUNNER ASSISTANT
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_rpg"], // ANTI-TANK
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_rpg"], // ANTI-TANK ASSISTANT
-	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"], // MARKSMAN
+	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"], // ANTI-TANK LIGHT
+	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml",nil], // MARKSMAN
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_sniper","rhs_6b27m_ml","rhs_assault_umbts"], // SNIPER
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_sniper","rhs_6b27m_ml","rhs_assault_umbts"], // SPOTTER
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_engineer","rhs_6b27m_ml","rhs_assault_umbts"], // EXPLOSIVE SPECIALIST
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"], // RIFLEMAN
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML","rhs_tsh4_ess_bala",nil], // DRIVER
-	["rhs_uniform_vdv_mflora","rhs_6b23_ML","rhs_tsh4_ess_bala",nil], // GROUND CREW
-	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // 20. PILOT
+	["rhs_uniform_vdv_mflora","rhs_6b23_ML","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // PILOT
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
 ];
 
@@ -67,14 +69,15 @@ ofcra_redfor_clothes_msv = [
 	["rhs_uniform_flora_patchless","rhs_6b23_rifleman","rhs_6b27m","rhs_assault_umbts"], // 10. GUNNER ASSISTANT
 	["rhs_uniform_flora_patchless","rhs_6b23_rifleman","rhs_6b27m","rhs_rpg"], // ANTI-TANK
 	["rhs_uniform_flora_patchless","rhs_6b23_rifleman","rhs_6b27m","rhs_rpg"], // ANTI-TANK ASSISTANT
+	["rhs_uniform_flora_patchless","rhs_6b23_rifleman","rhs_6b27m","rhs_assault_umbts"], // ANTI-TANK LIGHT
 	["rhs_uniform_flora_patchless","rhs_6b23_rifleman","rhs_6b27m",nil], // MARKSMAN
 	["rhs_uniform_flora_patchless","rhs_6b23_sniper","rhs_6b27m","rhs_assault_umbts"], // SNIPER
 	["rhs_uniform_flora_patchless","rhs_6b23_sniper","rhs_6b27m","rhs_assault_umbts"], // SPOTTER
 	["rhs_uniform_flora_patchless","rhs_6b23_engineer","rhs_6b27m","rhs_assault_umbts"], // EXPLOSIVE SPECIALIST
 	["rhs_uniform_flora_patchless","rhs_6b23_rifleman","rhs_6b27m","rhs_assault_umbts"], // RIFLEMAN
 	["rhs_uniform_flora_patchless","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // DRIVER
-	["rhs_uniform_flora_patchless","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // GROUND CREW
-	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // 20. PILOT
+	["rhs_uniform_flora_patchless","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // PILOT
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
 ];
 
@@ -93,14 +96,15 @@ ofcra_redfor_clothes_spetz = [
 	["gorka12","Smersh_def_PK","Altyn_ochki","rhs_assault_umbts"], // 10. GUNNER ASSISTANT
 	["gorka13","Smersh_def_AK","Altyn_ochki","rhs_rpg"], // ANTI-TANK
 	["gorka14","Smersh_def_AK","Altyn_ochki","rhs_rpg"], // ANTI-TANK ASSISTANT
+	["gorka14","Smersh_def_AK","Altyn_ochki","rhs_assault_umbts"], // ANTI-TANK LIGHT
 	["gorka15","Smersh_def_SVD","Altyn_ochki","rhs_assault_umbts"], // MARKSMAN
 	["gorka16","Smersh_def_SVD","Altyn_ochki","rhs_assault_umbts"], // SNIPER
 	["gorka2","Smersh_def_SVD","Altyn_ochki","rhs_assault_umbts"], // SPOTTER
 	["gorka3","Smersh_def_AK","Altyn_ochki","rhs_assault_umbts"], // EXPLOSIVE SPECIALIST
 	["gorka4","Smersh_def_AK","Altyn_ochki","rhs_assault_umbts"], // RIFLEMAN
 	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // DRIVER
-	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // GROUND CREW
-	["rhs_uniform_df15","","rhs_zsh7a_mike",nil], // 20. PILOT
+	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
+	["rhs_uniform_df15","","rhs_zsh7a_mike",nil], // PILOT
 	["rhs_uniform_df15","","rhs_zsh7a_mike",nil] // AIR CREW
 ];
 

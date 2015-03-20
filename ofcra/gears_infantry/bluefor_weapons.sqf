@@ -247,8 +247,8 @@ ofcra_fnc_bluefor_antitank = {
 	for "_i" from 1 to 4 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 
 	_unit addWeapon "tf47_m3maaws";
-	for "_i" from 1 to 2 do {_unit addItemToBackpack "tf47_m3maaws_HEAT";};
-	_unit addItemToBackpack "tf47_m3maaws_HEDP";
+	//for "_i" from 1 to 2 do {_unit addItemToBackpack "tf47_m3maaws_HEAT";};
+	//_unit addItemToBackpack "tf47_m3maaws_HEDP";
 
 	_unit addItemToVest "rhs_mag_m67";
 	_unit addItemToVest "SmokeShell";
@@ -276,7 +276,7 @@ ofcra_fnc_bluefor_antitank_assistant = {
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "SmokeShell";};
 
 
-	for "_i" from 1 to 2 do {_unit addItemToBackpack "MAAWS_HEAT";};
+	//for "_i" from 1 to 2 do {_unit addItemToBackpack "MAAWS_HEAT";};
 	_unit addItemToBackpack "MAAWS_HEDP";
 };
 
