@@ -16,8 +16,10 @@ if (isServer) then {
 	execVM "ofcra\IA_skills\main.sqf";
 
 	// Set objectives
-
-	// Load modules
+	
+	// Set time line
+	//execVM "ofcra\time_line\main.sqf";
+	
 
 	// Add kill logs
 	execVM "ofcra\kill_logger\main.sqf"

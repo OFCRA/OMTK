@@ -37,7 +37,7 @@ ofcra_redfor_clothes_vdvm = [
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"], // GRENADIER ASSISTANT
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"], // AUTORIFLEMAN
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"], // AUTORIFLEMAN ASSISTANT
-	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml",nil], // GUNNER
+	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"], // GUNNER
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"], // 10. GUNNER ASSISTANT
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_rpg"], // ANTI-TANK
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_rpg"], // ANTI-TANK ASSISTANT

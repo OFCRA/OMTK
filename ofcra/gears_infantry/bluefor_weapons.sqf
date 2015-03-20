@@ -599,7 +599,6 @@ ofcra_fnc_set_bluefor_gears = {
 	_clothes = _this select 2;
 	_found = 0;
 	
-	
 	if (_class in rifleman_bluefor_classes)					then { [_unit] call ofcra_fnc_bluefor_rifleman; _found=1; };
 	if (_class in medic_bluefor_classes)					then { [_unit] call ofcra_fnc_bluefor_medic; _found=1; };
 	if (_class in grenadier_bluefor_classes)				then { [_unit] call ofcra_fnc_bluefor_grenadier; _found=1; };

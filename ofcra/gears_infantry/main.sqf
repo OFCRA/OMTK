@@ -1,7 +1,7 @@
 _OFCRA_UNITES_CIBLES = "HUMAINS+IA";	// parmi {HUMAINS+IA|HUMAINS}
-_OFCRA_LISTE_EXCEPTIONS = [];			// tableau de noms d'unités à ne pas toucher, ex: ["nom1", "nom2"]
+_OFCRA_LISTE_EXCEPTIONS = [];			// tableau de noms d'unités entre-guillemets à ne pas équiper, ex: ["nom1", "nom2"]
 _OFCRA_TENUES_BLUEFOR = "UCP";			// parmi {UCP|OCP|SOC}
-_OFCRA_TENUES_REDFOR = "VDV";			// parmi {VDV|VDV-M|MSV|SPETZ}
+_OFCRA_TENUES_REDFOR = "MSV";			// parmi {VDV|VDV-M|MSV|SPETZ}
 
 
 ////////// NE PAS TOUCHER EN DESSOUS
@@ -40,6 +40,7 @@ switch(_OFCRA_UNITES_CIBLES) do {
 	
 	if (!(_name in _OFCRA_LISTE_EXCEPTIONS)) then {
 		[_x] call ofcra_fnc_remove_all_gears;
+		_x setUnitRank "PRIVATE";
 	
 		switch (_side) do {
 			case east: {
