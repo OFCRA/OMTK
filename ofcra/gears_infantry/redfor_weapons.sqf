@@ -457,8 +457,8 @@ gunner_redfor_classes = [
 ];
 
 gunner_assistant_redfor_classes = [
-	"O_support_AMG_F",		// CSAT\Men (Support)\Assist. Gunner (Mk6)
-	"O_support_AMort_F"		// CSAT\Men (Support)\Assist. Gunner (HMG:GMG)
+	"O_support_AMG_F",		// CSAT\Men (Support)\Asst. Gunner (Mk6)
+	"O_support_AMort_F"		// CSAT\Men (Support)\Asst. Gunner (HMG:GMG)
 ];
 
 antitank_redfor_classes = [
