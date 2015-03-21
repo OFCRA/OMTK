@@ -32,7 +32,6 @@ ofcra_fnc_redfor_cdc = {
 	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
 	
 	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
-
 	_unit addWeapon "rhs_weap_ak74m";
 	_unit addPrimaryWeaponItem "rhs_acc_1p29";	
 	
@@ -51,7 +50,6 @@ ofcra_fnc_redfor_cdg = {
 	
 	_unit setUnitRank "MAJOR"; 	
 	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
-
 	
 	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 	_unit addWeapon "rhs_weap_ak74m";
@@ -104,7 +102,7 @@ ofcra_fnc_redfor_medic = {
 	for "_i" from 1 to 50 do {_unit addItemToBackpack "cse_bandage_basic";};
 	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_morphine";};
 	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_epinephrine";};
-	for "_i" from 1 to 10 do  {_unit addItemToBackpack "cse_blood_iv_500";};
+	for "_i" from 1 to 10 do {_unit addItemToBackpack "cse_blood_iv_500";};
 };
 
 // GRENADIER
@@ -517,6 +515,7 @@ pilot_redfor_classes = [
 air_crew_redfor_classes = [
 	"O_helicrew_F"			// CSAT\Men\Helicopter Crew
 ];
+
 
 ////////// NE PAS TOUCHER EN DESSOUS
 
