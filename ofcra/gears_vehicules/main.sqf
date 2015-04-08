@@ -13,9 +13,9 @@ systemChat "Setting gears for vehicules";
 	_class = typeOf _x;
 	_found = 0;
 	
-	clearmagazinecargo _x;
-	clearweaponcargo _x;
-	clearitemcargo _x;
+	clearMagazineCargoGlobal _x;
+	clearWeaponCargoGlobal _x;
+	clearItemCargoGlobal _x;
 	clearBackpackCargoGlobal _x;
 	
 	_x disableTIEquipment true;
