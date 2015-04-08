@@ -173,3 +173,12 @@ ofcra_fn_get_objectives_results = {
 
 	_score_board;
 }
+
+
+//_target = [0,0,0] nearestObject 66207;
+//_target = missionNamespace getVariable "uto";
+//_target = missionNamespace getVariable "pop";
+
+//_ff = getDammage _target;
+//_ff = str _ff;
+//hint _ff;

@@ -33,6 +33,7 @@ switch(_OFCRA_UNITES_CIBLES) do {
 };
 
 
+
 {
 	_name = str _x;
 	_side = side _x;

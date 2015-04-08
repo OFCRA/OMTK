@@ -421,7 +421,7 @@ ofcra_fnc_redfor_air_crew = {
 	
 };
 
-////// Classes definitions
+////// REDFOR - classes definitions
 
 cdc_redfor_classes = [
 	"O_officer_F"			// CSAT\Men\Officer
@@ -517,7 +517,7 @@ air_crew_redfor_classes = [
 ];
 
 
-////////// NE PAS TOUCHER EN DESSOUS
+//////////////////////// NE PAS TOUCHER DESSOUS
 
 ofcra_fnc_set_redfor_gears = {
 	private ["_unit", "_class","_found"];

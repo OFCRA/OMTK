@@ -1,29 +1,50 @@
-/////////////////////////////////////////
-//Intro
-/////////////////////////////////////////
-
 author = "OFCRA";
-onLoadName = "OFCRA: NOM_DE_MISSION";
+onLoadName = "NOM_DE_MISSION";
 onLoadMission = "www.ofcra.org";
 loadScreen = "ofcra\img\overview.jpg";
 
 enableDebugConsole = 2;
 
-class Header
-{
+class Header {
 	gameType=TDM;
 	minPlayers = 1;
 	maxPlayers = 60;
 };
 
 
-////////////////////////////////////////////////////////////////////////////////
-// Viewdistance
-////////////////////////////////////////////////////////////////////////////////
 
-// #include "taw_vd\dialog.hpp"
+// Viewdistance script found on http://www.armaholic.com/page.php?id=19751
+// All credits to Tonic@http://www.iamtonic.co/
+#include "taw_vd\dialog.hpp"
+class CfgFunctions
+{
+	#include "taw_vd\CfgFunctions.hpp"
+};
 
-// class CfgFunctions
-// {
-//  #include "taw_vd\CfgFunctions.hpp"
-// };
+
+//
+class RscTitles {
+	class ScoreBoard {
+		idd = 100;
+		duration = 10;
+		class controls {
+			class ExampleControl {
+				idc = -1;
+				type = 0;
+				style = 0; //1 2 3...176
+				tileH = 2; //Tile Picture height (style = 144)
+				tileW = 5; //Tile Picture width (style = 144)
+				x = 0.25;
+				y = 0.25;
+				h = 0.5;
+				w = 0.5;
+				font = "EtelkaNarrowMediumPro";
+				sizeEx = 0.05;
+				colorBackground[] = {1,1,1,1}; //white background 
+				colorText[] = {0.5,0.5,0.5,1}; //grey foreground
+				text = "- MISSION TERMINEE -";
+				//lineSpacing = 1; //required for multi-line style
+			};
+		};
+	};
+};

@@ -4,22 +4,24 @@ ofcra_fnc_redfor_vehicules_common = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit addWeaponCargo ["rhs_weap_rpg26", 4];
-	_unit addWeaponCargo ["rhs_weap_ak74m", 4];
+	_unit addMagazineCargo ["rhs_rpg7_PG7VL_mag", 2];
+	_unit addMagazineCargo ["rhs_rpg7_PG7VR_mag", 2];
+	_unit addMagazineCargo ["rhs_rpg26_mag", 2];
 		
-	_unit addMagazineCargo ["rhs_rpg26_mag", 4];
-	_unit addMagazineCargo ["rhs_30Rnd_545x39_7N10_AK", 40];
-	_unit addMagazineCargo ["rhs_10Rnd_762x54mmR_7N1", 30];
-	_unit addMagazineCargo ["rhs_100Rnd_762x54mmR", 15];
-	_unit addMagazineCargo ["rhs_100Rnd_762x54mmR", 10];
-	_unit addMagazineCargo ["rhs_rpg7_PG7VL_mag", 4];
-	_unit addMagazineCargo ["rhs_rpg7_PG7VR_mag", 4];
-	_unit addMagazineCargo ["rhs_VOG25", 20];
-	_unit addMagazineCargo ["rhs_VOG25P", 20];
-	_unit addMagazineCargo ["rhs_VG40OP_white", 20];
-	_unit addItemCargo ["rhs_mag_rgd5", 15];
-	_unit addItemCargo ["rhs_mag_rdg2_white", 15];
-	_unit addItemCargo ["rhs_mag_rdg2_white", 15];
+	_unit addMagazineCargo ["rhs_30Rnd_545x39_7N10_AK", 10];
+	_unit addMagazineCargo ["hlc_75Rnd_762x39_m_rpk", 2];
+	_unit addMagazineCargo ["rhs_100Rnd_762x54mmR", 2];
+		
+	_unit addMagazineCargo ["rhs_VOG25", 5];
+	_unit addMagazineCargo ["rhs_VOG25P", 5];
+	_unit addMagazineCargo ["rhs_VG40OP_white", 5];
+	
+	_unit addItemCargo ["rhs_mag_rgd5", 5];
+	_unit addItemCargo ["rhs_mag_rdg2_white", 5];
+		
+	_unit addItemCargo ["cse_bandage_basic", 10];
+	_unit addItemCargo ["cse_epinephrine", 10];
+	_unit addItemCargo ["cse_morphine", 10];
 };
 
 ofcra_fnc_redfor_vehicules_car = {
@@ -73,7 +75,7 @@ ofcra_fnc_redfor_vehicules_aaa = {
 };
 
 ofcra_car_redfor_vehicules_classes = [
-	'rhs_tigr_vv','rhs_uaz_vv','rhs_uaz_open_vv',
+	'rhs_tigr_vv','rhs_uaz_vv','rhs_uaz_open_vv','rhs_tigr_3camo_vv',
 	'rhs_tigr_msv','RHS_UAZ_MSV_01','rhs_uaz_open_MSV_01',
 	'rhs_tigr_vdv','rhs_uaz_vdv','rhs_uaz_open_vdv',
 	'rhs_tigr_vmf','rhs_uaz_vmf','rhs_uaz_open_vmf'
@@ -128,20 +130,23 @@ ofcra_aaa_redfor_vehicules_classes = [
 ////////// NE PAS TOUCHER EN DESSOUS
 
 ofcra_fnc_set_redfor_vehicules_gears = {
-	private ["_unit", "_class","_found"];
+	private ["_unit", "_class","_redFound"];
 	_unit  = _this select 0;
 	_class = _this select 1;
-	_found = 0;
+	_redFound = 0;
 	
-	[_unit] call ofcra_fnc_redfor_vehicules_common;
-	if (_class in ofcra_car_redfor_vehicules_classes)			then { [_unit] call ofcra_fnc_redfor_vehicules_car; _found=1; };
-	if (_class in ofcra_apc_redfor_vehicules_classes)			then { [_unit] call ofcra_fnc_redfor_vehicules_apc; _found=1; };
-	if (_class in ofcra_mbt_redfor_vehicules_classes)			then { [_unit] call ofcra_fnc_redfor_vehicules_mbt; _found=1; };
-	if (_class in ofcra_mbt_light_redfor_vehicules_classes)	then { [_unit] call ofcra_fnc_redfor_vehicules_mbt_light; _found=1; };
-	if (_class in ofcra_artillery_redfor_vehicules_classes)	then { [_unit] call ofcra_fnc_redfor_vehicules_artillery; _found=1; };
-	if (_class in ofcra_ifv_redfor_vehicules_classes)			then { [_unit] call ofcra_fnc_redfor_vehicules_ifv; _found=1; };
-	if (_class in ofcra_aaa_redfor_vehicules_classes)			then { [_unit] call ofcra_fnc_redfor_vehicules_aaa; _found=1; };
-	if (_class in ofcra_truck_redfor_vehicules_classes)		then { [_unit] call ofcra_fnc_redfor_vehicules_truck; _found=1; };
+	if (_class in ofcra_car_redfor_vehicules_classes)		then { [_unit] call ofcra_fnc_redfor_vehicules_car; _redFound=1; };
+	if (_class in ofcra_apc_redfor_vehicules_classes)		then { [_unit] call ofcra_fnc_redfor_vehicules_apc; _redFound=1; };
+	if (_class in ofcra_mbt_redfor_vehicules_classes)		then { [_unit] call ofcra_fnc_redfor_vehicules_mbt; _redFound=1; };
+	if (_class in ofcra_mbt_light_redfor_vehicules_classes)	then { [_unit] call ofcra_fnc_redfor_vehicules_mbt_light; _redFound=1; };
+	if (_class in ofcra_artillery_redfor_vehicules_classes)	then { [_unit] call ofcra_fnc_redfor_vehicules_artillery; _redFound=1; };
+	if (_class in ofcra_ifv_redfor_vehicules_classes)		then { [_unit] call ofcra_fnc_redfor_vehicules_ifv; _redFound=1; };
+	if (_class in ofcra_aaa_redfor_vehicules_classes)		then { [_unit] call ofcra_fnc_redfor_vehicules_aaa; _redFound=1; };
+	if (_class in ofcra_truck_redfor_vehicules_classes)		then { [_unit] call ofcra_fnc_redfor_vehicules_truck; _redFound=1; };
 	
-	_found;
+	if (_redFound > 0) then {
+		[_unit] call ofcra_fnc_redfor_vehicules_common;
+	};
+	
+	_redFound;
 };

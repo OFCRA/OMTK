@@ -451,46 +451,45 @@ ofcra_fnc_bluefor_air_crew = {
 	_unit addWeapon "rhs_weap_m4";
 };
 
-
-////// Classes definitions
+////// BLUEFOR classes definitions
 
 cdc_bluefor_classes = [
-	"B_officer_F",			// NATO\Officer
-	"B_G_officer_F"			// FIA\Officer
+	"B_officer_F",			// NATO\Men\Officer
+	"B_G_officer_F"			// FIA\Men\Officer
 ];
 
 cdg_bluefor_classes = [
-	"B_Soldier_TL_F",		// NATO\Team Leader
-	"B_G_Soldier_TL_F"		// FIA\Team Leader
+	"B_Soldier_TL_F",		// NATO\Men\Team Leader
+	"B_G_Soldier_TL_F"		// FIA\Men\Team Leader
 ];
 
 cde_bluefor_classes = [
-	"B_Soldier_SL_F",		// NATO\Squad Leader
-	"B_G_Soldier_SL_F"		// FIA\Squad Leader
+	"B_Soldier_SL_F",		// NATO\Men\Squad Leader
+	"B_G_Soldier_SL_F"		// FIA\Men\Squad Leader
 ];
 
 medic_bluefor_classes = [
- 	"B_medic_F", 			// NATO\Combat Life Saver
- 	"B_G_medic_F"			// FIA\Combat Life Saver
+ 	"B_medic_F", 			// NATO\Men\Combat Life Saver
+ 	"B_G_medic_F"			// FIA\Men\Combat Life Saver
 ];
 
 grenadier_bluefor_classes = [
-	"B_Soldier_GL_F",		// NATO\Grenadier
-	"B_G_Soldier_GL_F"		// FIA\Grenadier
+	"B_Soldier_GL_F",		// NATO\Men\Grenadier
+	"B_G_Soldier_GL_F"		// FIA\Men\Grenadier
 ];
 
 grenadier_assistant_bluefor_classes = [
-	"B_Soldier_A_F",		// NATO\Ammo Bearer
-	"B_G_Soldier_A_F"		// FIA\Ammo Bearer
+	"B_Soldier_A_F",		// NATO\Men\Ammo Bearer
+	"B_G_Soldier_A_F"		// FIA\Men\Ammo Bearer
 ];
 
 autorifleman_bluefor_classes = [
-	"B_soldier_AR_F",		// NATO\Autorifleman
-	"B_G_Soldier_AR_F"		// FIA\Autorifleman
+	"B_soldier_AR_F",		// NATO\Men\Autorifleman
+	"B_G_Soldier_AR_F"		// FIA\Men\Autorifleman
 ];
 
 autorifleman_assistant_bluefor_classes = [
-	"B_soldier_AAR_F"		// NATO\Asst. Autorifleman
+	"B_soldier_AAR_F"		// NATO\Men (Support)\Asst. Autorifleman
 ];
 
 gunner_bluefor_classes = [
@@ -505,65 +504,65 @@ gunner_assistant_bluefor_classes = [
 ];
 
 antitank_bluefor_classes = [
-	"B_soldier_AT_F"		// NATO\Missile Specialist (AT)
+	"B_soldier_AT_F"		// NATO\Men\Missile Specialist (AT)
 ];
 
 antitank_assistant_bluefor_classes = [
-	"B_soldier_AAT_F"		// NATO\Asst. Missile Specialist (AT)
+	"B_soldier_AAT_F"		// NATO\Men (Support)\Asst. Missile Specialist (AT)
 ];
 
 antitank_light_bluefor_classes = [
-	"B_soldier_LAT_F",		// NATO\Rifleman (AT)
-	"B_G_Soldier_LAT_F"		// FIA\Rifleman (AT)
+	"B_soldier_LAT_F",		// NATO\Men\Rifleman (AT)
+	"B_G_Soldier_LAT_F"		// FIA\Men\Rifleman (AT)
 ];
 
 marksman_bluefor_classes = [
-	"B_soldier_M_F",		// NATO\Marksman
-	"B_G_Soldier_M_F"		// FIA\Marksman
+	"B_soldier_M_F",		// NATO\Men\Marksman
+	"B_G_Soldier_M_F"		// FIA\Men\Marksman
 	
 ];
 
 sniper_bluefor_classes = [
-	"B_sniper_F"			// NATO\Sniper
+	"B_sniper_F"			// NATO\Men (Sniper)\Sniper
 ];
 
 spotter_bluefor_classes = [
-	"B_spotter_F"			// NATO\Spotter
+	"B_spotter_F"			// NATO\Men (Sniper)\Spotter
 ];
 
 explosive_specialist_bluefor_classes = [
-	"B_soldier_exp_F",		// NATO\Explosive Specialist
-	"B_G_Soldier_exp_F"		// FIA\Explosive Specialist
+	"B_soldier_exp_F",		// NATO\Men\Explosive Specialist
+	"B_G_Soldier_exp_F"		// FIA\Men\Explosive Specialist
 ];
 
 rifleman_bluefor_classes = [
-	"B_Soldier_F",			// NATO\Rifleman
-	"B_Soldier_lite_F",		// NATO\Rifleman (Light)
-	"b_soldier_unarmed_f",	// NATO\Rifleman (Unarmed)
-	"B_G_Soldier_F",		// FIA\Rifleman
-	"B_G_Soldier_lite_F",	// FIA\Rifleman (Light)
-	"b_g_soldier_unarmed_f"	// FIA\Rifleman (Unarmed)
+	"B_Soldier_F",			// NATO\Men\Rifleman
+	"B_Soldier_lite_F",		// NATO\Men\Rifleman (Light)
+	"b_soldier_unarmed_f",	// NATO\Men\Rifleman (Unarmed)
+	"B_G_Soldier_F",		// FIA\Men\Rifleman
+	"B_G_Soldier_lite_F",	// FIA\Men\Rifleman (Light)
+	"b_g_soldier_unarmed_f"	// FIA\Men\Rifleman (Unarmed)
 ];
 	
 driver_bluefor_classes = [
-	"B_soldier_UAV_F"		// NATO\UAV Operator
+	"B_soldier_UAV_F"		// NATO\Men\UAV Operator
 ];
 
 ground_crew_bluefor_classes = [
-	"B_crew_F"				// NATO\Crewman
+	"B_crew_F"				// NATO\Men\Crewman
 ];
 
 pilot_bluefor_classes = [
-	"B_Helipilot_F",		// NATO\Helicopter Pilot
-	"B_Pilot_F"				// NATO\Pilot
+	"B_Helipilot_F",		// NATO\Men\Helicopter Pilot
+	"B_Pilot_F"				// NATO\Men\Pilot
 ];
 
 air_crew_bluefor_classes = [
-	"B_helicrew_F"			// NATO\Helicopter Crew
+	"B_helicrew_F"			// NATO\Men\Helicopter Crew
 ];
 
 
-////////// NE PAS TOUCHER EN DESSOUS
+//////////////////////// NE PAS TOUCHER DESSOUS
 
 ofcra_fnc_set_bluefor_gears = {
 	private ["_unit", "_class","_found"];

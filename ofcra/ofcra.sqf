@@ -18,7 +18,7 @@ if (isServer) then {
 	// Set objectives
 	
 	// Set time line
-	//execVM "ofcra\time_line\main.sqf";
+	execVM "ofcra\time_line\main.sqf";
 	
 
 	// Add kill logs

@@ -2,24 +2,28 @@
 
 ofcra_fnc_bluefor_vehicules_common = {
 	private ["_unit"];
-	_unit = _this select 0;
+	_unit = _this select 0;		
 	
-	_unit addWeaponCargo ["tf47_m3maaws", 2];
-	_unit addWeaponCargo ["rhs_weap_m4a1_grip", 2];
-
+	_unit addMagazineCargo ["tf47_m3maaws_HEAT", Ceil random 20];
+	_unit addMagazineCargo ["tf47_m3maaws_HEDP", 2];	
 	_unit addMagazineCargo ["rhs_m136_mag", 2];
-	_unit addMagazineCargo ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 20];
-	_unit addMagazineCargo ["hlc_30rnd_556x45_SPR", 20];
-	_unit addMagazineCargo ["rhsusf_100Rnd_556x45_soft_pouch", 10];
-	_unit addMagazineCargo ["rhsusf_100Rnd_762x51", 5];
-	_unit addMagazineCargo ["tf47_m3maaws_HEAT", 2];
-	_unit addMagazineCargo ["tf47_m3maaws_HEDP", 2];
-	_unit addMagazineCargo ["rhs_mag_M441_HE", 10];
-	_unit addMagazineCargo ["rhs_mag_M433_HEDP", 10];
-	_unit addMagazineCargo ["rhs_mag_M585_white", 10];
-	_unit addItemCargo ["MiniGrenade", 15];
-	_unit addItemCargo ["SmokeShell", 15];
-	_unit addItemCargo ["SmokeShell", 15];
+	
+	_unit addMagazineCargo ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 10];
+	_unit addMagazineCargo ["rhsusf_100Rnd_556x45_soft_pouch", 2];
+	_unit addMagazineCargo ["rhsusf_100Rnd_762x51", 2];
+	
+	_unit addMagazineCargo ["rhs_mag_M441_HE", 5];
+	_unit addMagazineCargo ["rhs_mag_M433_HEDP", 5];
+	_unit addMagazineCargo ["rhs_mag_M585_white", 5];
+	
+	_unit addItemCargo ["rhs_mag_m67", 5];
+	_unit addItemCargo ["SmokeShell", 5];
+	
+	_unit addItemCargo ["cse_bandage_basic", 10];
+	_unit addItemCargo ["cse_epinephrine", 10];
+	_unit addItemCargo ["cse_morphine", 10];
+	
+	
 };
 
 ofcra_fnc_bluefor_vehicules_car = {
@@ -125,23 +129,25 @@ ofcra_aaa_bluefor_vehicules_classes = [
 ];
 
 
-
 ////////// NE PAS TOUCHER EN DESSOUS
 
 ofcra_fnc_set_bluefor_vehicules_gears = {
-	private ["_unit", "_class","_found"];
+	private ["_unit", "_class","_blueFound"];
 	_unit  = _this select 0;
 	_class = _this select 1;
-	_found = 0;
-	
-	[_unit] call ofcra_fnc_bluefor_vehicules_common;
-	if (_class in ofcra_car_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_car; _found=1; };
-	if (_class in ofcra_apc_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_apc; _found=1; };
-	if (_class in ofcra_mbt_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_mbt; _found=1; };
-	if (_class in ofcra_artillery_bluefor_vehicules_classes)	then { [_unit] call ofcra_fnc_bluefor_vehicules_artillery; _found=1; };
-	if (_class in ofcra_ifv_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_ifv; _found=1; };
-	if (_class in ofcra_aaa_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_aaa; _found=1; };
-	if (_class in ofcra_truck_bluefor_vehicules_classes)		then { [_unit] call ofcra_fnc_bluefor_vehicules_truck; _found=1; };
+	_blueFound = 0;
+		
+	if (_class in ofcra_car_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_car; _blueFound=1; };
+	if (_class in ofcra_apc_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_apc; _blueFound=1; };
+	if (_class in ofcra_mbt_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_mbt; _blueFound=1; };
+	if (_class in ofcra_artillery_bluefor_vehicules_classes)	then { [_unit] call ofcra_fnc_bluefor_vehicules_artillery; _blueFound=1; };
+	if (_class in ofcra_ifv_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_ifv; _blueFound=1; };
+	if (_class in ofcra_aaa_bluefor_vehicules_classes)			then { [_unit] call ofcra_fnc_bluefor_vehicules_aaa; _blueFound=1; };
+	if (_class in ofcra_truck_bluefor_vehicules_classes)		then { [_unit] call ofcra_fnc_bluefor_vehicules_truck; _blueFound=1; };
 
-	_found;
+	if (_blueFound > 0) then {
+		[_unit] call ofcra_fnc_bluefor_vehicules_common;
+	};
+	
+	_blueFound;
 };
