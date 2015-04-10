@@ -1,8 +1,7 @@
-_OFCRA_UNITES_CIBLES = "HUMAINS+IA";	// parmi {HUMAINS+IA|HUMAINS}
-_OFCRA_LISTE_EXCEPTIONS = [];			// tableau de noms d'unités entre-guillemets à ne pas équiper, ex: ["nom1", "nom2"]
-_OFCRA_TENUES_BLUEFOR = "UCP";			// parmi {UCP|OCP|SOC}
-_OFCRA_TENUES_REDFOR = "MSV";			// parmi {VDV|VDV-M|MSV|SPETZ}
-
+OFCRA_UNITES_CIBLES = "HUMAINS+IA";	// parmi {HUMAINS+IA|HUMAINS}
+OFCRA_LISTE_EXCEPTIONS = [];			// tableau de noms d'unités entre-guillemets à ne pas équiper, ex: ["nom1", "nom2"]
+OFCRA_TENUES_BLUEFOR = "UCP";			// parmi {UCP|OCP|SOC}
+OFCRA_TENUES_REDFOR = "MSV";			// parmi {VDV|VDV-M|MSV|SPETZ}
 
 ////////// NE PAS TOUCHER EN DESSOUS
 
@@ -22,7 +21,7 @@ systemChat "Setting gears for infantry";
 
 
 _targeted_units = nil;
-switch(_OFCRA_UNITES_CIBLES) do {
+switch(OFCRA_UNITES_CIBLES) do {
 	case "HUMAINS+IA":	{ _targeted_units = allUnits; };
 	case "HUMAINS":		{ _targeted_units = playableUnits; };
 	default	{
@@ -32,33 +31,10 @@ switch(_OFCRA_UNITES_CIBLES) do {
 	};
 };
 
-
-
 {
-	_name = str _x;
-	_side = side _x;
-	_class = typeOf _x;
-	
-	if (!(_name in _OFCRA_LISTE_EXCEPTIONS)) then {
-		[_x] call ofcra_fnc_remove_all_gears;
-		_x setUnitRank "PRIVATE";
-	
-		switch (_side) do {
-			case east: {
-				_clothes = [_OFCRA_TENUES_REDFOR] call ofcra_fnc_get_redfor_clothes;
-				[_x, _class, _clothes] call ofcra_fnc_set_redfor_gears;
-			};
-			case west: {
-				_clothes = [_OFCRA_TENUES_BLUEFOR] call ofcra_fnc_get_bluefor_clothes;
-				[_x, _class, _clothes] call ofcra_fnc_set_bluefor_gears;
-			};
-			default {
-				_log = "camp inconnu pour l'unité '" + (name _x) + "'";
-				[_log, "ERROR"] call ofcra_fnc_log;
-			};
-		};
-	};
-	
+	//[[_x],"ofcra_fnc_set_unit_gears"] call BIS_fnc_MP;
+	[_x] call ofcra_fnc_set_unit_gears;
+	_x addEventHandler ["respawn", { [_this select 0] call ofcra_fnc_set_unit_gears}];
 } forEach _targeted_units;
 
 diag_log "[OFCRA] INFO: infantry gears done.";
