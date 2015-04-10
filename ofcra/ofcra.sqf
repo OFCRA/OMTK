@@ -1,13 +1,15 @@
-if (isServer) then {
+// main lib
+execVM "ofcra\library.sqf"
 
-	// main lib
-	execVM "ofcra\library.sqf"
+// Set players Gears
+execVM "ofcra\gears_infantry\main.sqf";	
+
+	
+// On server only
+if (isServer) then {
 
 	// Check difficulty
 	execVM "ofcra\difficulty_check\main.sqf"
-
-	// Set players Gears
-	execVM "ofcra\gears_infantry\main.sqf";
 
 	// Set vehicules Gears
 	execVM "ofcra\gears_vehicules\main.sqf"
@@ -20,8 +22,11 @@ if (isServer) then {
 	// Set time line
 	execVM "ofcra\time_line\main.sqf";
 	
-
 	// Add kill logs
 	execVM "ofcra\kill_logger\main.sqf"
 
 };
+
+
+
+

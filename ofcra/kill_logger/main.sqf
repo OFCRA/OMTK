@@ -1,5 +1,5 @@
 diag_log "[OFCRA] INFO: enabling kill logs ...";
-systemChat "enable kill logs";
+systemChat "Setting kill logs";
 
 _index = 1;
 {
