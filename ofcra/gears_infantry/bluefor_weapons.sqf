@@ -111,7 +111,7 @@ ofcra_fnc_bluefor_medic = {
 	for "_i" from 1 to 50 do {_unit addItemToBackpack "cse_bandage_basic";};
 	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_morphine";};
 	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_epinephrine";};
-	for "_i" from 1 to 10 do {_unit addItemToBackpack "cse_blood_iv_500";};
+	for "_i" from 1 to 10 do {_unit addItemToBackpack "cse_saline_iv";};
 };
 
 // GRENADIER

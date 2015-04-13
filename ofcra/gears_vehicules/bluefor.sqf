@@ -3,27 +3,10 @@
 ofcra_fnc_bluefor_vehicules_common = {
 	private ["_unit"];
 	_unit = _this select 0;		
-	
-	_unit addMagazineCargo ["tf47_m3maaws_HEAT", Ceil random 20];
-	_unit addMagazineCargo ["tf47_m3maaws_HEDP", 2];	
-	_unit addMagazineCargo ["rhs_m136_mag", 2];
-	
-	_unit addMagazineCargo ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 10];
-	_unit addMagazineCargo ["rhsusf_100Rnd_556x45_soft_pouch", 2];
-	_unit addMagazineCargo ["rhsusf_100Rnd_762x51", 2];
-	
-	_unit addMagazineCargo ["rhs_mag_M441_HE", 5];
-	_unit addMagazineCargo ["rhs_mag_M433_HEDP", 5];
-	_unit addMagazineCargo ["rhs_mag_M585_white", 5];
-	
-	_unit addItemCargo ["rhs_mag_m67", 5];
-	_unit addItemCargo ["SmokeShell", 5];
-	
-	_unit addItemCargo ["cse_bandage_basic", 10];
-	_unit addItemCargo ["cse_epinephrine", 10];
-	_unit addItemCargo ["cse_morphine", 10];
-	
-	
+		
+	_unit addItemCargoGlobal ["cse_bandage_basic", 10];
+	_unit addItemCargoGlobal ["cse_epinephrine", 10];
+	_unit addItemCargoGlobal ["cse_morphine", 10];
 };
 
 ofcra_fnc_bluefor_vehicules_car = {

@@ -3,25 +3,10 @@
 ofcra_fnc_redfor_vehicules_common = {
 	private ["_unit"];
 	_unit = _this select 0;
-	
-	_unit addMagazineCargo ["rhs_rpg7_PG7VL_mag", 2];
-	_unit addMagazineCargo ["rhs_rpg7_PG7VR_mag", 2];
-	_unit addMagazineCargo ["rhs_rpg26_mag", 2];
 		
-	_unit addMagazineCargo ["rhs_30Rnd_545x39_7N10_AK", 10];
-	_unit addMagazineCargo ["hlc_75Rnd_762x39_m_rpk", 2];
-	_unit addMagazineCargo ["rhs_100Rnd_762x54mmR", 2];
-		
-	_unit addMagazineCargo ["rhs_VOG25", 5];
-	_unit addMagazineCargo ["rhs_VOG25P", 5];
-	_unit addMagazineCargo ["rhs_VG40OP_white", 5];
-	
-	_unit addItemCargo ["rhs_mag_rgd5", 5];
-	_unit addItemCargo ["rhs_mag_rdg2_white", 5];
-		
-	_unit addItemCargo ["cse_bandage_basic", 10];
-	_unit addItemCargo ["cse_epinephrine", 10];
-	_unit addItemCargo ["cse_morphine", 10];
+	_unit addItemCargoGlobal ["cse_bandage_basic", 10];
+	_unit addItemCargoGlobal ["cse_epinephrine", 10];
+	_unit addItemCargoGlobal ["cse_morphine", 10];
 };
 
 ofcra_fnc_redfor_vehicules_car = {
@@ -76,6 +61,7 @@ ofcra_fnc_redfor_vehicules_aaa = {
 
 ofcra_car_redfor_vehicules_classes = [
 	'rhs_tigr_vv','rhs_uaz_vv','rhs_uaz_open_vv','rhs_tigr_3camo_vv',
+	'rhs_tigr_ffv_3camo_msv',
 	'rhs_tigr_msv','RHS_UAZ_MSV_01','rhs_uaz_open_MSV_01',
 	'rhs_tigr_vdv','rhs_uaz_vdv','rhs_uaz_open_vdv',
 	'rhs_tigr_vmf','rhs_uaz_vmf','rhs_uaz_open_vmf'

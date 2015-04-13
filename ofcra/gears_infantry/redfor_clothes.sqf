@@ -55,7 +55,35 @@ ofcra_redfor_clothes_vdvm = [
 ];
 
 // MSV
-ofcra_redfor_clothes_msv = [
+ofcra_redfor_clothes_msv_digital = [
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi","rhs_assault_umbts"], // 0. COMMON
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_digi",nil], // CDC
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_digi",nil], // CDG
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_headset","rhs_6b27m_digi","rhs_assault_umbts"], // CDE
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_medic","rhs_6b27m_digi","rhs_assault_umbts"], // MEDIC
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi_ess","rhs_assault_umbts"], // GRENADIER
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi_ess","rhs_assault_umbts"], // GRENADIER ASSISTANT
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi","rhs_assault_umbts"], // AUTORIFLEMAN
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi_ess","rhs_assault_umbts"], // AUTORIFLEMAN ASSISTANT
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi","rhs_assault_umbts"], // GUNNER
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi_ess","rhs_assault_umbts"], // 10. GUNNER ASSISTANT
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi_ess","rhs_rpg"], // ANTI-TANK
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi_ess","rhs_rpg"], // ANTI-TANK ASSISTANT
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi_ess","rhs_assault_umbts"], // ANTI-TANK LIGHT
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi",nil], // MARKSMAN
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_sniper","rhs_6b27m_digi","rhs_assault_umbts"], // SNIPER
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_sniper","rhs_6b27m_digi","rhs_assault_umbts"], // SPOTTER
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_engineer","rhs_6b27m_digi","rhs_assault_umbts"], // EXPLOSIVE SPECIALIST
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi","rhs_assault_umbts"], // RIFLEMAN
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_crew","rhs_tsh4_ess_bala",nil], // DRIVER
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_crew","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // PILOT
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
+];
+
+
+// MSV_FLORA
+ofcra_redfor_clothes_msv_flora = [
 	["rhs_uniform_flora_patchless","rhs_6b23_rifleman","rhs_6b27m","rhs_assault_umbts"], // 0. COMMON
 	["rhs_uniform_flora_patchless","rhs_6b23_6sh92_headset_mapcase","rhs_6b27m",nil], // CDC
 	["rhs_uniform_flora_patchless","rhs_6b23_6sh92_headset_mapcase","rhs_6b27m",nil], // CDG
@@ -123,8 +151,11 @@ ofcra_fnc_get_redfor_clothes = {
 		case "VDV-M":	{
 			_result = ofcra_redfor_clothes_vdvm;
 		};
-		case "MSV":	{
-			_result = ofcra_redfor_clothes_msv;
+		case "MSV_DIGITAL":	{
+			_result = ofcra_redfor_clothes_msv_digital;
+		};
+		case "MSV_FLORA":	{
+			_result = ofcra_redfor_clothes_msv_flora;
 		};
 		case "SPETZ":	{
 			_result = ofcra_redfor_clothes_spetz;
