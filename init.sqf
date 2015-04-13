@@ -1,3 +1,3 @@
-execVM "OFCRA\ofcra.sqf"
+execVM "OFCRA\ofcra.sqf";
 
 
