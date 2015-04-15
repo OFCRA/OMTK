@@ -81,6 +81,59 @@ ofcra_bluefor_clothes_soc = [
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil] // AIR CREW
 ];
 
+// MARPAT_WOOD
+ofcra_bluefor_clothes_marpat_wd = [
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // 0. COMMON
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset",nil], // CDC
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset",nil], // CDG
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // CDE
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // MEDIC
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // GRENADIER
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // GRENADIER ASSISTANT
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // AUTORIFLEMAN
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // AUTORIFLEMAN ASSISTANT
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // GUNNER
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // 10. GUNNER ASSISTANT
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // ANTI-TANK
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // ANTI-TANK ASSISTANT
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // ANTI-TANK LIGHT
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // MARKSMAN
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // SNIPER
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // SPOTTER
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // EXPLOSIVE SPECIALIST
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // RIFLEMAN
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_cvc_green_helmet",nil], // DRIVER
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_cvc_green_helmet",nil], // 20. GROUND CREW
+	["rhs_uniform_FROG01_wd","rhsusf_spc","H_PilotHelmetHeli_B",nil], // PILOT
+	["rhs_uniform_FROG01_wd","rhsusf_spc","H_PilotHelmetHeli_B",nil] // AIR CREW
+];
+
+// MARPAT_DESERT
+ofcra_bluefor_clothes_marpat_d = [
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // 0. COMMON
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset",nil], // CDC
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset",nil], // CDG
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // CDE
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // MEDIC
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // GRENADIER
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // GRENADIER ASSISTANT
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // AUTORIFLEMAN
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // AUTORIFLEMAN ASSISTANT
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // GUNNER
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // 10. GUNNER ASSISTANT
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // ANTI-TANK
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // ANTI-TANK ASSISTANT
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // ANTI-TANK LIGHT
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // MARKSMAN
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // SNIPER
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // SPOTTER
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // EXPLOSIVE SPECIALIST
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // RIFLEMAN
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_cvc_helmet",nil], // DRIVER
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
+	["rhs_uniform_FROG01_d","rhsusf_spc","H_PilotHelmetHeli_B",nil], // PILOT
+	["rhs_uniform_FROG01_d","rhsusf_spc","H_PilotHelmetHeli_B",nil] // AIR CREW
+];
 
 ////////// NE PAS TOUCHER EN DESSOUS
 
@@ -98,6 +151,12 @@ ofcra_fnc_get_bluefor_clothes = {
 		};
 		case "SOC":	{
 			_result = ofcra_bluefor_clothes_soc;
+		};
+		case "MARPAT_WOOD":	{
+			_result = ofcra_bluefor_clothes_marpat_wd;
+		};
+		case "MARPAT_DESERT":	{
+			_result = ofcra_bluefor_clothes_marpat_d;
 		};
 		default {
 			_log = "tenue BLUEFOR inconnue '" + _param + "'";
