@@ -318,8 +318,9 @@ ofcra_fnc_bluefor_marksman = {
 	
 	[_unit, 14, _clothes] call ofcra_fn_set_clothes;
 
-	for "_i" from 1 to 8 do {_unit addItemToBackpack "hlc_30rnd_556x45_SPR";};
-	_unit addWeapon "hlc_rifle_samr2";
+	for "_i" from 1 to 8 do {_unit addItemToBackpack "rhsusf_20Rnd_762x51_m118_special_Mag";};
+	//_unit addWeapon "hlc_rifle_samr2";
+	_unit addWeapon "rhs_weap_m14ebrri";
 	_unit addPrimaryWeaponItem "optic_DMS";
 	
 	_unit addItemToVest "rhs_mag_m67";

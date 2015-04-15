@@ -168,8 +168,6 @@ ofcra_fnc_redfor_autorifleman = {
 	_unit addPrimaryWeaponItem "rhs_acc_ekp1";
 	for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_75Rnd_762x39_m_rpk";};
 	
-	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
-	
 	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_rgd5";};
 	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_rdg2_white";};
 };
