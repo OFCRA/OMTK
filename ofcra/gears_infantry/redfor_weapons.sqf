@@ -163,8 +163,10 @@ ofcra_fnc_redfor_autorifleman = {
 	
 	[_unit, 7, _clothes] call ofcra_fn_set_clothes;
 	
-	_unit addItemToVest "rhs_100Rnd_762x54mmR";
-	_unit addWeapon "rhs_weap_pkm";
+	_unit addItemToVest "hlc_75Rnd_762x39_m_rpk";
+	_unit addWeapon "hlc_rifle_rpk";
+	_unit addPrimaryWeaponItem "rhs_acc_ekp1";
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "hlc_75Rnd_762x39_m_rpk";};
 	
 	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
 	
@@ -389,6 +391,8 @@ ofcra_fnc_redfor_driver = {
 	_unit addWeapon "rhs_weap_ak74m_folded";
 	_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";
 		
+	_unit addWeapon "Binocular";
+	_unit linkItem "ItemGPS";
 	_unit addItem "cse_m_pda_o";
 };
 
@@ -416,6 +420,8 @@ ofcra_fnc_redfor_pilot = {
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N10_AK";};	
 	_unit addWeapon "rhs_weap_ak74m_folded";
 	
+	_unit addWeapon "Binocular";
+	_unit linkItem "ItemGPS";
 	_unit addItem "cse_m_pda_o";
 };
 

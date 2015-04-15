@@ -143,8 +143,8 @@ ofcra_fnc_bluefor_grenadier_assistant = {
 	
 	[_unit, 6, _clothes] call ofcra_fn_set_clothes;
 
-	
-	//_unit addWeapon "tf47_at4_HEDP";
+	_unit addItemToBackpack "rhs_m136_hedp_mag";
+	_unit addWeapon "rhs_weap_M136_hedp";
 	
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	_unit addWeapon "rhs_weap_m4a1_grip";
@@ -186,7 +186,8 @@ ofcra_fnc_bluefor_autorifleman_assistant = {
 	
 	[_unit, 8, _clothes] call ofcra_fn_set_clothes;
 
-	//_unit addWeapon "tf47_at4_HEDP";
+	_unit addItemToBackpack "rhs_m136_hedp_mag";
+	_unit addWeapon "rhs_weap_M136_hedp";
 	
 	for "_i" from 1 to 10 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	_unit addWeapon "rhs_weap_m4a1_grip";
@@ -226,7 +227,8 @@ ofcra_fnc_bluefor_gunner_assistant = {
 	
 	[_unit, 10, _clothes] call ofcra_fn_set_clothes;
 
-	//_unit addWeapon "tf47_at4_HEDP";
+	_unit addItemToBackpack "rhs_m136_hedp_mag";
+	_unit addWeapon "rhs_weap_M136_hedp";
 	
 	for "_i" from 1 to 10 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	_unit addWeapon "rhs_weap_m4a1_grip";
@@ -413,6 +415,9 @@ ofcra_fnc_bluefor_driver = {
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	_unit addWeapon "rhs_weap_m4";
 	_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+	
+	_unit addWeapon "Binocular";
+	_unit linkItem "ItemGPS";
 	_unit addItem "cse_m_pda";
 };
 
@@ -437,6 +442,9 @@ ofcra_fnc_bluefor_pilot = {
 
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	_unit addWeapon "rhs_weap_m4";
+	
+	_unit addWeapon "Binocular";
+	_unit linkItem "ItemGPS";
 	_unit addItem "cse_m_pda";
 };
 
