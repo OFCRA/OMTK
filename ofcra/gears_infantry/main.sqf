@@ -32,7 +32,7 @@ switch(OFCRA_UNITES_CIBLES) do {
 };
 
 {
-	//[[_x],"ofcra_fnc_set_unit_gears"] call BIS_fnc_MP;
+ 	uiSleep 0.1;
 	[_x] call ofcra_fnc_set_unit_gears;
 	_x addEventHandler ["respawn", { [_this select 0] call ofcra_fnc_set_unit_gears}];
 } forEach _targeted_units;
