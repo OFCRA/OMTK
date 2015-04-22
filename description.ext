@@ -5,7 +5,7 @@ loadScreen = "ofcra\img\overview.jpg";
 onLoadIntro = "Prepare for the fight !";
 respawn = 0;
 
-enableDebugConsole = 2;
+enableDebugConsole = 0;
 
 class Header {
 	gameType=TDM;

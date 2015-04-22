@@ -4,6 +4,8 @@ execVM "ofcra\library.sqf"
 // Set players Gears
 execVM "ofcra\gears_infantry\main.sqf";	
 
+// Set time line
+//execVM "ofcra\time_line\main.sqf";
 	
 // On server only
 if (isServer) then {
@@ -19,8 +21,7 @@ if (isServer) then {
 
 	// Set objectives
 	
-	// Set time line
-	//execVM "ofcra\time_line\main.sqf";
+	
 	
 	// Add kill logs
 	execVM "ofcra\kill_logger\main.sqf"
