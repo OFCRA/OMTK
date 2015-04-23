@@ -117,7 +117,7 @@ ofcra_fnc_redfor_grenadier = {
 	_unit addWeapon "rhs_weap_rshg2";
 		
 	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
-	_unit addWeapon "rhs_weap_ak74m"; 
+	_unit addWeapon "rhs_weap_ak74m_gp25"; 
 	_unit addPrimaryWeaponItem "rhs_acc_ekp1";
 	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
