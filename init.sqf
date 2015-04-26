@@ -3,8 +3,7 @@ execVM "OFCRA\ofcra.sqf";
 tawvd_disablenone = true;
 tawvd_maxRange = 6000;
 
-//TF_defaultWestBackpack = "tf_rt1523g";
-TF_defaultEastBackpack = "tf_mr3000_rhs";
+TF_no_auto_long_range_radio = 1;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 // Commande pour le déclencheur
