@@ -3,8 +3,8 @@
 // UCP
 ofcra_bluefor_clothes_ucp = [
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // 0. COMMON
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp",nil], // CDC
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp",nil], // CDG
+	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"], // CDC
+	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"], // CDG
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_squadleader","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // CDE
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_medic","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // MEDIC
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_grenadier","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // GRENADIER
@@ -21,17 +21,17 @@ ofcra_bluefor_clothes_ucp = [
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // SPOTTER
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // EXPLOSIVE SPECIALIST
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_rifleman","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // RIFLEMAN
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_cvc_helmet",nil], // DRIVER
+	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_cvc_helmet","tf_rt1523g_rhs"], // DRIVER
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","H_PilotHelmetHeli_B",nil], // PILOT
+	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","H_PilotHelmetHeli_B",nil] // AIR CREW
 ];
 
 // OCP
 ofcra_bluefor_clothes_ocp = [
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // 0. COMMON
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp",nil], // CDC
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp",nil], // CDG
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp","tf_rt1523g_rhs"], // CDC
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp","tf_rt1523g_rhs"], // CDG
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_squadleader","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // CDE
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_medic","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp_medic"], // MEDIC
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_grenadier","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // GRENADIER
@@ -48,17 +48,17 @@ ofcra_bluefor_clothes_ocp = [
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // SPOTTER
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp_engineer"], // EXPLOSIVE SPECIALIST
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_rifleman","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // RIFLEMAN
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet",nil], // DRIVER
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet","tf_rt1523g_rhs"], // DRIVER
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil], // PILOT
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil] // AIR CREW
 ];
 
 // SOC
 ofcra_bluefor_clothes_soc = [
 	["U_SOC_G3_WDL","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // 0. COMMON
-	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB",nil], // CDC
-	["U_SOC_G3_WDL_03","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB",nil], // CDG
+	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","tf_rt1523g_rhs"], // CDC
+	["U_SOC_G3_WDL_03","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","tf_rt1523g_rhs"], // CDG
 	["U_SOC_G3_WDL_04","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // CDE
 	["U_SOC_G3_WDL","V_SOC_LV_MBAV","rhs_assault_umbts"], // MEDIC
 	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // GRENADIER
@@ -75,17 +75,17 @@ ofcra_bluefor_clothes_soc = [
 	["U_SOC_G3_WDL_04","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // SPOTTER
 	["U_SOC_G3_WDL","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // EXPLOSIVE SPECIALIST
 	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"], // RIFLEMAN
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet",nil], // DRIVER
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet","tf_rt1523g_rhs"], // DRIVER
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil], // PILOT
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil] // AIR CREW
 ];
 
 // MARPAT_WOOD
 ofcra_bluefor_clothes_marpat_wd = [
 	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // 0. COMMON
-	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset",nil], // CDC
-	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset",nil], // CDG
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","tf_rt1523g_rhs"], // CDC
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","tf_rt1523g_rhs"], // CDG
 	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // CDE
 	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // MEDIC
 	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // GRENADIER
@@ -102,17 +102,17 @@ ofcra_bluefor_clothes_marpat_wd = [
 	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // SPOTTER
 	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // EXPLOSIVE SPECIALIST
 	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"], // RIFLEMAN
-	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_cvc_green_helmet",nil], // DRIVER
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_cvc_green_helmet","tf_rt1523g_rhs"], // DRIVER
 	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_cvc_green_helmet",nil], // 20. GROUND CREW
-	["rhs_uniform_FROG01_wd","rhsusf_spc","H_PilotHelmetHeli_B",nil], // PILOT
+	["rhs_uniform_FROG01_wd","rhsusf_spc","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_FROG01_wd","rhsusf_spc","H_PilotHelmetHeli_B",nil] // AIR CREW
 ];
 
 // MARPAT_DESERT
 ofcra_bluefor_clothes_marpat_d = [
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // 0. COMMON
-	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset",nil], // CDC
-	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset",nil], // CDG
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","tf_rt1523g_rhs"], // CDC
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","tf_rt1523g_rhs"], // CDG
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // CDE
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // MEDIC
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // GRENADIER
@@ -129,9 +129,9 @@ ofcra_bluefor_clothes_marpat_d = [
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // SPOTTER
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // EXPLOSIVE SPECIALIST
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"], // RIFLEMAN
-	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_cvc_helmet",nil], // DRIVER
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_cvc_helmet","tf_rt1523g_rhs"], // DRIVER
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
-	["rhs_uniform_FROG01_d","rhsusf_spc","H_PilotHelmetHeli_B",nil], // PILOT
+	["rhs_uniform_FROG01_d","rhsusf_spc","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_FROG01_d","rhsusf_spc","H_PilotHelmetHeli_B",nil] // AIR CREW
 ];
 
