@@ -21,30 +21,29 @@ ofcra_fnc_set_unit_gears = {
 		
 	if (local _x) then {
 	
-	_name = str _x;
-	_side = side _x;
-	_class = typeOf _x;
+		_name = str _x;
+		_side = side _x;
+		_class = typeOf _x;
 	
-	if (!(_name in OFCRA_LISTE_EXCEPTIONS)) then {
-		[_x] call ofcra_fnc_remove_all_gears;
-		_x setUnitRank "PRIVATE";
+		if (!(_name in OFCRA_LISTE_INFANTERIE_EXCEPTIONS)) then {
+			[_x] call ofcra_fnc_remove_all_gears;
+			_x setUnitRank "PRIVATE";
 	
-		switch (_side) do {
-			case east: {
-				_clothes = [OFCRA_TENUES_REDFOR] call ofcra_fnc_get_redfor_clothes;
-				[_x, _class, _clothes] call ofcra_fnc_set_redfor_gears;
-			};
-			case west: {
-				_clothes = [OFCRA_TENUES_BLUEFOR] call ofcra_fnc_get_bluefor_clothes;
-				[_x, _class, _clothes] call ofcra_fnc_set_bluefor_gears;
-			};
-			default {
-				_log = "camp inconnu pour l'unité '" + (name _x) + "'";
-				[_log, "ERROR"] call ofcra_fnc_log;
+			switch (_side) do {
+				case east: {
+					_clothes = [OFCRA_TENUES_REDFOR] call ofcra_fnc_get_redfor_clothes;
+					[_x, _class, _clothes] call ofcra_fnc_set_redfor_gears;
+				};
+				case west: {
+					_clothes = [OFCRA_TENUES_BLUEFOR] call ofcra_fnc_get_bluefor_clothes;
+					[_x, _class, _clothes] call ofcra_fnc_set_bluefor_gears;
+				};
+				default {
+					_log = "camp inconnu pour l'unité '" + (name _x) + "'";
+					[_log, "ERROR"] call ofcra_fnc_log;
+				};
 			};
 		};
-	};
-	
 	};
 };
 
@@ -62,3 +61,4 @@ ofcra_fn_set_clothes = {
 	_unit addBackpack _bg;
 	};
 };
+

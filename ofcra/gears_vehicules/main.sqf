@@ -1,3 +1,5 @@
+OFCRA_LISTE_VEHICULES_EXCEPTIONS = [];	// tableau de noms d'unités véhicules entre-guillemets à ne pas équiper le cargo, ex: ["nom1", "nom2"]
+
 _handle = execVM  "ofcra\gears_vehicules\bluefor.sqf";
 waitUntil {isNull _handle};
 _handle = execVM  "ofcra\gears_vehicules\redfor.sqf";
@@ -13,21 +15,24 @@ systemChat "Setting gears for vehicules";
 	_class = typeOf _x;
 	_found = 0;
 	
-	clearMagazineCargoGlobal _x;
-	clearWeaponCargoGlobal _x;
-	clearMagazineCargoGlobal _x;
-	clearItemCargoGlobal _x;
-	clearBackpackCargoGlobal _x;
+	if (!(_name in OFCRA_LISTE_VEHICULES_EXCEPTIONS)) then {
 	
-	_x disableTIEquipment true;
+		clearMagazineCargoGlobal _x;
+		clearWeaponCargoGlobal _x;
+		clearMagazineCargoGlobal _x;
+		clearItemCargoGlobal _x;
+		clearBackpackCargoGlobal _x;
+	
+		_x disableTIEquipment true;
 
-	_found = [_x, _class] call ofcra_fnc_set_bluefor_vehicules_gears;
-	if (_found < 1) then  {
-		_found = [_x, _class] call ofcra_fnc_set_redfor_vehicules_gears;
-	};
-	if (_found < 1) then  {
-		_log = "camp inconnu pour le vehicule '" + (typeOf _x) + "'";
-		[_log, "ERROR"] call ofcra_fnc_log;
+		_found = [_x, _class] call ofcra_fnc_set_bluefor_vehicules_gears;
+		if (_found < 1) then  {
+			_found = [_x, _class] call ofcra_fnc_set_redfor_vehicules_gears;
+		};
+		if (_found < 1) then  {
+			_log = "camp inconnu pour le vehicule '" + (typeOf _x) + "'";
+			[_log, "ERROR"] call ofcra_fnc_log;
+		};	
 	};
 	
 } foreach vehicles;

@@ -132,8 +132,8 @@ ofcra_redfor_clothes_spetz = [
 	["gorka4","Smersh_def_AK","Altyn_ochki","rhs_assault_umbts"], // RIFLEMAN
 	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala","tf_mr3000_rhs"], // DRIVER
 	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
-	["rhs_uniform_df15","","rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
-	["rhs_uniform_df15","","rhs_zsh7a_mike",nil] // AIR CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
 ];
 
 // M88
