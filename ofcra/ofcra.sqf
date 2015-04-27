@@ -14,7 +14,7 @@ if (isServer) then {
 	execVM "ofcra\difficulty_check\main.sqf"
 
 	// Set vehicules Gears
-	execVM "ofcra\gears_vehicules\main.sqf"
+	execVM "ofcra\gears_vehicles\main.sqf"
 
 	// Set IA skills
 	execVM "ofcra\IA_skills\main.sqf";
