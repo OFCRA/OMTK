@@ -1,12 +1,12 @@
 ////// CONFIGURATION MISSION_TOOLKIT OFCRA
 
-// gears_infantry: équippement automatisé des infanteries
+// gears_infantry: équipement automatisé des infanteries
 OFCRA_GI_UNITES_CIBLES = "HUMAINS+IA";			// parmi {HUMAINS+IA|HUMAINS}
 OFCRA_GI_LISTE_INFANTERIE_EXCEPTIONS = [];		// tableau de noms d'unités entre-guillemets à ne pas équiper, ex: ["nom1", "nom2"]
 OFCRA_GI_TENUES_BLUEFOR = "UCP";				// parmi {UCP|OCP|SOC|MARPAT_WOOD|MARPAT_DESERT}
 OFCRA_GI_TENUES_REDFOR = "VDV";					// parmi {VDV|VDV-M|MSV_DIGITAL|MSV_FLORA|M88}
 
-// gears_vehicles: équippement automatisé des véhicules
+// gears_vehicles: équipement automatisé des véhicules
 OFCRA_GV_LISTE_VEHICULES_EXCEPTIONS = [];		// tableau de noms d'unités véhicules entre-guillemets à ne pas équiper le cargo, ex: ["nom1", "nom2"]
 
 // score_board: définition du tableau des scores et des objectifs
