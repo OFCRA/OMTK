@@ -1,8 +1,8 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
-_handle = execVM  "ofcra\gears_vehicules\bluefor.sqf";
+_handle = execVM  "ofcra\gears_vehicles\bluefor.sqf";
 waitUntil {isNull _handle};
-_handle = execVM  "ofcra\gears_vehicules\redfor.sqf";
+_handle = execVM  "ofcra\gears_vehicles\redfor.sqf";
 waitUntil {isNull _handle};
 
 
