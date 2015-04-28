@@ -571,7 +571,7 @@ air_crew_bluefor_classes = [
 ];
 
 
-//////////////////////// NE PAS TOUCHER DESSOUS
+////////// NE PAS TOUCHER EN DESSOUS
 
 ofcra_fnc_set_bluefor_gears = {
 	private ["_unit", "_class","_found"];

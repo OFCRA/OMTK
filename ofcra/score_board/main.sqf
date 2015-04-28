@@ -1,21 +1,12 @@
-OFCRA_DUREE_MISSION = [0, 0, 20]; // [heures, minutes, secondes] au format 24
-
 ////////// NE PAS TOUCHER EN DESSOUS
+
 diag_log "[OFCRA] INFO: setting mission time-line...";
 systemChat "Setting mission time-line";
 
-ofcra_fnc_clients_side_mission_end = {
-	cutRsc ["ScoreBoard","BLACK FADED"];
-};
-
-ofcra_show = {
-	[[],"ofcra_fnc_clients_side_mission_end",true,true] call BIS_fnc_MP;
-};
-
 if (isServer) then {
-	_endHour = OFCRA_DUREE_MISSION select 0;
-	_endMinute = OFCRA_DUREE_MISSION select 1;
-	_endSecond = OFCRA_DUREE_MISSION select 2;
+	_endHour   = OFCRA_SC_DUREE_MISSION select 0;
+	_endMinute = OFCRA_SC_DUREE_MISSION select 1;
+	_endSecond = OFCRA_SC_DUREE_MISSION select 2;
 	_ofcra_mission_duration = 3600*_endHour + 60*_endMinute + _endSecond - 1;
 
 	_initHour = floor daytime;
@@ -61,9 +52,11 @@ if (isServer) then {
     	_tr
 	};
 
-	_timeout = [ofcra_show, [], _ofcra_mission_duration - 1] call KK_fnc_setTimeout;
+	_timeout = [ofcra_scoreboard_display, [], _ofcra_mission_duration] call KK_fnc_setTimeout;
 };
 
+
+// Display end misison time to client
 sleep 5;
 _ofcra_mEnd = missionNamespace getVariable "ofcra_mission_end_time_txt";
 

@@ -1,3 +1,5 @@
+////////// NE PAS TOUCHER EN DESSOUS
+
 diag_log "[OFCRA] INFO: start to lower IA skills ...";
 
 {

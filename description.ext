@@ -14,7 +14,9 @@ class Header {
 };
 
 
+// Definition du tableau des scores
+#include "ofcra\score_board\defines.hpp"
+#include "ofcra\score_board\dialogs.hpp"
 
-// Spectator script found on http://www.armaholic.com/page.php?id=22827
-// All credits to Kegety & Ollem
+// Spectator script found on http://www.armaholic.com/page.php?id=22827 - all credits to Kegety & Ollem
 #include "spectator\spectating.hpp"

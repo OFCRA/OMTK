@@ -1,7 +1,7 @@
-# mission_pack
+# mission_toolkit
 
 ## G&eacute;n&eacute;ralit&eacute;s
-Le mission_pack [OFCRA](http://ofcrav2.org) permet de construire les missions officielles de l'OFCRA, en rendant la tache facile:
+Le mission_toolkit [OFCRA](http://ofcrav2.org) permet de construire les missions officielles de l'OFCRA, en rendant la tache facile:
 
 1. Cr&eacute;ez une mission vide avec l'&eacute;diteur du jeu (_pensez &agrave; lancer Arma3 avec tous les add-on du repo officiel OFCRA avec ArmaSync_)
 2. Copiez/collez le contenu du mission_pack dans le r&eacute;pertoire de la mission (_g&eacute;n&eacute;ralement dans _My Documents\Arma 3\missions\nom_de_votre_mission_) &agrave; c&ocirc;t&eacute; du fichier mission.sqm

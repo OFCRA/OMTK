@@ -1,5 +1,3 @@
-// COMMUN
-
 ofcra_fnc_redfor_vehicules_common = {
 	private ["_unit"];
 	_unit = _this select 0;

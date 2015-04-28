@@ -1,8 +1,3 @@
-OFCRA_UNITES_CIBLES = "HUMAINS+IA";			// parmi {HUMAINS+IA|HUMAINS}
-OFCRA_LISTE_INFANTERIE_EXCEPTIONS = [];		// tableau de noms d'unités entre-guillemets à ne pas équiper, ex: ["nom1", "nom2"]
-OFCRA_TENUES_BLUEFOR = "MARPAT_DESERT";		// parmi {UCP|OCP|SOC|MARPAT_WOOD|MARPAT_DESERT}
-OFCRA_TENUES_REDFOR = "M88";				// parmi {VDV|VDV-M|MSV_DIGITAL|MSV_FLORA|SPETZ|M88}
-
 ////////// NE PAS TOUCHER EN DESSOUS
 
 _handle = execVM  "ofcra\gears_infantry\library.sqf";
@@ -21,11 +16,11 @@ systemChat "Setting gears for infantry";
 
 
 _targeted_units = nil;
-switch(OFCRA_UNITES_CIBLES) do {
+switch(OFCRA_GI_UNITES_CIBLES) do {
 	case "HUMAINS+IA":	{ _targeted_units = allUnits; };
 	case "HUMAINS":		{ _targeted_units = playableUnits; };
 	default	{
-		_log = "param _UNITES_CIBLES incorrect: '" + _UNITES_CIBLES + "'";
+		_log = "param OFCRA_UNITES_GI_CIBLES incorrect: '" + OFCRA_GI_UNITES_CIBLES + "'";
 		[_log, "ERROR"] call ofcra_fnc_log;
 		_targeted_units = [];
 	};

@@ -1,3 +1,4 @@
+////////// NE PAS TOUCHER EN DESSOUS
 
 ofcra_fnc_log = {
 	private ["_msg", "_level"];
@@ -9,4 +10,13 @@ ofcra_fnc_log = {
 	diag_log  _log_line;
 };
 
+ofcra_fnc_mission_end = {
+	createdialog "ScoreBoard";
+	waitUntil { !dialog };
+};
+
+
+ofcra_scoreboard_display = {
+	[[],"ofcra_fnc_mission_end",true,true] call BIS_fnc_MP;
+};
 
