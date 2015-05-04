@@ -12,9 +12,3 @@ class Header {
 	minPlayers = 1;
 	maxPlayers = 60;
 };
-
-
-
-// Spectator script found on http://www.armaholic.com/page.php?id=22827
-// All credits to Kegety & Ollem
-#include "spectator\spectating.hpp"
