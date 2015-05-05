@@ -1,8 +1,8 @@
 OFCRA_LISTE_VEHICULES_EXCEPTIONS = [];	// tableau de noms d'unités véhicules entre-guillemets à ne pas équiper le cargo, ex: ["nom1", "nom2"]
 
-_handle = execVM  "ofcra\gears_vehicules\bluefor.sqf";
+_handle = execVM  "ofcra\gears_vehicles\bluefor.sqf";
 waitUntil {isNull _handle};
-_handle = execVM  "ofcra\gears_vehicules\redfor.sqf";
+_handle = execVM  "ofcra\gears_vehicles\redfor.sqf";
 waitUntil {isNull _handle};
 
 

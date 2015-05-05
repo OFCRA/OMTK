@@ -16,7 +16,7 @@ Le mission_pack se compose de diff&eacute;rents modules ind&eacute;pendants:
 * IA_skill: configure les capacit&eacute;s de l'IA (vers le bas)
 * difficulty_check: leve une alerte si la mission n'a pas ete lanc&eacute;e en difficult&eacute; _elite_
 * gears_infantry: &eacute;quipe tous les slots humains automatiquement, avec la configuration modifiable du module
-* gears_vehicules: &eacute;quipe tous les types de v&eacute;hicules automatiquement, avec la configuration modifiable du module
+* gears_vehicles: &eacute;quipe tous les types de v&eacute;hicules automatiquement, avec la configuration modifiable du module
 * objectives_setter: permet de d&eacute;finir les objectifs de la mission, avec notamment le tableau des scores final affichant le status des joueurs et les r&eacute;sultats des diff&eacute;rents objectifs d&eacute;finis.
 * time_line: permet de d&eacute;finir une dur&eacute;e maximale de mission, et de param&eacute;trer les diff&eacute;rentes alertes de temps restant 
 
