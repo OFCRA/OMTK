@@ -7,13 +7,13 @@ if (isServer) then {
 	_endHour   = OFCRA_SC_DUREE_MISSION select 0;
 	_endMinute = OFCRA_SC_DUREE_MISSION select 1;
 	_endSecond = OFCRA_SC_DUREE_MISSION select 2;
-	_ofcra_mission_duration = 3600*_endHour + 60*_endMinute + _endSecond - 1;
+	_ofcra_mission_duration = 3600*_endHour + 60*_endMinute + _endSecond;
 
 	_initHour = floor daytime;
 	_initMinute = floor ((daytime - _initHour) * 60);
 	_initSecond = floor (((((daytime) - (_initHour))*60) - _initMinute)*60);
 
-	_ofcra_mission_endTime = (_initHour + _endHour)*3600 + (_initMinute + _endMinute)*60 + _initSecond + _endSecond - 1;
+	_ofcra_mission_endTime = (_initHour + _endHour)*3600 + (_initMinute + _endMinute)*60 + _initSecond + _endSecond;
 	missionNamespace setVariable ["ofcra_mission_endTime", _ofcra_mission_endTime];
 
 	_ofcra_mission_endTime_hour = floor (_ofcra_mission_endTime/3600);
