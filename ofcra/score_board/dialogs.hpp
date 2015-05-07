@@ -54,7 +54,7 @@ class Banner: RscPicture
 
 
 		class Objectives: RscText {
-			idc = 1530;
+			idc = 1510;
 			x = 0 * safezoneW + safezoneX;
 			y = 0.30 * safezoneH + safezoneY;
 			w = 1 * safezoneW;
@@ -88,7 +88,7 @@ class Banner: RscPicture
 				
 
 		class BlueforListSurvivors: RscListbox {
-			idc = 1501;
+			idc = 1521;
 			x = 0.276563 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.211979 * safezoneW;
@@ -96,7 +96,7 @@ class Banner: RscPicture
 		};
 		
 		class RedForSurvivors: RscListbox {
-			idc = 1500;
+			idc = 1522;
 			x = 0.511458 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
 			w = 0.211979 * safezoneW;

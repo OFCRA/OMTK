@@ -11,7 +11,9 @@ OFCRA_GV_LISTE_VEHICULES_EXCEPTIONS = [];		// tableau de noms d'unités véhicules
 
 // score_board: définition du tableau des scores et des objectifs
 OFCRA_SC_DUREE_MISSION = [2, 0, 0]; // [heures, minutes, secondes], ex: [1,30,15] pour une durée d' 1h30min15s avant l'affichage du tableau des scores
-//[] call createObjective;
+if (isServer) then {
+	// [TYPE, SIDE, PARAMS] call ofcra_fn_create_objective;
+};
 
 
 

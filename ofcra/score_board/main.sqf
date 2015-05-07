@@ -28,35 +28,11 @@ if (isServer) then {
 	missionNamespace setVariable ["ofcra_mission_end_time_txt",_ofcra_mission_end_time_txt];
 	publicVariable "ofcra_mission_end_time_txt";
 	
-	KK_fnc_setTimeout = {
-	    private "_tr";
-	    _tr = createTrigger [
-        	"EmptyDetector",
-        	[0,0,0]
-    	];
-    	_tr setTriggerTimeout [
-	        _this select 2,
-        	_this select 2,
-        	_this select 2,
-        	false
-    	];
-    	_tr setTriggerStatements [
-	        "true",
-        	format [
-	            "deleteVehicle thisTrigger; %2 call %1", 
-            	_this select 0,
-            	_this select 1
-        	],
-        	""
-    	];
-    	_tr
-	};
-
 	_timeout = [ofcra_scoreboard_display, [], _ofcra_mission_duration] call KK_fnc_setTimeout;
 };
 
 
-// Display end misison time to client
+// Display end mission time to client
 sleep 5;
 _ofcra_mEnd = missionNamespace getVariable "ofcra_mission_end_time_txt";
 
