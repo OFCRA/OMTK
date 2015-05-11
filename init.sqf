@@ -5,6 +5,8 @@ tawvd_maxRange = 6000;
 
 TF_no_auto_long_range_radio = 1;
 
+[] execVM "CSSA3\CSSA3_init.sqf";
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 // Commande pour le déclencheur
 //if (isserver) then {"CALCUL TABLEAU !" call CBA_fnc_systemChat; _handle = execVM "CompteFin.sqf";}; Rslt = [true,"fnc_MP_FinMission",nil,true] spawn BIS_fnc_MP; 

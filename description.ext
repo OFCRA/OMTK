@@ -12,3 +12,7 @@ class Header {
 	minPlayers = 1;
 	maxPlayers = 60;
 };
+
+respawnDelay = 9999999; // 9999999 or greater = No Respawn
+//Changes respawn, respawnDialog and respawnTemplates parameters.
+#include "CSSA3\CSSA3_header.hpp"
