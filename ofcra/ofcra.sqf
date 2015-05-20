@@ -1,7 +1,9 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
 // main mandatory library
-execVM "ofcra\library.sqf"
+execVM "ofcra\library.sqf";
+
+sleep 1;
 
 // Set players Gears
 execVM "ofcra\gears_infantry\main.sqf";
@@ -11,7 +13,7 @@ execVM "ofcra\gears_vehicles\main.sqf"
 	
 // Set score-board
 execVM "ofcra\score_board\main.sqf";
-	
+
 // On server only
 if (isServer) then {
 

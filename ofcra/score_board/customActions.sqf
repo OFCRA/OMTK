@@ -1,0 +1,3 @@
+doNothing = {
+	hint "POPPOOOPOOOOO !!!!";
+};

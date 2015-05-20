@@ -1,8 +1,6 @@
-//class RscTitles {
-	
 class ScoreBoard {
 
-	idd = -1;
+	idd = 1666;
 	movingenable = 0;
 	enableSimulation = 0;
 	enableDisplay = 1;
