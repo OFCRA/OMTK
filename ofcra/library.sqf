@@ -5,7 +5,7 @@ ofcra_fnc_log = {
 	_msg  = _this select 0;
 	_level = _this select 1;
 	
-	[_msg,"systemChat",true,true] call BIS_fnc_MP;
+	//[_msg,"systemChat",true,true] call BIS_fnc_MP;
 	_log_line = '[OFCRA] ' + _level + ': ' + _msg;
 	diag_log  _log_line;
 };
@@ -75,6 +75,7 @@ ofcra_fn_compute_scoreboard = {
 	
 	ofcra_sc_scores = missionNamespace getVariable "ofcra_sc_scores";
 	ofcra_sc_objectives = missionNamespace getVariable "ofcra_sc_objectives";
+	ofcra_sc_flags = missionNamespace getVariable "ofcra_sc_flags";
 
 	_index = 1;
 	{
@@ -116,8 +117,9 @@ ofcra_fnc_getObjectiveResult = {
 			//["objectif BLUEFOR","INFO"] call ofcra_fnc_log;
 		};
 		case "DANS_ZONE":	{
+			//["objectif " + (str (_obj select 3)) + " for SIDE=" + (str _side),"INFO"] call ofcra_fnc_log;
 			_res = [_obj select 5, _side, 1, _obj select 4] call ofcra_isInArea;
-			//["objectif BLUEFOR","INFO"] call ofcra_fnc_log;
+			
 		};
 		case "HORS_ZONE":	{
 			_res = [_obj select 5, _side, 0, _obj select 4] call ofcra_isInArea;
@@ -125,10 +127,20 @@ ofcra_fnc_getObjectiveResult = {
 		};
 		case "ACTION":	{
 			_ofcra_sc_scores = missionNamespace getVariable "ofcra_sc_scores";			
-			_res = (_ofcra_sc_scores select _index) ;
+			_res = (_ofcra_sc_scores select _index);
 			//["objectif BLUEFOR","INFO"] call ofcra_fnc_log;
 		};
 		case "ACTION_DISPUTEE":	{
+			//["objectif BLUEFOR","INFO"] call ofcra_fnc_log;
+		};
+		case "FLAG":	{
+			_res = true;
+			_ofcra_sc_flags = missionNamespace getVariable "ofcra_sc_flags";
+			{
+				_log = "Get " + str _x + " / " + str (count _ofcra_sc_flags) + " : " + str (_ofcra_sc_flags select _x);
+				//[ _log, "INFO"] call ofcra_fnc_log;
+				if (!(_ofcra_sc_flags select _x)) then { _res = false; };
+			} forEach (_obj select 4);		
 			//["objectif BLUEFOR","INFO"] call ofcra_fnc_log;
 		};
 		
@@ -140,34 +152,51 @@ ofcra_fnc_getObjectiveResult = {
 	_res;
 };
 
+ofcra_side_in_area = {
+	private["_blue","_red","_r"];
+	_blue = 0;
+	_red = 0;
+	{
+		_r = [(_this select 0), (position _x)] call BIS_fnc_inTrigger;
+		if (_r and alive _x) then {
+			_side = side _x;		
+			switch((side _x)) do {
+				case West:	{ _blue = _blue + 1; };
+				case East:	{ _red = _red + 1; };
+			};
+		};
+	} foreach allUnits;
+	["Zone: " +  (_this select 0) + " BLUE=" + (str _blue) + " - RED=" + (str _red),"OBJECTIVE"] call ofcra_fnc_log;
+	[_blue, _red];
+};
+
 
 ofcra_isInArea = {
-	private["_subArr","_subject","_value","_side","_mode","_count","_res","_type"];
+	private["_subArr","_subject","_value","_Sside","_mode","_count","_res","_type"];
 		
 	_subject = _this select 0 select 0;	
 	_value = _this select 0 select 1;
-	_side = _this select 1;
+	_Sside = _this select 1;
 	_mode = _this select 2;
 	_area = _this select 3;
 	_res = false;
 	
 	switch(_subject) do {
 		case "BLUEFOR":	{ 
-			_count = 0;
-			_bEff = count ofcra_bluefor_survivors;
-			_res = (_bEff >= _value);
+			//_eff = [_area] call ofcra_side_in_area;
+			//_res = (((_eff select 0) - (_eff select 1)) >= _value);
 		};
 		case "REDFOR":	{ 
-			_count = 0;
-			_rEff = count ofcra_redfor_survivors;
-			_res = (_rEff >= _value);
+			//_eff = [_area] call ofcra_side_in_area;
+			//_res = (((_eff select 1) - (_eff select 0)) >= _value);
 		};
 		
 		case "DIFF": { 
-			_bEff = count ofcra_bluefor_survivors;
-			_rEff = count ofcra_redfor_survivors;
-			if (_side == West) then { _res = (_bEff - _rEff) >= _value; }
-			else {_res = (_rEff - _bEff) >= _value; };
+			_eff = [_area] call ofcra_side_in_area;
+			if (_Sside == West) then { _res = ((_eff select 0) - (_eff select 1)) >= _value; }
+			else {_res = ((_eff select 1) - (_eff select 0)) >= _value; };
+			
+			if (_mode < 1) then { _res = !_res; };
 		};
 		
 		case "LISTE": {
@@ -204,11 +233,13 @@ ofcra_isAlive = {
 			_count = 0;
 			_bEff = count ofcra_bluefor_survivors;
 			_res = (_bEff >= _value);
+			if (_mode < 1) then { _res = !_res; };
 		};
 		case "REDFOR":	{ 
 			_count = 0;
 			_rEff = count ofcra_redfor_survivors;
 			_res = (_rEff >= _value);
+			if (_mode < 1) then { _res = !_res; };
 		};
 		
 		case "DIFF": { 
@@ -217,27 +248,6 @@ ofcra_isAlive = {
 			if (_side == West) then { _res = (_bEff - _rEff) >= _value; }
 			else {_res = (_rEff - _bEff) >= _value; };
 		};
-		
-		case "ID_OBJET": { 
-			_res = true;
-			{
-				_target = [0,0,0] nearestObject _x;	
-				_r = alive _target;
-				if (_mode < 1) then { _r = !_r; };
-				if (!_r) then {_res = false;};
-			} foreach _value;
-		};
-		
-		case "UNITE": {
-			_res = true;
-			{
-				_target = missionNamespace getVariable [_x , objNull];
-				_r = alive _target;
-				if (_mode < 1) then { _r = !_r; };
-				if (!_r) then {_res = false;};
-			} foreach _value;
-		};
-		
 		
 		case "LISTE": {
 			_res = true;
@@ -254,7 +264,6 @@ ofcra_isAlive = {
 			} foreach _value;
 		};
 		
-		
 		default	{
 			_res = false;
 			["Sujet de l'objectif inconnu: %1", _subject] call BIS_fnc_error;		
@@ -263,6 +272,22 @@ ofcra_isAlive = {
 	_res;
 };
 
+
+ofcra_fn_setObjectiveResult = {
+	ofcra_sc_scores = missionNamespace getVariable "ofcra_sc_scores";
+	ofcra_sc_scores set [_this select 0, _this select 1];
+	//["action " + str(_this select 0) + " = " + str(_this select 1), "OBJECTIVE"] call ofcra_fnc_log;
+	missionNamespace setVariable ["ofcra_sc_scores", ofcra_sc_scores];
+	publicVariableServer "ofcra_sc_scores";
+};
+
+ofcra_fn_setFlagResult = {
+	_ofcra_sc_flags = missionNamespace getVariable "ofcra_sc_flags";
+	_ofcra_sc_flags set [_this select 0, _this select 1];
+	["flag " + str(_this select 0) + " = " + str(_this select 1), "OBJECTIVE"] call ofcra_fnc_log;
+	missionNamespace setVariable ["ofcra_sc_flags", _ofcra_sc_flags];
+	publicVariableServer "ofcra_sc_flags";
+};
 
 
 ofcra_fn_closeAction = {
@@ -280,11 +305,9 @@ ofcra_fn_closeAction = {
 	_obj removeAction _id;
 	_index = _index + 2;
 	
-	ofcra_sc_scores = missionNamespace getVariable "ofcra_sc_scores";
-	ofcra_sc_scores set [_index, true];
-	missionNamespace setVariable ["ofcra_sc_scores", ofcra_sc_scores];
-	publicVariableServer "ofcra_sc_scores";
+	[_index, true] call ofcra_fn_setObjectiveResult;
 	
 	_bool = isNil _proc;
 	if (!_bool) then { [] call _proc; };
 };
+

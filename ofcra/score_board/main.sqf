@@ -36,9 +36,12 @@ if (isServer) then {
 	// OBJ
 	_ofcra_sc_objectives = [];
 	_ofcra_sc_scores = [0,0];
+	_ofcra_sc_flags = [];
 
 	{
 		_side = _x select 1;
+		_type = _x select 2;
+		_values = _x select 4;
 		
 		switch(_side) do {
 			case "BLUEFOR":	{
@@ -65,19 +68,27 @@ if (isServer) then {
 			};
 		};
 		
+		if (_type == "FLAG") then {
+			{
+				_ofcra_sc_flags	set [_x, false];
+			} forEach _values;
+		};
+		
 	} foreach OFCRA_SC_LISTE_OBJECTIFS;
+	
 	
 	missionNamespace setVariable ["ofcra_sc_objectives", _ofcra_sc_objectives];
 	missionNamespace setVariable ["ofcra_sc_scores", _ofcra_sc_scores];
+	missionNamespace setVariable ["ofcra_sc_flags", _ofcra_sc_flags];
 	
 	publicVariable "ofcra_sc_scores";
 	publicVariable "ofcra_sc_objectives";
+	publicVariable "ofcra_sc_flags";
 };
 
 
-sleep 3
+sleep 3;
 
-execVM "ofcra\score_board\customActions.sqf";
 _ofcra_sc_objectives = missionNamespace getVariable "ofcra_sc_objectives";
 
 _index = -1;

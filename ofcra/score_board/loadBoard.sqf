@@ -32,3 +32,4 @@ ctrlSetText [1520, _text];
 
 { lbAdd [1521, _x]; } foreach (_bluefor_survivors call BIS_fnc_sortAlphabetically);
 { lbAdd [1522, _x]; } foreach (_redfor_survivors  call BIS_fnc_sortAlphabetically);
+

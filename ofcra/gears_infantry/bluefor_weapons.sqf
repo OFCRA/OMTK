@@ -30,7 +30,6 @@ ofcra_fnc_bluefor_cdc = {
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	_unit addWeapon "rhs_weap_m4a1_grip";
-	_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 	_unit addPrimaryWeaponItem "rhsusf_acc_ACOG3";
 	
 	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_m67";};
@@ -53,7 +52,6 @@ ofcra_fnc_bluefor_cdg = {
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	_unit addWeapon "rhs_weap_m4a1_grip";
-	_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 	_unit addPrimaryWeaponItem "rhsusf_acc_ACOG3";
 
 	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_m67";};
@@ -100,7 +98,6 @@ ofcra_fnc_bluefor_medic = {
 	for "_i" from 1 to 7 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	_unit addWeapon "rhs_weap_m4a1_grip";
-	_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 	_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 		
 	for "_i" from 1 to 3 do {_unit addItemToBackpack "SmokeShell";};
@@ -123,7 +120,6 @@ ofcra_fnc_bluefor_grenadier = {
 
 	for "_i" from 1 to 10 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
 	_unit addWeapon "rhs_m4a1_m320";
-	_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 	_unit addPrimaryWeaponItem "rhsusf_acc_compm4";
 	
 	for "_i" from 1 to 6 do {_unit addItemToBackpack "rhs_mag_M441_HE";};

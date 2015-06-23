@@ -18,13 +18,16 @@ execVM "ofcra\score_board\main.sqf";
 if (isServer) then {
 
 	// Check difficulty
-	execVM "ofcra\difficulty_check\main.sqf"
+	execVM "ofcra\difficulty_check\main.sqf";
 
 	// Set IA skills
 	execVM "ofcra\IA_skills\main.sqf";
 	
 	// Add kill logs
-	execVM "ofcra\kill_logger\main.sqf"
+	execVM "ofcra\kill_logger\main.sqf";
+	
+	// Set radio settings
+	//execVM "ofcra\radio_settings\main.sqf";
 };
 
 

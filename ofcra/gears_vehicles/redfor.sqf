@@ -3,15 +3,14 @@ ofcra_fnc_redfor_vehicules_common = {
 	_unit = _this select 0;
 		
 	_unit addItemCargoGlobal ["cse_bandage_basic", 10];
-	_unit addItemCargoGlobal ["cse_epinephrine", 10];
-	_unit addItemCargoGlobal ["cse_morphine", 10];
+	_unit addItemCargoGlobal ["cse_epinephrine", 5];
+	_unit addItemCargoGlobal ["cse_morphine", 5];
 };
 
 ofcra_fnc_redfor_vehicules_car = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-
 };
 
 ofcra_fnc_redfor_vehicules_truck = {
@@ -84,11 +83,11 @@ ofcra_apc_redfor_vehicules_classes = [
 ];
 
 ofcra_ifv_redfor_vehicules_classes = [
-	'rhs_bmp1_vv','rhs_bmp1d_vv','rhs_bmp1k_vv','rhs_bmp2_vv','rhs_bmp1p_vv','rhs_bmp2e_vv','rhs_bmp2d_vv','rhs_bmp2k_vv','rhs_brm1k_vv','rhs_prp3_vv',
-	'rhs_bmp1_msv','rhs_bmp1d_msv','rhs_bmp1k_msv','rhs_bmp1p_msv','rhs_bmp2_msv','rhs_bmp2e_msv','rhs_bmp2d_msv','rhs_bmp2k_msv','rhs_brm1k_msv','rhs_prp3_msv',
-	'rhs_bmd1','rhs_bmd1k','rhs_bmd1p','rhs_bmd1pk','rhs_bmd1r','rhs_bmd2','rhs_bmd2k','rhs_bmd2m',
-	'rhs_bmd4_vdv','rhs_bmd4m_vdv','rhs_bmd4ma_vdv','rhs_bmp1_vdv','rhs_bmp1d_vdv','rhs_bmp1k_vdv','rhs_bmp1p_vdv','rhs_bmp2_vdv','rhs_bmp2e_vdv','rhs_bmp2d_vdv','rhs_bmp2k_vdv','rhs_brm1k_vdv','rhs_prp3_vdv',
-	'rhs_bmp1_vmf','rhs_bmp1d_vmf','rhs_bmp1k_vmf','rhs_bmp1p_vmf','rhs_bmp2_vmf','rhs_bmp2e_vmf','rhs_bmp2d_vmf','rhs_bmp2k_vmf','rhs_brm1k_vmf','rhs_prp3_vmf',
+	//'rhs_bmp1_vv','rhs_bmp1d_vv','rhs_bmp1k_vv','rhs_bmp2_vv','rhs_bmp1p_vv','rhs_bmp2e_vv','rhs_bmp2d_vv','rhs_bmp2k_vv','rhs_brm1k_vv','rhs_prp3_vv',
+	//'rhs_bmp1_msv','rhs_bmp1d_msv','rhs_bmp1k_msv','rhs_bmp1p_msv','rhs_bmp2_msv','rhs_bmp2e_msv','rhs_bmp2d_msv','rhs_bmp2k_msv','rhs_brm1k_msv','rhs_prp3_msv',
+	//'rhs_bmd1','rhs_bmd1k','rhs_bmd1p','rhs_bmd1pk','rhs_bmd1r','rhs_bmd2','rhs_bmd2k','rhs_bmd2m',
+	//'rhs_bmd4_vdv','rhs_bmd4m_vdv','rhs_bmd4ma_vdv','rhs_bmp1_vdv','rhs_bmp1d_vdv','rhs_bmp1k_vdv','rhs_bmp1p_vdv','rhs_bmp2_vdv','rhs_bmp2e_vdv','rhs_bmp2d_vdv','rhs_bmp2k_vdv','rhs_brm1k_vdv','rhs_prp3_vdv',
+	//'rhs_bmp1_vmf','rhs_bmp1d_vmf','rhs_bmp1k_vmf','rhs_bmp1p_vmf','rhs_bmp2_vmf','rhs_bmp2e_vmf','rhs_bmp2d_vmf','rhs_bmp2k_vmf','rhs_brm1k_vmf','rhs_prp3_vmf',
 	'rhs_bmp1_tv','rhs_bmp1d_tv','rhs_bmp1k_tv','rhs_bmp1p_tv','rhs_bmp2_tv','rhs_bmp2e_tv','rhs_bmp2d_tv','rhs_bmp2k_tv','rhs_brm1k_tv','rhs_prp3_tv'
 ];
 
@@ -97,8 +96,8 @@ ofcra_mbt_light_redfor_vehicules_classes = [
 ];
 
 ofcra_mbt_redfor_vehicules_classes = [
-	'rhs_t72ba_tv','rhs_t72bb_tv','rhs_t72bc_tv','rhs_t72bd_tv',
-	'rhs_t80','rhs_t80a','rhs_t80b','rhs_t80bk','rhs_t80bv','rhs_t80bvk','rhs_t80u'	
+	'rhs_t72ba_tv'//,'rhs_t72bb_tv','rhs_t72bc_tv','rhs_t72bd_tv',
+	//'rhs_t80','rhs_t80a','rhs_t80b','rhs_t80bk','rhs_t80bv','rhs_t80bvk','rhs_t80u'	
 ];
 
 ofcra_artillery_redfor_vehicules_classes = [
