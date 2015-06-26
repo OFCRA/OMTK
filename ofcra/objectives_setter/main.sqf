@@ -1,17 +1,5 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
-ofcra_objectives = [];
-_score_board = [0, 0];
-
-// Add Event Handler on killing
-
-
-ofcra_fn_add_objective = {
-	private["_type"];
-	ofcra_objective
-	
-
-};
 
 _ofcra_fn_is_captured = {
 	private["_obj","_side","_result","_area","_mode","_nb"];

@@ -1,3 +1,5 @@
+////////// NE PAS TOUCHER EN DESSOUS
+
 diag_log "[OFCRA] INFO: enabling kill logs ...";
 systemChat "Setting kill logs";
 

@@ -25,17 +25,17 @@ ofcra_fnc_set_unit_gears = {
 		_side = side _x;
 		_class = typeOf _x;
 	
-		if (!(_name in OFCRA_LISTE_INFANTERIE_EXCEPTIONS)) then {
+		if (!(_name in OFCRA_GI_LISTE_INFANTERIE_EXCEPTIONS)) then {
 			[_x] call ofcra_fnc_remove_all_gears;
 			_x setUnitRank "PRIVATE";
 	
 			switch (_side) do {
 				case east: {
-					_clothes = [OFCRA_TENUES_REDFOR] call ofcra_fnc_get_redfor_clothes;
+					_clothes = [OFCRA_GI_TENUES_REDFOR] call ofcra_fnc_get_redfor_clothes;
 					[_x, _class, _clothes] call ofcra_fnc_set_redfor_gears;
 				};
 				case west: {
-					_clothes = [OFCRA_TENUES_BLUEFOR] call ofcra_fnc_get_bluefor_clothes;
+					_clothes = [OFCRA_GI_TENUES_BLUEFOR] call ofcra_fnc_get_bluefor_clothes;
 					[_x, _class, _clothes] call ofcra_fnc_set_bluefor_gears;
 				};
 				default {
@@ -58,7 +58,6 @@ ofcra_fn_set_clothes = {
 	_unit addHeadgear ((_clothes select _index) select 2);
 	_bg = ((_clothes select _index) select 3);
 	if (!isNil "_bg" ) then {
-	_unit addBackpack _bg;
+		_unit addBackpack _bg;
 	};
 };
-
