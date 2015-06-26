@@ -84,8 +84,6 @@ ofcra_fnc_bluefor_cde = {
 	for "_i" from 1 to 4 do {_unit addItemToVest "SmokeShell";};
 	
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
-	_unit addItem "cse_m_pda";
 };
 
 // MEDIC
@@ -464,13 +462,13 @@ cdc_bluefor_classes = [
 ];
 
 cdg_bluefor_classes = [
-	"B_Soldier_TL_F",		// NATO\Men\Team Leader
-	"B_G_Soldier_TL_F"		// FIA\Men\Team Leader
+	"B_Soldier_SL_F",		// NATO\Men\Team Leader
+	"B_G_Soldier_SL_F"		// FIA\Men\Team Leader
 ];
 
 cde_bluefor_classes = [
-	"B_Soldier_SL_F",		// NATO\Men\Squad Leader
-	"B_G_Soldier_SL_F"		// FIA\Men\Squad Leader
+	"B_Soldier_TL_F",		// NATO\Men\Squad Leader
+	"B_G_Soldier_TL_F"		// FIA\Men\Squad Leader
 ];
 
 medic_bluefor_classes = [

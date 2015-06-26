@@ -441,11 +441,11 @@ cdc_redfor_classes = [
 	"O_officer_F"			// CSAT\Men\Officer
 ];
 cdg_redfor_classes = [
-	"O_Soldier_TL_F"		// CSAT\Men\Team Leader
+	"O_Soldier_SL_F"		// CSAT\Men\Team Leader
 ];
 
 cde_redfor_classes = [
-	"O_Soldier_SL_F" 		// CSAT\Men\Squad Leader
+	"O_Soldier_TL_F" 		// CSAT\Men\Squad Leader
 ];
 
 medic_redfor_classes = [
