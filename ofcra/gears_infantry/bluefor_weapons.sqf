@@ -5,9 +5,7 @@ ofcra_fnc_bluefor_common = {
 	private ["_unit"];
 	_unit = _this select 0;
 
-	_unit addItemToUniform "ACE_fieldDressing";
-	_unit addItemToUniform "ACE_fieldDressing";
-	_unit addItemToUniform "ACE_fieldDressing";
+	for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_fieldDressing";};
 	_unit addItemToUniform "ACE_epinephrine";
 	_unit addItemToUniform "ACE_morphine";
 
@@ -25,6 +23,7 @@ ofcra_fnc_bluefor_cdc = {
 	private ["_unit"];
 	_unit = _this select 0;
 
+	_unit setUnitRank "COLONEL";
 	[_unit, 1, _clothes] call ofcra_fn_set_clothes;
 
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
@@ -46,6 +45,7 @@ ofcra_fnc_bluefor_cdg = {
 	private ["_unit"];
 	_unit = _this select 0;
 
+	_unit setUnitRank "MAJOR";
 	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
 
 	for "_i" from 1 to 6 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
@@ -59,7 +59,8 @@ ofcra_fnc_bluefor_cdg = {
 	_unit addItemToVest "rhs_mag_m67";
 
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // CDE
@@ -67,6 +68,7 @@ ofcra_fnc_bluefor_cde = {
 	private ["_unit"];
 	_unit = _this select 0;
 
+	_unit setUnitRank "CAPTAIN";
 	[_unit, 3, _clothes] call ofcra_fn_set_clothes;
 
 	for "_i" from 1 to 10 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
@@ -400,6 +402,7 @@ ofcra_fnc_bluefor_driver = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
+	_unit setUnitRank "MAJOR";
 	[_unit, 19, _clothes] call ofcra_fn_set_clothes;
 	
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
@@ -427,6 +430,7 @@ ofcra_fnc_bluefor_pilot = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
+	_unit setUnitRank "MAJOR";
 	[_unit, 21, _clothes] call ofcra_fn_set_clothes;
 
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_Stanag";};

@@ -7,14 +7,13 @@ ofcra_fnc_redfor_common = {
 
 	//[_unit, 0, _clothes] call ofcra_fn_set_clothes;
 
-	_unit addItemToUniform "cse_bandage_basic";
-	_unit addItemToUniform "cse_bandage_basic";
-	_unit addItemToUniform "cse_bandage_basic";
-	_unit addItemToUniform "cse_morphine";
-	_unit addItemToUniform "cse_epinephrine";
+	for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_fieldDressing";};
+	_unit addItemToUniform "ACE_morphine";
+	_unit addItemToUniform "ACE_epinephrine";
 
 	_unit addItemToUniform "rhs_mag_rgd5";
 	_unit addItemToUniform "rhs_mag_rdg2_white";
+	_unit addItemToUniform "ACE_EarPlugs";
 	
 	_unit linkItem "ItemMap";
 	_unit linkItem "ItemCompass";
@@ -28,10 +27,10 @@ ofcra_fnc_redfor_cdc = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit setUnitRank "MAJOR"; 
+	_unit setUnitRank "COLONEL"; 
 	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
 	
-	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 8 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
 	_unit addWeapon "rhs_weap_ak74m";
 	_unit addPrimaryWeaponItem "rhs_acc_1p29";	
 	
@@ -39,7 +38,8 @@ ofcra_fnc_redfor_cdc = {
 	_unit addItemToVest "rhs_mag_rdg2_white";
 		
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // CDG
@@ -47,7 +47,7 @@ ofcra_fnc_redfor_cdg = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit setUnitRank "MAJOR"; 	
+	_unit setUnitRank "MAJOR";
 	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
 	
 	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
@@ -58,7 +58,7 @@ ofcra_fnc_redfor_cdg = {
 	_unit addItemToVest "rhs_mag_rdg2_white";
 
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // CDE
@@ -66,6 +66,7 @@ ofcra_fnc_redfor_cde = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
+	_unit setUnitRank "CAPTAIN";
 	[_unit, 3, _clothes] call ofcra_fn_set_clothes;
 
 	for "_i" from 1 to 4 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
@@ -380,7 +381,7 @@ ofcra_fnc_redfor_driver = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit setUnitRank "MAJOR"; 
+	_unit setUnitRank "MAJOR";
 	[_unit, 19, _clothes] call ofcra_fn_set_clothes;
 	
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N10_AK";};
@@ -409,7 +410,7 @@ ofcra_fnc_redfor_pilot = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit setUnitRank "MAJOR"; 
+	_unit setUnitRank "MAJOR";
 	[_unit, 21, _clothes] call ofcra_fn_set_clothes;
 	
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N10_AK";};	

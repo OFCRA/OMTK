@@ -14,6 +14,9 @@ execVM "ofcra\gears_vehicles\main.sqf"
 // Set score-board
 execVM "ofcra\score_board\main.sqf";
 
+// Set radio lock
+execVM "ofcra\radio_lock\main.sqf";
+
 // On server only
 if (isServer) then {
 
