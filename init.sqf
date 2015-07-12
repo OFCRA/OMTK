@@ -29,6 +29,12 @@ tawvd_maxRange = 6000;
 #include "\task_force_radio\functions\common.sqf";
 tf_no_auto_long_range_radio = true;
 
+// radio_settings: configuration des fréquences des radios
+// 0 indique une génération aléatoire, sinon indique la valeur de fréquence souhaitée
+OFCRA_RD_FREQUENCES_BLUEFOR_LP = [0, 0, 0, 0, 0, 0, 0, 0, 0]; 
+OFCRA_RD_FREQUENCES_BLUEFOR_CP = [0, 0, 0, 0, 0, 0, 0, 0];
+OFCRA_RD_FREQUENCES_REDFOR_LP = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+OFCRA_RD_FREQUENCES_REDFOR_CP = [0, 0, 0, 0, 0, 0, 0, 0];
 
 
 //// EXECUTION MISSION_TOOLKIT OFCRA

@@ -29,7 +29,4 @@ if (isServer) then {
 	// Set radio settings
 	//execVM "ofcra\radio_settings\main.sqf";
 };
-
-
-
-
+//execVM "ofcra\radio_settings\main.sqf";

@@ -2,10 +2,13 @@ ofcra_fnc_bluefor_vehicules_common = {
 	private ["_unit"];
 	_unit = _this select 0;		
 		
-	_unit addItemCargoGlobal ["cse_bandage_basic", 10];
-	_unit addItemCargoGlobal ["cse_epinephrine", 5];
-	_unit addItemCargoGlobal ["cse_morphine", 5];
+	_unit addItemCargoGlobal ["ACE_fieldDressing", 10];
+	_unit addItemCargoGlobal ["ACE_epinephrine", 5];
+	_unit addItemCargoGlobal ["ACE_morphine", 5];
 	_unit addItemCargoGlobal ["rhsusf_acc_anpeq15",10];
+	_unit addItemCargoGlobal ["rhs_mag_m67", 4];
+	_unit addItemCargoGlobal ["SmokeShell", 2];
+	_unit addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 6];
 };
 
 ofcra_fnc_bluefor_vehicules_car = {
@@ -53,11 +56,12 @@ ofcra_fnc_bluefor_vehicules_aaa = {
 };
 
 ofcra_car_bluefor_vehicules_classes = [
-	'rhsusf_m1025_w_mk19','rhsusf_m1025_w',
+	'rhsusf_m1025_w_m2',
+	'rhsusf_m1025_w_mk19','rhsusf_m1025_w','rhsusf_m998_w_2dr_halftop_10',
 	'rhsusf_m998_w_2dr_fulltop','rhsusf_m998_w_2dr_halftop','rhsusf_m998_w_2dr','rhsusf_m998_w_4dr_fulltop','rhsusf_m998_w_4dr_halftop','rhsusf_m998_w_4dr',
 	'rhsusf_m1025_d_m2','rhsusf_m1025_d_Mk19',
 	'rhsusf_m998_d_s_2dr','rhsusf_m998_d_s_2dr_fulltop',
-	'rhsusf_m1025_d',
+	'rhsusf_m1025_d','rhsusf_m1025_d_s_10','rhsusf_rg33_d',
 	'rhsusf_m998_d_2dr_fulltop','rhsusf_m998_d_2dr_halftop','rhsusf_m998_d_2dr','rhsusf_m998_d_4dr_fulltop','rhsusf_m998_d_4dr_halftop','rhsusf_m998_d_4dr',
 	'rhsusf_m1025_w_s_m2','rhsusf_m1025_w_s_Mk19','rhsusf_m1025_w_s','rhsusf_m998_w_s_2dr',
 	'rhsusf_m998_w_s_2dr_halftop','rhsusf_m998_w_s_2dr_fulltop','rhsusf_m998_w_s_4dr_halftop','rhsusf_m998_w_s_4dr','rhsusf_m998_w_s_4dr_fulltop',
@@ -66,7 +70,9 @@ ofcra_car_bluefor_vehicules_classes = [
 ];
 
 ofcra_truck_bluefor_vehicules_classes = [
-		
+	'rhsusf_M1078A1P2_B_M2_wd_fmtv_usarmy',
+	'rhsusf_M1083A1P2_wd_fmtv_usarmy',
+	'rhsusf_M1078A1P2_B_M2_wd_fmtv_usarmy_10'
 ];
 
 ofcra_apc_bluefor_vehicules_classes = [
@@ -75,28 +81,28 @@ ofcra_apc_bluefor_vehicules_classes = [
 ];
 
 ofcra_ifv_bluefor_vehicules_classes = [
-	//'RHS_M2A2_wd',
-	//'RHS_M2A2_BUSKI_WD',
-	//'RHS_M2A3_wd',
-	//'RHS_M2A3_BUSKI_wd',
-	//'RHS_M2A3_BUSKIII_wd',
-	//'RHS_M2A2',
-	//'RHS_M2A2_BUSKI',
-	//'RHS_M2A3',
+	'RHS_M2A2_wd',
+	'RHS_M2A2_BUSKI_WD',
+	'RHS_M2A3_wd',
+	'RHS_M2A3_BUSKI_wd',
+	'RHS_M2A3_BUSKIII_wd',
+	'RHS_M2A2',
+	'RHS_M2A2_BUSKI',
+	'RHS_M2A3',
 	'RHS_M2A3_BUSKI',
 	'RHS_M2A3_BUSKIII'
 ];
 
 ofcra_mbt_bluefor_vehicules_classes = [
-	//'rhsusf_m1a1aimwd_usarmy',
-	//'rhsusf_m1a1aim_tuski_wd',
-	//'rhsusf_m1a2sep1wd_usarmy',
-	///'rhsusf_m1a2sep1tuskiwd_usarmy',
-	//'rhsusf_m1a1aimd_usarmy',
-	//'rhsusf_m1a1aim_tuski_d',
-	//'rhsusf_m1a2sep1d_usarmy',
-	//'rhsusf_m1a2sep1tuskid_usarmy',
-	//'rhsusf_m1a1fep_wd',
+	'rhsusf_m1a1aimwd_usarmy',
+	'rhsusf_m1a1aim_tuski_wd',
+	'rhsusf_m1a2sep1wd_usarmy',
+	'rhsusf_m1a2sep1tuskiwd_usarmy',
+	'rhsusf_m1a1aimd_usarmy',
+	'rhsusf_m1a1aim_tuski_d',
+	'rhsusf_m1a2sep1d_usarmy',
+	'rhsusf_m1a2sep1tuskid_usarmy',
+	'rhsusf_m1a1fep_wd',
 	'rhsusf_m1a1fep_d'
 ];
 

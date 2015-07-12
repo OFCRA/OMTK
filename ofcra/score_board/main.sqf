@@ -125,6 +125,6 @@ if (!isNil "_ofcra_mEnd") then {
 	[_ofcra_mEnd,0,0,10,2] spawn BIS_fnc_dynamicText;
 };
 
-noesckey = (findDisplay 1666) displayAddEventHandler ["KeyDown", "if ((_this select 1) == 1) then { true }"]; 
+//noesckey = (findDisplay 1666) displayAddEventHandler ["KeyDown", "if ((_this select 1) == 1) then { true }"]; 
 
 diag_log "[OFCRA] INFO: mission time-line setting done.";

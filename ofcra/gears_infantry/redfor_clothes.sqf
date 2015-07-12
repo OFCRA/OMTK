@@ -24,7 +24,9 @@ ofcra_redfor_clothes_vdv = [
 	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala","tf_mr3000_rhs"], // DRIVER
 	["rhs_uniform_vdv_flora","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
-	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
+	["rhs_uniform_vdv_flora","rhs_6b23_6sh92_headset_mapcase","rhs_6b28_flora","tf_mr3000_rhs"], // OPERATEUR DRONE
+	["rhs_uniform_vdv_flora","rhs_6b23_6sh92_headset_mapcase","rhs_6b28_flora","tf_mr3000_rhs"] // OPERATEUR RADIO
 ];
 
 // VDV-M
@@ -51,7 +53,9 @@ ofcra_redfor_clothes_vdvm = [
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML","rhs_tsh4_ess_bala","tf_mr3000_rhs"], // DRIVER
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
-	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
+	["rhs_uniform_vdv_mflora","rhs_6b23_ML_6sh92_headset_mapcase","rhs_6b27m_ml","tf_mr3000_rhs"], // OPERATEUR DRONE
+	["rhs_uniform_vdv_mflora","rhs_6b23_ML_6sh92_headset_mapcase","rhs_6b27m_ml","tf_mr3000_rhs"] // OPERATEUR RADIO
 ];
 
 // MSV
@@ -78,7 +82,9 @@ ofcra_redfor_clothes_msv_digital = [
 	["rhs_uniform_emr_patchless","rhs_6b23_digi_crew","rhs_tsh4_ess_bala","tf_mr3000_rhs"], // DRIVER
 	["rhs_uniform_emr_patchless","rhs_6b23_digi_crew","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
-	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_digi","tf_mr3000_rhs"], // OPERATEUR DRONE
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_digi","tf_mr3000_rhs"] // OPERATEUR RADIO
 ];
 
 
@@ -106,7 +112,9 @@ ofcra_redfor_clothes_msv_flora = [
 	["rhs_uniform_flora_patchless","rhs_6b23_crew","rhs_tsh4_ess_bala","tf_mr3000_rhs"], // DRIVER
 	["rhs_uniform_flora_patchless","rhs_6b23_crew","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
-	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
+	["rhs_uniform_flora_patchless","rhs_6b23_6sh92_headset_mapcase","rhs_6b27m","tf_mr3000_rhs"], // OPERATEUR DRONE
+	["rhs_uniform_flora_patchless","rhs_6b23_6sh92_headset_mapcase","rhs_6b27m","tf_mr3000_rhs"] // OPERATEUR RADIO
 ];
 
 
@@ -134,7 +142,9 @@ ofcra_redfor_clothes_m88 = [
 	["rhs_uniform_m88_patchless","rhs_6b23_digi_crew","rhs_tsh4_ess_bala","tf_mr3000_rhs"], // DRIVER
 	["rhs_uniform_m88_patchless","rhs_6b23_digi_crew","rhs_tsh4_ess_bala",nil], // 20. GROUND CREW
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
-	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil] // AIR CREW
+	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
+	["rhs_uniform_m88_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_green","tf_mr3000_rhs"], // OPERATEUR DRONE
+	["rhs_uniform_m88_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_green","tf_mr3000_rhs"] // OPERATEUR RADIO
 ];
 
 ////////// NE PAS TOUCHER EN DESSOUS
