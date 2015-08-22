@@ -26,7 +26,8 @@ ofcra_bluefor_clothes_ucp = [
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","H_PilotHelmetHeli_B",nil], // AIR CREW
 	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"] // OPERATEUR RADIO
+	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_rifleman","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"] // RIFLEMAN-RECO
 ];
 
 // OCP
@@ -55,7 +56,8 @@ ofcra_bluefor_clothes_ocp = [
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil], // AIR CREW
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp","tf_rt1523g_rhs"] // OPERATEUR RADIO
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp","tf_rt1523g_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_rifleman","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"] // RIFLEMAN-RECO
 ];
 
 // SOC
@@ -84,7 +86,8 @@ ofcra_bluefor_clothes_soc = [
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil], // AIR CREW
 	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
-	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","tf_rt1523g_rhs"] // OPERATEUR RADIO
+	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","tf_rt1523g_rhs"], // OPERATEUR RADIO
+	["U_SOC_G3_WDL_02","V_SOC_LV_MBAV","H_SOC_MARITIME_ODB","B_TacticalPack_oli"] // RIFLEMAN-RECO
 ];
 
 // MARPAT_WOOD
@@ -113,7 +116,8 @@ ofcra_bluefor_clothes_marpat_wd = [
 	["rhs_uniform_FROG01_wd","rhsusf_spc","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_FROG01_wd","rhsusf_spc","H_PilotHelmetHeli_B",nil], // AIR CREW
 	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
-	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","tf_rt1523g_rhs"] // OPERATEUR RADIO
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","tf_rt1523g_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_FROG01_wd","rhsusf_spc","rhsusf_mich_helmet_marpatwd_headset","rhsusf_assault_eagleaiii_coy"] // RIFLEMAN-RECO
 ];
 
 // MARPAT_DESERT
@@ -142,7 +146,8 @@ ofcra_bluefor_clothes_marpat_d = [
 	["rhs_uniform_FROG01_d","rhsusf_spc","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
 	["rhs_uniform_FROG01_d","rhsusf_spc","H_PilotHelmetHeli_B",nil], // AIR CREW
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
-	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","tf_rt1523g_rhs"] // OPERATEUR RADIO
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","tf_rt1523g_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"] // RIFLEMAN-RECO
 ];
 
 ////////// NE PAS TOUCHER EN DESSOUS

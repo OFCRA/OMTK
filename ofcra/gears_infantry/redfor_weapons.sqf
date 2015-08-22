@@ -58,6 +58,7 @@ ofcra_fnc_redfor_cdg = {
 	_unit addItemToVest "rhs_mag_rdg2_white";
 
 	_unit addWeapon "Binocular";
+	_unit addItemToVest "ACE_MapTools";
 	_unit addItemToVest "ACE_microDAGR";
 };
 
@@ -304,6 +305,9 @@ ofcra_fnc_redfor_marksman = {
 	_unit addItemToVest "rhs_mag_rgd5";
 	_unit addItemToUniform "rhs_mag_rgd5";
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
+	_unit addItemToVest "ACE_RangeCard";
+	_unit addItemToVest "ACE_Kestrel4500";
+	_unit addItemToVest "ACE_ATragMX";
 };
 
 // SNIPER
@@ -389,7 +393,8 @@ ofcra_fnc_redfor_driver = {
 	_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";
 		
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // GROUND CREW
@@ -417,7 +422,8 @@ ofcra_fnc_redfor_pilot = {
 	_unit addWeapon "rhs_weap_ak74m_folded";
 	
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // AIR CREW
@@ -448,7 +454,8 @@ ofcra_fnc_redfor_op_drone = {
 	_unit addItemToVest "rhs_mag_rdg2_white";
 		
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // Operateur radio
@@ -466,10 +473,29 @@ ofcra_fnc_redfor_op_radio = {
 	_unit addItemToVest "rhs_mag_rgd5";
 	_unit addItemToVest "rhs_mag_rdg2_white";
 		
-	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
+// RIFLEMAN-RECO:
+ofcra_fnc_redfor_reco = {
+	private ["_unit"];
+	_unit = _this select 0;
+	
+	[_unit, 25, _clothes] call ofcra_fn_set_clothes;
+
+	for "_i" from 1 to 4 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 6 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_rgd5";};
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
+	
+	_unit addWeapon "rhs_weap_ak74m";
+	_unit addPrimaryWeaponItem "rhs_acc_ekp1";
+	
+	_unit addWeapon "ACE_Yardage450";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
+};
 
 ////// REDFOR - classes definitions
 
@@ -574,6 +600,9 @@ op_radio_redfor_classes = [
 	"O_recon_JTAC_F"			// CSAT\Men (Recon)\Recon JTAC
 ];
 
+reco_redfor_classes = [
+	"O_recon_F"			// CSAT\Men (Recon)\Recon Scout
+];
 
 ////////// NE PAS TOUCHER EN DESSOUS
 
@@ -610,6 +639,7 @@ ofcra_fnc_set_redfor_gears = {
 	if (_class in cdc_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cdc; _found=1; };
 	if (_class in op_drone_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_op_drone; _found=1; };
 	if (_class in op_radio_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_op_radio; _found=1; };
+	if (_class in reco_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_reco; _found=1; };
 	
 	[_unit] call ofcra_fnc_redfor_common;
 	

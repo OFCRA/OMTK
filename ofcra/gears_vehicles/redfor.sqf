@@ -13,14 +13,11 @@ ofcra_fnc_redfor_vehicules_common = {
 ofcra_fnc_redfor_vehicules_car = {
 	private ["_unit"];
 	_unit = _this select 0;
-	
 };
 
 ofcra_fnc_redfor_vehicules_truck = {
 	private ["_unit"];
 	_unit = _this select 0;
-	
-
 };
 
 ofcra_fnc_redfor_vehicules_apc = {

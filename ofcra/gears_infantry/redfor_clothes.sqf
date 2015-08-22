@@ -26,7 +26,8 @@ ofcra_redfor_clothes_vdv = [
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
 	["rhs_uniform_vdv_flora","rhs_6b23_6sh92_headset_mapcase","rhs_6b28_flora","tf_mr3000_rhs"], // OPERATEUR DRONE
-	["rhs_uniform_vdv_flora","rhs_6b23_6sh92_headset_mapcase","rhs_6b28_flora","tf_mr3000_rhs"] // OPERATEUR RADIO
+	["rhs_uniform_vdv_flora","rhs_6b23_6sh92_headset_mapcase","rhs_6b28_flora","tf_mr3000_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_vdv_flora","rhs_6b23_rifleman","rhs_6b28_flora","rhs_assault_umbts"] // RIFLEMAN-RECO
 ];
 
 // VDV-M
@@ -55,7 +56,8 @@ ofcra_redfor_clothes_vdvm = [
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
 	["rhs_uniform_vdv_mflora","rhs_6b23_ML_6sh92_headset_mapcase","rhs_6b27m_ml","tf_mr3000_rhs"], // OPERATEUR DRONE
-	["rhs_uniform_vdv_mflora","rhs_6b23_ML_6sh92_headset_mapcase","rhs_6b27m_ml","tf_mr3000_rhs"] // OPERATEUR RADIO
+	["rhs_uniform_vdv_mflora","rhs_6b23_ML_6sh92_headset_mapcase","rhs_6b27m_ml","tf_mr3000_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_vdv_mflora","rhs_6b23_ML_rifleman","rhs_6b27m_ml","rhs_assault_umbts"] // RIFLEMAN-RECO
 ];
 
 // MSV
@@ -84,7 +86,8 @@ ofcra_redfor_clothes_msv_digital = [
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
 	["rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_digi","tf_mr3000_rhs"], // OPERATEUR DRONE
-	["rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_digi","tf_mr3000_rhs"] // OPERATEUR RADIO
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_digi","tf_mr3000_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_emr_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_digi","rhs_assault_umbts"] // RIFLEMAN-RECO
 ];
 
 
@@ -114,7 +117,8 @@ ofcra_redfor_clothes_msv_flora = [
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
 	["rhs_uniform_flora_patchless","rhs_6b23_6sh92_headset_mapcase","rhs_6b27m","tf_mr3000_rhs"], // OPERATEUR DRONE
-	["rhs_uniform_flora_patchless","rhs_6b23_6sh92_headset_mapcase","rhs_6b27m","tf_mr3000_rhs"] // OPERATEUR RADIO
+	["rhs_uniform_flora_patchless","rhs_6b23_6sh92_headset_mapcase","rhs_6b27m","tf_mr3000_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_flora_patchless","rhs_6b23_rifleman","rhs_6b27m","rhs_assault_umbts"] // RIFLEMAN-RECO
 ];
 
 
@@ -144,7 +148,8 @@ ofcra_redfor_clothes_m88 = [
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike","tf_mr3000_rhs"], // PILOT
 	["rhs_uniform_df15",nil,"rhs_zsh7a_mike",nil], // AIR CREW
 	["rhs_uniform_m88_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_green","tf_mr3000_rhs"], // OPERATEUR DRONE
-	["rhs_uniform_m88_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_green","tf_mr3000_rhs"] // OPERATEUR RADIO
+	["rhs_uniform_m88_patchless","rhs_6b23_digi_6sh92_headset_mapcase","rhs_6b27m_green","tf_mr3000_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_m88_patchless","rhs_6b23_digi_rifleman","rhs_6b27m_green","rhs_assault_umbts"] // RIFLEMAN-RECO
 ];
 
 ////////// NE PAS TOUCHER EN DESSOUS

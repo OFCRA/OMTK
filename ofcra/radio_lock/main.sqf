@@ -27,7 +27,7 @@ if (!isServer) then {
 				
 		if (_item in _forbiddenBackPackRadios) then {
 			[("'" + _unitName + "' a vole une radio ennemie '" + _item + "'!"), "CHEAT"] call ofcra_fnc_log;
-			removeBackpackGlobal player;
+			player action ["PutBag"];
 		};
 		
 		
