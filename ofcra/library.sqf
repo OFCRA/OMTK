@@ -11,14 +11,16 @@ ofcra_fnc_log = {
 };
 
 ofcra_fnc_mission_end = {
-	createdialog "ScoreBoard";
-	waitUntil { !dialog };
+	createDialog "ScoreBoard";
+	//waitUntil { !_sb_dialog };
 };
 
 
-ofcra_scoreboard_display = {
-	[[],"ofcra_fn_compute_scoreboard",true,true] call BIS_fnc_MP;
-	[[],"ofcra_fnc_mission_end",true,true] call BIS_fnc_MP;
+ofcra_computing_display = {
+	_computing_txt = format ["<t shadow='1' shadowColor='#CC0000'>- FIN DE MISSION -<br />calcul des scores en cours...</t>"];
+	_computing_txt = parseText _computing_txt;
+	_computing_txt = composeText [_computing_txt];
+	[_computing_txt,0,0,8,2] spawn BIS_fnc_dynamicText;
 };
 
 KK_fnc_setTimeout = {

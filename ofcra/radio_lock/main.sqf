@@ -1,6 +1,6 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
-if (!isServer) then {
+if (!isDedicated) then {
 	
 	disableRadioPickup = {
 		_unitName = name (_this select 0);

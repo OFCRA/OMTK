@@ -14,7 +14,6 @@ ofcra_fnc_bluefor_vehicules_common = {
 ofcra_fnc_bluefor_vehicules_car = {
 	private ["_unit"];
 	_unit = _this select 0;
-	
 
 };
 

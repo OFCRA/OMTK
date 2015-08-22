@@ -3,7 +3,7 @@ onLoadName = "NOM_DE_LA_MISSION";
 onLoadMission = "www.ofcra.org";
 loadScreen = "ofcra\img\overview.jpg";
 onLoadIntro = "Prepare for the fight !";
-respawn = 0;
+respawnDelay = 9999999
 
 enableDebugConsole = 0;
 
@@ -17,3 +17,6 @@ class Header {
 // Definition du tableau des scores
 #include "ofcra\score_board\defines.hpp"
 #include "ofcra\score_board\dialogs.hpp"
+
+// CSSA3 SPECTATOR
+#include "CSSA3\CSSA3_header.hpp"

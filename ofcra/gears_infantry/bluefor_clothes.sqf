@@ -2,62 +2,62 @@
 
 // UCP
 ofcra_bluefor_clothes_ucp = [
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // 0. COMMON
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"], // CDC
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"], // CDG
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_squadleader","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // CDE
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_medic","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // MEDIC
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_grenadier","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // GRENADIER
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // GRENADIER ASSISTANT
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_SAW","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // AUTORIFLEMAN
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_SAW","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // AUTORIFLEMAN ASSISTANT
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_SAW","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // GUNNER
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_SAW","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // 10. GUNNER ASSISTANT
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // ANTI-TANK
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // ANTI-TANK ASSISTANT
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // ANTI-TANK LIGHT
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // MARKSMAN
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // SNIPER
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // SPOTTER
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // EXPLOSIVE SPECIALIST
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_rifleman","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // RIFLEMAN
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_cvc_helmet","tf_rt1523g_rhs"], // DRIVER
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp","H_PilotHelmetHeli_B",nil], // AIR CREW
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"], // OPERATEUR RADIO
-	["rhs_uniform_cu_ucp_patchless","rhsusf_iotv_ucp_rifleman","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"] // RIFLEMAN-RECO
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ESS_ucp","rhsusf_assault_eagleaiii_ucp"], // 0. COMMON
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_Squadleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"], // CDC
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_Squadleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"], // CDG
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_Teamleader","rhsusf_ach_helmet_ESS_ucp","rhsusf_assault_eagleaiii_ucp"], // CDE
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_Medic","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // MEDIC
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_Grenadier","rhsusf_ach_helmet_ESS_ucp","rhsusf_assault_eagleaiii_ucp"], // GRENADIER
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_Grenadier","rhsusf_ach_helmet_ESS_ucp","rhsusf_assault_eagleaiii_ucp"], // GRENADIER ASSISTANT
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_SAW","rhsusf_ach_helmet_ESS_ucp","rhsusf_assault_eagleaiii_ucp"], // AUTORIFLEMAN
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // AUTORIFLEMAN ASSISTANT
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_SAW","rhsusf_ach_helmet_ESS_ucp","rhsusf_assault_eagleaiii_ucp"], // GUNNER
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // 10. GUNNER ASSISTANT
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ESS_ucp","rhsusf_assault_eagleaiii_ucp"], // ANTI-TANK
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // ANTI-TANK ASSISTANT
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ESS_ucp","rhsusf_assault_eagleaiii_ucp"], // ANTI-TANK LIGHT
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // MARKSMAN
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // SNIPER
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // SPOTTER
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_ach_helmet_ESS_ucp","rhsusf_assault_eagleaiii_ucp"], // EXPLOSIVE SPECIALIST
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_rifleman","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"], // RIFLEMAN
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_cvc_helmet","tf_rt1523g_rhs"], // DRIVER
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp","H_PilotHelmetHeli_B",nil], // AIR CREW
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_teamleader","rhsusf_ach_helmet_ucp","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_Squadleader","rhsusf_ach_helmet_ucp","tf_rt1523g_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_cu_ucp","rhsusf_iotv_ucp_rifleman","rhsusf_ach_helmet_ucp","rhsusf_assault_eagleaiii_ucp"] // RIFLEMAN-RECO
 ];
 
 // OCP
 ofcra_bluefor_clothes_ocp = [
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // 0. COMMON
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp","tf_rt1523g_rhs"], // CDC
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp","tf_rt1523g_rhs"], // CDG
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_squadleader","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // CDE
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_medic","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp_medic"], // MEDIC
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_grenadier","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // GRENADIER
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // GRENADIER ASSISTANT
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // AUTORIFLEMAN
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // AUTORIFLEMAN ASSISTANT
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // GUNNER
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // 10. GUNNER ASSISTANT
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // ANTI-TANK
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // ANTI-TANK ASSISTANT
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // ANTI-TANK LIGHT
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // MARKSMAN
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // SNIPER
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // SPOTTER
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp_engineer"], // EXPLOSIVE SPECIALIST
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_rifleman","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // RIFLEMAN
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet","tf_rt1523g_rhs"], // DRIVER
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil], // AIR CREW
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_teamleader","rhsusf_ach_helmet_ocp","tf_rt1523g_rhs"], // OPERATEUR RADIO
-	["rhs_uniform_cu_ocp_patchless","rhsusf_iotv_ocp_rifleman","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"] // RIFLEMAN-RECO
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // 0. COMMON
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Teamleader","rhsusf_patrolcap_ocp","tf_rt1523g_rhs"], // CDC
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Teamleader","rhsusf_patrolcap_ocp","tf_rt1523g_rhs"], // CDG
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Squadleader","rhsusf_ach_helmet_ocp","rhsusf_assault_eagleaiii_ocp"], // CDE
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Medic","rhsusf_ach_helmet_headset_ocp","rhsusf_assault_eagleaiii_ocp_medic"], // MEDIC
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Grenadier","rhsusf_ach_helmet_headset_ocp","rhsusf_assault_eagleaiii_ocp"], // GRENADIER
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_ach_helmet_headset_ocp","rhsusf_assault_eagleaiii_ocp"], // GRENADIER ASSISTANT
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_SAW","rhsusf_ach_helmet_headset_ess_ocp","rhsusf_assault_eagleaiii_ocp"], // AUTORIFLEMAN
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_ach_helmet_headset_ocp","rhsusf_assault_eagleaiii_ocp"], // AUTORIFLEMAN ASSISTANT
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_SAW","rhsusf_ach_helmet_headset_ess_ocp","rhsusf_assault_eagleaiii_ocp"], // GUNNER
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_ach_helmet_headset_ocp","rhsusf_assault_eagleaiii_ocp"], // 10. GUNNER ASSISTANT
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_SAW","rhsusf_ach_helmet_headset_ess_ocp","rhsusf_assault_eagleaiii_ocp"], // ANTI-TANK
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_ach_helmet_headset_ocp","rhsusf_assault_eagleaiii_ocp"], // ANTI-TANK ASSISTANT
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_SAW","rhsusf_ach_helmet_headset_ess_ocp","rhsusf_assault_eagleaiii_ocp"], // ANTI-TANK LIGHT
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp","rhs_Booniehat_ocp",nil], // MARKSMAN
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp","rhs_Booniehat_ocp",nil], // SNIPER
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Rifleman","rhs_Booniehat_ocp","rhsusf_assault_eagleaiii_ocp"], // SPOTTER
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_ach_helmet_headset_ocp","rhsusf_assault_eagleaiii_ocp_engineer"], // EXPLOSIVE SPECIALIST
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_ach_helmet_headset_ocp","rhsusf_assault_eagleaiii_ocp"], // RIFLEMAN
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp","rhsusf_cvc_helmet","tf_rt1523g_rhs"], // DRIVER
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp","H_PilotHelmetHeli_B","tf_rt1523g_rhs"], // PILOT
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp","H_PilotHelmetHeli_B",nil], // AIR CREW
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Teamleader","rhsusf_ach_helmet_headset_ocp","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Squadleader","rhsusf_ach_helmet_headset_ocp","tf_rt1523g_rhs"], // OPERATEUR RADIO
+	["rhs_uniform_cu_ocp","rhsusf_iotv_ocp_Rifleman","rhsusf_ach_helmet_headset_ocp","rhsusf_assault_eagleaiii_ocp"] // RIFLEMAN-RECO
 ];
 
 // SOC
@@ -150,6 +150,36 @@ ofcra_bluefor_clothes_marpat_d = [
 	["rhs_uniform_FROG01_d","rhsusf_spc","rhsusf_mich_helmet_marpatd_headset","rhsusf_assault_eagleaiii_coy"] // RIFLEMAN-RECO
 ];
 
+// RETRO_DESERT  TRYK_H_Helmet_CC
+ofcra_bluefor_clothes_retro_d = [
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // 0. COMMON
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Booniehat_3CD","tf_rt1523g_black"], // CDC
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC","tf_rt1523g_black"], // CDG
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // CDE
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC","TRYK_B_Medbag_BK"], // MEDIC
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // GRENADIER
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // GRENADIER ASSISTANT
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // AUTORIFLEMAN
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // AUTORIFLEMAN ASSISTANT
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // GUNNER
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // 10. GUNNER ASSISTANT
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC","TRYK_B_Coyotebackpack"], // ANTI-TANK
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // ANTI-TANK ASSISTANT
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // ANTI-TANK LIGHT
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Booniehat_3CD",nil], // MARKSMAN
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Booniehat_3CD",nil], // SNIPER
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil], // SPOTTER
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC","TRYK_B_Coyotebackpack"], // EXPLOSIVE SPECIALIST
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC","TRYK_B_Coyotebackpack"], // RIFLEMAN
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","rhsusf_cvc_helmet","tf_rt1523g_black"], // DRIVER
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","rhsusf_cvc_helmet",nil], // 20. GROUND CREW
+	["U_B_PilotCoveralls",nil,"H_Cap_headphones",nil], // PILOT
+	["U_B_PilotCoveralls",nil,"H_PilotHelmetHeli_B",nil], // AIR CREW
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC","B_MAV_B_BACKPACK"], // OPERATEUR DRONE
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC","tf_rt1523g_black"], // OPERATEUR RADIO
+	["Niko_USA_R_6cd","Niko_USA_ArmorL_6CD","TRYK_H_Helmet_CC",nil] // RIFLEMAN-RECO
+];
+
 ////////// NE PAS TOUCHER EN DESSOUS
 
 ofcra_fnc_get_bluefor_clothes = {
@@ -172,6 +202,9 @@ ofcra_fnc_get_bluefor_clothes = {
 		};
 		case "MARPAT_DESERT":	{
 			_result = ofcra_bluefor_clothes_marpat_d;
+		};
+		case "RETRO_DESERT": {
+			_result = ofcra_bluefor_clothes_retro_d;
 		};
 		default {
 			_log = "tenue BLUEFOR inconnue '" + _param + "'";

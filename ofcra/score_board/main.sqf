@@ -1,6 +1,6 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
-diag_log "[OFCRA] INFO: setting mission time-line...";
+diag_log "[OFCRA] INFO: setting mission objectives...";
 systemChat "Setting mission time-line";
 
 if (isServer) then {
@@ -30,9 +30,9 @@ if (isServer) then {
 	missionNamespace setVariable ["ofcra_mission_end_time_txt",_ofcra_mission_end_time_txt];
 	publicVariable "ofcra_mission_end_time_txt";
 	
-	_timeout = [ofcra_scoreboard_display, [], _ofcra_mission_duration] call KK_fnc_setTimeout;
-
-
+	// SCHEDULE EVENTS
+	[ofcra_fn_compute_scoreboard, [], _ofcra_mission_duration] call KK_fnc_setTimeout;
+	
 	// OBJ
 	_ofcra_sc_objectives = [];
 	_ofcra_sc_scores = [0,0];
@@ -84,6 +84,17 @@ if (isServer) then {
 	publicVariable "ofcra_sc_scores";
 	publicVariable "ofcra_sc_objectives";
 	publicVariable "ofcra_sc_flags";
+};
+
+if (!isDedicated) then {
+	// SCHEDULE EVENTS
+	_endHour   = OFCRA_SC_DUREE_MISSION select 0;
+	_endMinute = OFCRA_SC_DUREE_MISSION select 1;
+	_endSecond = OFCRA_SC_DUREE_MISSION select 2;
+	_ofcra_mission_duration = 3600*_endHour + 60*_endMinute + _endSecond - 1;
+	
+	[ofcra_computing_display, [], _ofcra_mission_duration] call KK_fnc_setTimeout;
+	[ofcra_fnc_mission_end, [], (_ofcra_mission_duration + 10)] call KK_fnc_setTimeout;
 };
 
 

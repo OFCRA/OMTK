@@ -28,7 +28,7 @@ ofcra_fnc_redfor_cdc = {
 	_unit = _this select 0;
 	
 	_unit setUnitRank "COLONEL"; 
-	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
+	[_unit, 1, _clothes] call ofcra_fn_set_clothes;
 	
 	for "_i" from 1 to 8 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
 	_unit addWeapon "rhs_weap_ak74m";
