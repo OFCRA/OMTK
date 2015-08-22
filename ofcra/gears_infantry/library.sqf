@@ -53,6 +53,8 @@ ofcra_fn_set_clothes = {
 	_index = _this select 1;
 	_clothes = _this select 2;
 
+	//["UNI=" + ((_clothes select _index) select 0) + " - VEST=" + ((_clothes select _index) select 1),"INFO"] call ofcra_fnc_log;
+	
 	_unit forceAddUniform ((_clothes select _index) select 0);
 	_unit addVest ((_clothes select _index) select 1);
 	_unit addHeadgear ((_clothes select _index) select 2);

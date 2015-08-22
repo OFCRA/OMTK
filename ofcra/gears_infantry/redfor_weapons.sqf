@@ -7,14 +7,13 @@ ofcra_fnc_redfor_common = {
 
 	//[_unit, 0, _clothes] call ofcra_fn_set_clothes;
 
-	_unit addItemToUniform "cse_bandage_basic";
-	_unit addItemToUniform "cse_bandage_basic";
-	_unit addItemToUniform "cse_bandage_basic";
-	_unit addItemToUniform "cse_morphine";
-	_unit addItemToUniform "cse_epinephrine";
+	for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_fieldDressing";};
+	_unit addItemToUniform "ACE_morphine";
+	_unit addItemToUniform "ACE_epinephrine";
 
 	_unit addItemToUniform "rhs_mag_rgd5";
 	_unit addItemToUniform "rhs_mag_rdg2_white";
+	_unit addItemToUniform "ACE_EarPlugs";
 	
 	_unit linkItem "ItemMap";
 	_unit linkItem "ItemCompass";
@@ -28,10 +27,10 @@ ofcra_fnc_redfor_cdc = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit setUnitRank "MAJOR"; 
+	_unit setUnitRank "COLONEL"; 
 	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
 	
-	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 8 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
 	_unit addWeapon "rhs_weap_ak74m";
 	_unit addPrimaryWeaponItem "rhs_acc_1p29";	
 	
@@ -39,8 +38,8 @@ ofcra_fnc_redfor_cdc = {
 	_unit addItemToVest "rhs_mag_rdg2_white";
 		
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
-	_unit addItem "cse_m_tablet_o";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // CDG
@@ -48,7 +47,7 @@ ofcra_fnc_redfor_cdg = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit setUnitRank "MAJOR"; 	
+	_unit setUnitRank "MAJOR";
 	[_unit, 2, _clothes] call ofcra_fn_set_clothes;
 	
 	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
@@ -59,9 +58,8 @@ ofcra_fnc_redfor_cdg = {
 	_unit addItemToVest "rhs_mag_rdg2_white";
 
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
-	_unit addItem "cse_m_pda_o";
-
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // CDE
@@ -69,6 +67,7 @@ ofcra_fnc_redfor_cde = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
+	_unit setUnitRank "CAPTAIN";
 	[_unit, 3, _clothes] call ofcra_fn_set_clothes;
 
 	for "_i" from 1 to 4 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
@@ -100,10 +99,10 @@ ofcra_fnc_redfor_medic = {
 	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_rgd5";};
 	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
 
-	for "_i" from 1 to 50 do {_unit addItemToBackpack "cse_bandage_basic";};
-	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_morphine";};
-	for "_i" from 1 to 20 do {_unit addItemToBackpack "cse_epinephrine";};
-	for "_i" from 1 to 10 do {_unit addItemToBackpack "cse_saline_iv";};
+	for "_i" from 1 to 40 do {_unit addItemToBackpack "ACE_fieldDressing";};
+	for "_i" from 1 to 15 do {_unit addItemToBackpack "ACE_morphine";};
+	for "_i" from 1 to 15 do {_unit addItemToBackpack "ACE_epinephrine";};
+	for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_bloodIV";};
 };
 
 // GRENADIER
@@ -223,6 +222,7 @@ ofcra_fnc_redfor_gunner_assistant = {
 	
 	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 	_unit addWeapon "rhs_weap_ak74m"; 
+	_unit addPrimaryWeaponItem "rhs_acc_ekp1";
 	for "_i" from 1 to 3 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
 
 	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_rgd5";};
@@ -305,6 +305,9 @@ ofcra_fnc_redfor_marksman = {
 	_unit addItemToVest "rhs_mag_rgd5";
 	_unit addItemToUniform "rhs_mag_rgd5";
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_rdg2_white";};
+	_unit addItemToVest "ACE_RangeCard";
+	_unit addItemToVest "ACE_Kestrel4500";
+	_unit addItemToVest "ACE_ATragMX";
 };
 
 // SNIPER
@@ -382,7 +385,7 @@ ofcra_fnc_redfor_driver = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit setUnitRank "MAJOR"; 
+	_unit setUnitRank "MAJOR";
 	[_unit, 19, _clothes] call ofcra_fn_set_clothes;
 	
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N10_AK";};
@@ -390,8 +393,8 @@ ofcra_fnc_redfor_driver = {
 	_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";
 		
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
-	_unit addItem "cse_m_pda_o";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // GROUND CREW
@@ -412,15 +415,15 @@ ofcra_fnc_redfor_pilot = {
 	private ["_unit"];
 	_unit = _this select 0;
 	
-	_unit setUnitRank "MAJOR"; 
+	_unit setUnitRank "MAJOR";
 	[_unit, 21, _clothes] call ofcra_fn_set_clothes;
 	
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N10_AK";};	
 	_unit addWeapon "rhs_weap_ak74m_folded";
 	
 	_unit addWeapon "Binocular";
-	_unit linkItem "ItemGPS";
-	_unit addItem "cse_m_pda_o";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 // AIR CREW
@@ -433,6 +436,65 @@ ofcra_fnc_redfor_air_crew = {
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N10_AK";};
 	_unit addWeapon "rhs_weap_ak74m_folded";
 	
+};
+
+// Operateur de drone
+ofcra_fnc_redfor_op_drone = {
+	private ["_unit"];
+	_unit = _this select 0;
+	
+	_unit setUnitRank "MAJOR"; 
+	[_unit, 23, _clothes] call ofcra_fn_set_clothes;
+	
+	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+	_unit addWeapon "rhs_weap_ak74m";
+	_unit addPrimaryWeaponItem "rhs_acc_1p29";	
+	
+	_unit addItemToVest "rhs_mag_rgd5";
+	_unit addItemToVest "rhs_mag_rdg2_white";
+		
+	_unit addWeapon "Binocular";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
+};
+
+// Operateur radio
+ofcra_fnc_redfor_op_radio = {
+	private ["_unit"];
+	_unit = _this select 0;
+	
+	_unit setUnitRank "MAJOR"; 
+	[_unit, 24, _clothes] call ofcra_fn_set_clothes;
+	
+	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+	_unit addWeapon "rhs_weap_ak74m";
+	_unit addPrimaryWeaponItem "rhs_acc_1p29";	
+	
+	_unit addItemToVest "rhs_mag_rgd5";
+	_unit addItemToVest "rhs_mag_rdg2_white";
+		
+	_unit addItemToVest "ACE_microDAGR";
+};
+
+// RIFLEMAN-RECO:
+ofcra_fnc_redfor_reco = {
+	private ["_unit"];
+	_unit = _this select 0;
+	
+	[_unit, 25, _clothes] call ofcra_fn_set_clothes;
+
+	for "_i" from 1 to 4 do {_unit addItemToVest "rhs_30Rnd_545x39_7N10_AK";};
+	for "_i" from 1 to 6 do {_unit addItemToBackpack "rhs_30Rnd_545x39_7N10_AK";};
+
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_rgd5";};
+	for "_i" from 1 to 3 do {_unit addItemToBackpack "rhs_mag_rdg2_white";};
+	
+	_unit addWeapon "rhs_weap_ak74m";
+	_unit addPrimaryWeaponItem "rhs_acc_ekp1";
+	
+	_unit addWeapon "ACE_Yardage450";
+	_unit addItemToVest "ACE_MapTools";
+	_unit addItemToVest "ACE_microDAGR";
 };
 
 ////// REDFOR - classes definitions
@@ -514,7 +576,7 @@ rifleman_redfor_classes = [
 ];
 
 driver_redfor_classes = [
-	"O_soldier_UAV_F"		// CSAT\Men\UAV Operator
+	"O_diver_TL_F"		// CSAT\Men (Diver)\Diver Team Leader
 ];
 
 ground_crew_redfor_classes = [
@@ -530,6 +592,17 @@ air_crew_redfor_classes = [
 	"O_helicrew_F"			// CSAT\Men\Helicopter Crew
 ];
 
+op_drone_redfor_classes = [
+	"O_soldier_UAV_F"			// CSAT\Men\UAV Operator
+];
+
+op_radio_redfor_classes = [
+	"O_recon_JTAC_F"			// CSAT\Men (Recon)\Recon JTAC
+];
+
+reco_redfor_classes = [
+	"O_recon_F"			// CSAT\Men (Recon)\Recon Scout
+];
 
 ////////// NE PAS TOUCHER EN DESSOUS
 
@@ -564,6 +637,10 @@ ofcra_fnc_set_redfor_gears = {
 	if (_class in cde_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cde; _found=1; };
 	if (_class in cdg_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cdg; _found=1; };
 	if (_class in cdc_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_cdc; _found=1; };
+	if (_class in op_drone_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_op_drone; _found=1; };
+	if (_class in op_radio_redfor_classes)					then { [_unit] call ofcra_fnc_redfor_op_radio; _found=1; };
+	if (_class in reco_redfor_classes)						then { [_unit] call ofcra_fnc_redfor_reco; _found=1; };
+	
 	[_unit] call ofcra_fnc_redfor_common;
 	
 	if (_found<1) then  {
