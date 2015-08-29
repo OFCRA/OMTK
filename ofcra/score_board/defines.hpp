@@ -97,7 +97,7 @@
 //Base Classes//
 ////////////////
 
-class RscText
+class ofcra_RscText
 {
     access = 0;
     idc = -1;
@@ -120,7 +120,7 @@ class RscText
 
 
 
-class RscPicture
+class ofcra_RscPicture
 {
     access = 0;
     idc = -1;
@@ -140,7 +140,7 @@ class RscPicture
     h = 0.15;
 };
 
-class RscButton {    
+class ofcra_RscButton {    
     access = 0;
     idc = -1;
     type = CT_BUTTON;
@@ -172,7 +172,7 @@ class RscButton {
     borderSize = 0;
 };
 
-class RscFrame
+class ofcra_RscFrame
 {
     type = CT_STATIC;
     idc = -1;
@@ -200,7 +200,7 @@ class RscFrame
  //   text = "";
 //};
 
-class ScrollBar {
+class ofcra_ScrollBar {
     color[] = {1,1,1,0.6}; 
     colorActive[] = {1,1,1,1}; 
     colorDisabled[] = {1,1,1,0.3}; 
@@ -211,7 +211,7 @@ class ScrollBar {
     shadow = 0;
   };
 
-class RscListBox
+class ofcra_RscListBox
 {
  access = 0;
  type = 5;
@@ -238,7 +238,7 @@ class RscListBox
  arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
  arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
  shadow = 0;
- class ListScrollBar : ScrollBar //ListScrollBar is class name required for Arma 3
+ class ListScrollBar : ofcra_ScrollBar //ListScrollBar is class name required for Arma 3
  {
   color[] = {1,1,1,0.6};
   colorActive[] = {1,1,1,1};
@@ -251,7 +251,7 @@ class RscListBox
  };
 };
     
-class BOX
+class ofcra_BOX
 { 
     type = CT_STATIC;
     idc = -1;

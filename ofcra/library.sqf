@@ -1,24 +1,25 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
 ofcra_fnc_log = {
-	private ["_msg", "_level"];
+	private ["_msg", "_tag", "_chat"];
 	_msg  = _this select 0;
-	_level = _this select 1;
+	_tag = _this select 1;
+	_chat = _this select 2;
 	
-	//[_msg,"systemChat",true,true] call BIS_fnc_MP;
-	_log_line = '[OFCRA] ' + _level + ': ' + _msg;
-	diag_log  _log_line;
+	if (_chat) then { systemChat ('[MT] ' + _msg)};
+	diag_log  ('[OFCRA] ' + _tag + ': ' + _msg);
 };
 
 ofcra_fnc_mission_end = {
-	createdialog "ScoreBoard";
-	waitUntil { !dialog };
+	createDialog "ScoreBoard";
 };
 
 
-ofcra_scoreboard_display = {
-	[[],"ofcra_fn_compute_scoreboard",true,true] call BIS_fnc_MP;
-	[[],"ofcra_fnc_mission_end",true,true] call BIS_fnc_MP;
+ofcra_computing_display = {
+	_computing_txt = format ["<t shadow='1' shadowColor='#CC0000'>- FIN DE MISSION -<br />calcul des scores en cours...</t>"];
+	_computing_txt = parseText _computing_txt;
+	_computing_txt = composeText [_computing_txt];
+	[_computing_txt,0,0,8,2] spawn BIS_fnc_dynamicText;
 };
 
 KK_fnc_setTimeout = {
@@ -276,7 +277,7 @@ ofcra_isAlive = {
 ofcra_fn_setObjectiveResult = {
 	ofcra_sc_scores = missionNamespace getVariable "ofcra_sc_scores";
 	ofcra_sc_scores set [_this select 0, _this select 1];
-	//["action " + str(_this select 0) + " = " + str(_this select 1), "OBJECTIVE"] call ofcra_fnc_log;
+	["action " + str(_this select 0) + " = " + str(_this select 1), "OBJECTIVE", false] call ofcra_fnc_log;
 	missionNamespace setVariable ["ofcra_sc_scores", ofcra_sc_scores];
 	publicVariableServer "ofcra_sc_scores";
 };
@@ -284,16 +285,17 @@ ofcra_fn_setObjectiveResult = {
 ofcra_fn_setFlagResult = {
 	_ofcra_sc_flags = missionNamespace getVariable "ofcra_sc_flags";
 	_ofcra_sc_flags set [_this select 0, _this select 1];
-	["flag " + str(_this select 0) + " = " + str(_this select 1), "OBJECTIVE"] call ofcra_fnc_log;
+	["flag " + str(_this select 0) + " = " + str(_this select 1), "OBJECTIVE", false] call ofcra_fnc_log;
 	missionNamespace setVariable ["ofcra_sc_flags", _ofcra_sc_flags];
 	publicVariableServer "ofcra_sc_flags";
 };
 
 
 ofcra_fn_closeAction = {
-	private["_obj", "_id", "_proc", "_index", "_dur", "_ofcra_sc_scores","_num"];
+	private["_obj", "_id", "_caller", "_proc", "_index", "_dur", "_ofcra_sc_scores","_num"];
 	
 	_obj = _this select 0;
+	_caller = _this select 1;
 	_id = _this select 2;
 	
 	_dur = _this select 3 select 0;
@@ -301,13 +303,13 @@ ofcra_fn_closeAction = {
 	_index = _this select 3 select 2;
 	
 	// TODO Display progress bar using _dur, then..
-		
+	
 	_obj removeAction _id;
 	_index = _index + 2;
 	
 	[_index, true] call ofcra_fn_setObjectiveResult;
 	
 	_bool = isNil _proc;
-	if (!_bool) then { [] call _proc; };
+	if (!_bool) then { [_obj,_caller] call _proc; };
 };
 

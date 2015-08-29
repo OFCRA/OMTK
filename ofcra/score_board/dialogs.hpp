@@ -12,7 +12,7 @@ class ScoreBoard {
 	
 	class controls {
 		
-		class MainContainer: BOX {
+		class MainContainer: ofcra_BOX {
 			idc = 1800;
 			x = 0.276563 * safezoneW + safezoneX;
 			y = 0.236103 * safezoneH + safezoneY;
@@ -22,7 +22,7 @@ class ScoreBoard {
 		
 		
 
-class BlueforLogo: RscPicture
+class BlueforLogo: ofcra_RscPicture
 {
 	idc = 1200;
 	text = "ofcra\score_board\img\bluefor.jpg";
@@ -31,7 +31,7 @@ class BlueforLogo: RscPicture
 	w = 0.0802083 * safezoneW;
 	h = 0.0989614 * safezoneH;
 };
-class RedforLogo: RscPicture
+class RedforLogo: ofcra_RscPicture
 {
 	idc = 1201;
 	text = "ofcra\score_board\img\redfor.jpg";
@@ -40,7 +40,7 @@ class RedforLogo: RscPicture
 	w = 0.0802083 * safezoneW;
 	h = 0.0989614 * safezoneH;
 };
-class Banner: RscPicture
+class Banner: ofcra_RscPicture
 {
 	idc = 1202;
 	text = "ofcra\score_board\img\banner.jpg";
@@ -51,7 +51,7 @@ class Banner: RscPicture
 };
 
 
-		class Objectives: RscText {
+		class Objectives: ofcra_RscText {
 			idc = 1510;
 			x = 0 * safezoneW + safezoneX;
 			y = 0.30 * safezoneH + safezoneY;
@@ -59,7 +59,7 @@ class Banner: RscPicture
 			h = 0.1 * safezoneH;
 		};
 		
-		class BlueForObjectifs: RscListbox {
+		class BlueForObjectifs: ofcra_RscListbox {
 			idc = 1511;
 			x = 0.276563 * safezoneW + safezoneX;
 			y = 0.37 * safezoneH + safezoneY;
@@ -67,7 +67,7 @@ class Banner: RscPicture
 			h = 0.09 * safezoneH;
 		};
 		
-		class RedForObjectifs: RscListbox {
+		class RedForObjectifs: ofcra_RscListbox {
 			idc = 1512;
 			x = 0.511458 * safezoneW + safezoneX;
 			y = 0.37 * safezoneH + safezoneY;
@@ -75,7 +75,7 @@ class Banner: RscPicture
 			h = 0.09 * safezoneH;
 		};
 
-		class Survivors: RscText {
+		class Survivors: ofcra_RscText {
 			idc = 1520;
 			x = 0 * safezoneW + safezoneX;
 			y = 0.43 * safezoneH + safezoneY;
@@ -85,7 +85,7 @@ class Banner: RscPicture
 		};
 				
 
-		class BlueforListSurvivors: RscListbox {
+		class BlueforListSurvivors: ofcra_RscListbox {
 			idc = 1521;
 			x = 0.276563 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
@@ -93,7 +93,7 @@ class Banner: RscPicture
 			h = 0.23 * safezoneH;
 		};
 		
-		class RedForSurvivors: RscListbox {
+		class RedForSurvivors: ofcra_RscListbox {
 			idc = 1522;
 			x = 0.511458 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
@@ -102,7 +102,7 @@ class Banner: RscPicture
 		};
 		
 		
-		class QuitButtonMenu: RscButton {
+		class QuitButtonMenu: ofcra_RscButton {
 			idc = -1;
 			x = 0.477080 * safezoneW + safezoneX;
 			y = 0.741906 * safezoneH + safezoneY;

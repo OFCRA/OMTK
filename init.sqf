@@ -1,10 +1,14 @@
 ////// CONFIGURATION MISSION_TOOLKIT OFCRA
 
-// gears_infantry: équipement automatisé des infanteries
-OFCRA_GI_UNITES_CIBLES = "HUMAINS+IA";			// parmi {HUMAINS+IA|HUMAINS}
+// infantry_loadouts: équipement automatisé des infanteries
+OFCRA_GI_UNITES_CIBLES = "HUMAINS+IA";		// parmi {HUMAINS+IA|HUMAINS}
 OFCRA_GI_LISTE_INFANTERIE_EXCEPTIONS = [];	// tableau de noms d'unités entre-guillemets à ne pas équiper, ex: ["nom1", "nom2"]
-OFCRA_GI_TENUES_BLUEFOR = "UCP";			// parmi {UCP|OCP|SOC|MARPAT_WOOD|MARPAT_DESERT}
-OFCRA_GI_TENUES_REDFOR = "VDV";				// parmi {VDV|VDV-M|MSV_DIGITAL|MSV_FLORA|M88}
+
+OFCRA_GI_ARMES_BLUEFOR = "us_army";
+OFCRA_GI_TENUES_BLUEFOR = "us_ocp";
+
+OFCRA_GI_ARMES_REDFOR = "ru_army";
+OFCRA_GI_TENUES_REDFOR = "ru_emr_spetnaz";
 
 // gears_vehicles: équipement automatisé des véhicules
 OFCRA_GV_LISTE_VEHICULES_EXCEPTIONS = [];		// tableau de noms d'unités véhicules entre-guillemets à ne pas équiper le cargo, ex: ["nom1", "nom2"]
@@ -21,9 +25,8 @@ OFCRA_SC_LISTE_OBJECTIFS = [
 
 ////// CONFIGURATION ADDONS EXTERNES
 
-// TAW_VIEWDISTANCE
-tawvd_disablenone = true;
-tawvd_maxRange = 6000;
+// CSSA3 SPECTATOR
+[] execVM "ofcra\3rd-parties\CSSA3\CSSA3_init.sqf";
 
 // TASK FORCE ARROWHEAD RADIO
 #include "\task_force_radio\functions\common.sqf";

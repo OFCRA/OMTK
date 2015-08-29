@@ -10,15 +10,17 @@ ctrlSetText [1510, _text];
 
 _index = 1;
 { 
-	_index = _index + 1;
-	_res = 0;
-	if (_ofcra_sc_scores select _index) then {
-		_res = _x select 0;
+	if ((_x select 0) != 0) then {
+		_index = _index + 1;
+		_res = 0;
+		if (_ofcra_sc_scores select _index) then {
+			_res = _x select 0;
+		};
+		_line = format ["%1  (%3/%2 pts)", _x select 3, _x select 0, _res];
+		_sideIdx = 1511;
+		if (_x select 1 == east) then { _sideIdx = 1512; };
+		lbAdd [_sideIdx, _line];
 	};
-	_line = format ["%1  (%3/%2 pts)", _x select 3, _x select 0, _res];
-	_sideIdx = 1511;
-	if (_x select 1 == east) then { _sideIdx = 1512; };
-	lbAdd [_sideIdx, _line];
 } foreach _ofcra_sc_objectives;
 
 

@@ -1,3 +1,7 @@
+////////// NE PAS TOUCHER EN DESSOUS
+
+["setting radio frequencies...", "INFO", false] call ofcra_fnc_log;
+
 ofcra_fn_getRandomFrequency = {
 	private["_min","_max","_res"];
 	_min = _this select 0;
@@ -51,3 +55,4 @@ tf_freq_east_lr = false call TFAR_fnc_generateLrSettings;
 tf_freq_east_lr set [2, ([OFCRA_RD_FREQUENCES_REDFOR_LP, 30, 87] call ofcra_generate_frequencies)];
 publicVariable "tf_freq_east_lr";
 
+["radio frequencies done.", "INFO", true] call ofcra_fnc_log;
