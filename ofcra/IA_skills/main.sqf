@@ -1,6 +1,6 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
-diag_log "[OFCRA] INFO: start to lower IA skills ...";
+["setting IA skills lower...", "INFO", false] call ofcra_fnc_log;
 
 {
 	_x setskill ["aimingAccuracy",0.1];
@@ -15,4 +15,4 @@ diag_log "[OFCRA] INFO: start to lower IA skills ...";
 	_x setskill ["general",0.2];
 } forEach allUnits;
 
-diag_log "[OFCRA] INFO: IA skills done.";
+["IA skills done.", "INFO", true] call ofcra_fnc_log;

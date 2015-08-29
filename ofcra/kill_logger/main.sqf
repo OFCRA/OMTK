@@ -1,7 +1,8 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
+["enabling kill log...", "INFO", false] call ofcra_fnc_log;
+
 diag_log "[OFCRA] INFO: enabling kill logs ...";
-systemChat "Setting kill logs";
 
 _index = 1;
 {
@@ -12,4 +13,4 @@ _index = 1;
 	_index = _index + 1;
 } forEach allUnits;
 
-diag_log "[OFCRA] INFO: kill logs done.";
+["kill logs done.", "INFO", true] call ofcra_fnc_log;

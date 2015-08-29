@@ -1,16 +1,16 @@
 author = "OFCRA";
-onLoadName = "NOM_DE_LA_MISSION";
+onLoadName = "NOM_DE_LA_MISSION";      // A DEFINIR
 onLoadMission = "www.ofcra.org";
 loadScreen = "ofcra\img\overview.jpg";
 onLoadIntro = "Prepare for the fight !";
-respawnDelay = 9999999
+respawnDelay = 9999999;
 
 enableDebugConsole = 0;
 
 class Header {
 	gameType=TDM;
 	minPlayers = 1;
-	maxPlayers = 60;
+	maxPlayers = 200;
 };
 
 
@@ -19,4 +19,85 @@ class Header {
 #include "ofcra\score_board\dialogs.hpp"
 
 // CSSA3 SPECTATOR
-#include "CSSA3\CSSA3_header.hpp"
+#include "ofcra\3rd-parties\CSSA3\CSSA3_header.hpp"
+
+class Params
+{
+	class OFCRA_TEST_MODE
+	{
+		title = "Mode TEST";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 0;
+	};
+	class OFCRA_DURATION_OVERRIDE
+	{
+		title = "Duree de mission forcee";
+		texts[] = {"desactive","15 min", "30 min","45 min"," 1 h","1 h 30 min"," 2 h"};
+		values[] = {0,900,1800,2700,3600,5400,7200};
+		default = 0;
+	};
+	class OFCRA_MODULE_DIFFICULTY_CHECK
+	{
+		title = "Module difficulty_check";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 1;
+	};
+	class OFCRA_MODULE_IA_SKILLS
+	{
+		title = "Module IA_skills";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 1;
+	};
+	class OFCRA_MODULE_INFANTRY_LOADOUTS
+	{
+		title = "Module infantry_loadouts";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 1;
+	};
+	class OFCRA_MODULE_KILL_LOGGER
+	{
+		title = "Module kill_logger";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 1;
+	};
+	class OFCRA_MODULE_RADIO_LOCK
+	{
+		title = "Module radio_lock";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 1;
+	};
+	class OFCRA_MODULE_RADIO_SETTINGS
+	{
+		title = "Module radio_settings";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 1;
+	};
+	class OFCRA_MODULE_SCORE_BOARD
+	{
+		title = "Module score_board";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 1;
+	};
+	class OFCRA_MODULE_VEHICLES_CARGOS
+	{
+		title = "Module vehicles_cargos";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 1;
+	};
+	class OFCRA_MODULE_WARM_UP
+	{
+		title = "Module warm_up";
+		texts[] = {"desactive","active"};
+		values[] = {0,1};
+		default = 1;
+	};
+};

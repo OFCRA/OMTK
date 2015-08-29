@@ -238,7 +238,7 @@ class ofcra_RscListBox
  arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
  arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
  shadow = 0;
- class ofcra_ListScrollBar : ofcra_ScrollBar //ListScrollBar is class name required for Arma 3
+ class ListScrollBar : ofcra_ScrollBar //ListScrollBar is class name required for Arma 3
  {
   color[] = {1,1,1,0.6};
   colorActive[] = {1,1,1,1};

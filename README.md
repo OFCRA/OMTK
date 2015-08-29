@@ -1,7 +1,7 @@
 # mission_toolkit
 
 ## G&eacute;n&eacute;ralit&eacute;s
-Le mission_toolkit [OFCRA](http://ofcrav2.org) permet de construire les missions officielles de l'OFCRA, en rendant la tache facile:
+Le mission_toolkit de l'OFCRA (http://ofcrav2.org) permet de construire les missions officielles de l'OFCRA, en rendant la tache facile:
 
 1. Cr&eacute;ez une mission vide avec l'&eacute;diteur du jeu (_pensez &agrave; lancer Arma3 avec tous les add-on du repo officiel OFCRA avec ArmaSync_)
 2. Copiez/collez le contenu du mission_pack dans le r&eacute;pertoire de la mission (_g&eacute;n&eacute;ralement dans _My Documents\Arma 3\missions\nom_de_votre_mission_) &agrave; c&ocirc;t&eacute; du fichier mission.sqm
@@ -14,11 +14,16 @@ Le mission_toolkit [OFCRA](http://ofcrav2.org) permet de construire les missions
 Le mission_pack se compose de diff&eacute;rents modules ind&eacute;pendants:
 
 * IA_skill: configure les capacit&eacute;s de l'IA (vers le bas)
-* difficulty_check: leve une alerte si la mission n'a pas ete lanc&eacute;e en difficult&eacute; _elite_
-* gears_infantry: &eacute;quipe tous les slots humains automatiquement, avec la configuration modifiable du module
-* gears_vehicles: &eacute;quipe tous les types de v&eacute;hicules automatiquement, avec la configuration modifiable du module
+* difficulty_check: lève une alerte si la mission n'a pas été lanc&eacute;e en difficult&eacute; _elite_
+* infantry_loadouts: &eacute;quipe tous les slots automatiquement (exceptions possibles)
+* kill_logger: logs tous les hits de la partie dans le fichier RPT du serveur
+* radio_lock: empêche la récupération de radios ennemies
+* radio_settings: configure les fréquences des radios TFAR
+* score_board: temps limite de mission avec lancement automatique du tableau des scores
 * objectives_setter: permet de d&eacute;finir les objectifs de la mission, avec notamment le tableau des scores final affichant le status des joueurs et les r&eacute;sultats des diff&eacute;rents objectifs d&eacute;finis.
-* time_line: permet de d&eacute;finir une dur&eacute;e maximale de mission, et de param&eacute;trer les diff&eacute;rentes alertes de temps restant 
+* test_mode: permet de lancer 
+* vehicles_cargos: charge les cargos de tous les types de v&eacute;hicules automatiquement
+* warm_up: permet de d&eacute;finir une plage de connexion 2 min. avec impossibilité de bouger
 
 ## Gestion des messages
 

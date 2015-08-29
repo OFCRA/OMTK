@@ -58,25 +58,25 @@ if (hasInterface) then
 {
 
 	//Compile functions
-	CSSA3_fnc_classExists = compile preprocessFileLineNumbers ("CSSA3\functions\fn_classExists.sqf");
-	CSSA3_fnc_draw3DHUD = compile preprocessFileLineNumbers ("CSSA3\functions\fn_draw3DHUD.sqf");
-	CSSA3_fnc_mainSpectateFunctions = compile preprocessFileLineNumbers ("CSSA3\functions\fn_CSSA3_MainFunctions.sqf");
-	CSSA3_fnc_createSpectateDialog = compile preprocessFileLineNumbers ("CSSA3\functions\fn_createSpectateDialog.sqf");
-	CSSA3_fnc_mainUpdateLoop = compile preprocessFileLineNumbers ("CSSA3\functions\fn_mainUpdateLoop.sqf");
-	CSSA3_fnc_forceReopen = compile preprocessFileLineNumbers ("CSSA3\functions\fn_forceReopen.sqf");
-	CSSA3_fnc_unitListIndexChange = compile preprocessFileLineNumbers ("CSSA3\functions\fn_unitListIndexChanged.sqf");
-	CSSA3_fnc_updateUnitList = compile preprocessFileLineNumbers ("CSSA3\functions\fn_updateUnitList.sqf");
-	CSSA3_fnc_settingsHandler = compile preprocessFileLineNumbers ("CSSA3\functions\fn_settingsHandler.sqf");
-	CSSA3_fnc_camMove = compile preprocessFileLineNumbers ("CSSA3\functions\fn_camMove.sqf");
-	CSSA3_fnc_camRotate = compile preprocessFileLineNumbers ("CSSA3\functions\fn_camRotate.sqf");
-	CSSA3_fnc_LMBhandler = compile preprocessFileLineNumbers ("CSSA3\functions\fn_LMBhandler.sqf");
-	CSSA3_fnc_changeView = compile preprocessFileLineNumbers ("CSSA3\functions\fn_changeView.sqf");
-	CSSA3_fnc_ctrlActive = compile preprocessFileLineNumbers ("CSSA3\functions\fn_ctrlActive.sqf");
-	CSSA3_fnc_closeInteractRose = compile preprocessFileLineNumbers ("CSSA3\functions\fn_closeInteractRose.sqf");
-	CSSA3_fnc_addremoveFavourite = compile preprocessFileLineNumbers ("CSSA3\functions\fn_addremoveFavourite.sqf");
-	CSSA3_fnc_strToUnit = compile preprocessFileLineNumbers ("CSSA3\functions\fn_strToUnit.sqf");
-	CSSA3_fnc_findInNested = compile preprocessFileLineNumbers ("CSSA3\functions\fn_findInNested.sqf");
-	CSSA3_fnc_forceExit = compile preprocessFileLineNumbers ("CSSA3\functions\fn_forceExit.sqf");
+	CSSA3_fnc_classExists = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_classExists.sqf");
+	CSSA3_fnc_draw3DHUD = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_draw3DHUD.sqf");
+	CSSA3_fnc_mainSpectateFunctions = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_CSSA3_MainFunctions.sqf");
+	CSSA3_fnc_createSpectateDialog = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_createSpectateDialog.sqf");
+	CSSA3_fnc_mainUpdateLoop = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_mainUpdateLoop.sqf");
+	CSSA3_fnc_forceReopen = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_forceReopen.sqf");
+	CSSA3_fnc_unitListIndexChange = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_unitListIndexChanged.sqf");
+	CSSA3_fnc_updateUnitList = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_updateUnitList.sqf");
+	CSSA3_fnc_settingsHandler = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_settingsHandler.sqf");
+	CSSA3_fnc_camMove = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_camMove.sqf");
+	CSSA3_fnc_camRotate = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_camRotate.sqf");
+	CSSA3_fnc_LMBhandler = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_LMBhandler.sqf");
+	CSSA3_fnc_changeView = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_changeView.sqf");
+	CSSA3_fnc_ctrlActive = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_ctrlActive.sqf");
+	CSSA3_fnc_closeInteractRose = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_closeInteractRose.sqf");
+	CSSA3_fnc_addremoveFavourite = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_addremoveFavourite.sqf");
+	CSSA3_fnc_strToUnit = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_strToUnit.sqf");
+	CSSA3_fnc_findInNested = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_findInNested.sqf");
+	CSSA3_fnc_forceExit = compile preprocessFileLineNumbers ("ofcra\3rd-parties\CSSA3\functions\fn_forceExit.sqf");
 
 	diag_log text "[CSSA3 Notice]: Functions compiled. Initiating player join. (CSSA3_init.sqf)";
 

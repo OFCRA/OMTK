@@ -1,5 +1,7 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
+["blocking radio picking...", "INFO", false] call ofcra_fnc_log;
+
 if (!isDedicated) then {
 	
 	disableRadioPickup = {
@@ -28,10 +30,10 @@ if (!isDedicated) then {
 		if (_item in _forbiddenBackPackRadios) then {
 			[("'" + _unitName + "' a vole une radio ennemie '" + _item + "'!"), "CHEAT"] call ofcra_fnc_log;
 			player action ["PutBag"];
-		};
-		
-		
+		};		
 	};		
 	
 	player addEventHandler ["Take",{[_this select 0,_this select 2] call disableRadioPickup;}];
 };
+
+["radio picking done.", "INFO", true] call ofcra_fnc_log;

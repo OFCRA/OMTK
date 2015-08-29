@@ -65,7 +65,7 @@ class CSSA3_openMain
 					y = 0;
 					w = 0.0123125 * safezoneW;
 					h = 0.03 * safezoneH;
-					action = "[] execVM 'CSSA3\functions\fn_animateUnitList.sqf'";
+					action = "[] execVM 'ofcra\3rd-parties\CSSA3\functions\fn_animateUnitList.sqf'";
 				};
 				class CSSA3_unitsFrame: RscFrame
 				{
@@ -434,7 +434,7 @@ class CSSA3_openMain
 				class CSSA3_InteractImage: RscPicture
 				{
 					idc = 791511;
-					text = "CSSA3\images\roseMid.paa";
+					text = "ofcra\3rd-parties\CSSA3\images\roseMid.paa";
 					x = 0.079944 * safezoneW;
 					y = 0.00440002 * safezoneH;
 					w = 0.0620312 * safezoneW;

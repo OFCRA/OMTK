@@ -1,7 +1,6 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
-diag_log "[OFCRA] INFO: setting mode to TEST...";
-systemChat "Setting TEST mode";
+["setting test mode...", "INFO", false] call ofcra_fnc_log;
 
 if (!isDedicated) then {
 	_ofcra_mode_txt = format ["<t shadow='1' shadowColor='#00CC00'>- - - MODE TEST - - -</t>"];
@@ -15,4 +14,4 @@ else {
 	{ _x allowDamage false; } forEach allUnits;
 };
 
-diag_log "[OFCRA] INFO: TEST mode settings done.";	
+["test mode done.", "INFO", true] call ofcra_fnc_log;

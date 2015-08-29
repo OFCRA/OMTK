@@ -1,13 +1,20 @@
 ////////// NE PAS TOUCHER EN DESSOUS
 
-diag_log "[OFCRA] INFO: setting mission objectives...";
-systemChat "Setting mission time-line";
+["setting mission objectives...", "INFO", false] call ofcra_fnc_log;
 
 if (isServer) then {
 	_endHour   = OFCRA_SC_DUREE_MISSION select 0;
 	_endMinute = OFCRA_SC_DUREE_MISSION select 1;
 	_endSecond = OFCRA_SC_DUREE_MISSION select 2;
 	_ofcra_mission_duration = 3600*_endHour + 60*_endMinute + _endSecond - 1;
+	
+	if (("OFCRA_DURATION_OVERRIDE" call BIS_fnc_getParamValue) > 0) then {
+		_override = ("OFCRA_DURATION_OVERRIDE" call BIS_fnc_getParamValue);
+		_ofcra_mission_duration = _override - 1;
+		_endHour   = floor (_override/3600);
+		_endMinute = floor ((_override - (3600*_endHour)) / 60);
+		_endSecond = _override - (3600*_endHour) - (60*_endMinute);
+	};
 
 	_initHour = floor daytime;
 	_initMinute = floor ((daytime - _initHour) * 60);
@@ -93,6 +100,14 @@ if (!isDedicated) then {
 	_endSecond = OFCRA_SC_DUREE_MISSION select 2;
 	_ofcra_mission_duration = 3600*_endHour + 60*_endMinute + _endSecond - 1;
 	
+	if (("OFCRA_DURATION_OVERRIDE" call BIS_fnc_getParamValue) > 0) then {
+		_override = ("OFCRA_DURATION_OVERRIDE" call BIS_fnc_getParamValue);
+		_ofcra_mission_duration = _override - 1;
+		_endHour   = floor (_override/3600);
+		_endMinute = floor ((_override - (3600*_endHour)) / 60);
+		_endSecond = _override - (3600*_endHour) - (60*_endMinute);
+	};
+	
 	[ofcra_computing_display, [], _ofcra_mission_duration] call KK_fnc_setTimeout;
 	[ofcra_fnc_mission_end, [], (_ofcra_mission_duration + 10)] call KK_fnc_setTimeout;
 };
@@ -138,4 +153,4 @@ if (!isNil "_ofcra_mEnd") then {
 
 //noesckey = (findDisplay 1666) displayAddEventHandler ["KeyDown", "if ((_this select 1) == 1) then { true }"]; 
 
-diag_log "[OFCRA] INFO: mission time-line setting done.";
+["mission objectives done.", "INFO", true] call ofcra_fnc_log;

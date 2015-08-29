@@ -1,6 +1,5 @@
 // Display warning message
 if (difficulty < 3) then {
-	diag_log "[OFCRA] WARNING: difficulty is not ELITE !";
-	systemChat "WARNING: difficulty is not ELITE !";
+	["difficulty is not ELITE !", "WARNING", true] call ofcra_fnc_log;
 	hint "WARNING: difficulty is not ELITE !";
 };
