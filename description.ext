@@ -1,11 +1,15 @@
 author = "OFCRA";
-onLoadName = "NOM_DE_LA_MISSION";      // A DEFINIR
+onLoadName = "TEMPLATE";      // TO BE DEFINED
 onLoadMission = "www.ofcra.org";
-loadScreen = "ofcra\img\overview.jpg";
+loadScreen = "loadscreen.jpg";
 onLoadIntro = "Prepare for the fight !";
-respawnDelay = 9999999;
+
+respawn = "BASE";
+respawnDelay = 999999;
 
 enableDebugConsole = 0;
+disableChannels[]={0,5,6};
+
 
 class Header {
 	gameType=TDM;
@@ -15,89 +19,143 @@ class Header {
 
 
 // Definition du tableau des scores
-#include "ofcra\score_board\defines.hpp"
-#include "ofcra\score_board\dialogs.hpp"
-
-// CSSA3 SPECTATOR
-#include "ofcra\3rd-parties\CSSA3\CSSA3_header.hpp"
+#include "omtk\score_board\defines.hpp"
+#include "omtk\score_board\dialogs.hpp"
 
 class Params
 {
-	class OFCRA_TEST_MODE
+	class OMTK_LAUNCH_MODE
 	{
-		title = "Mode TEST";
-		texts[] = {"desactive","active"};
-		values[] = {0,1};
+		title = "Mission mode";
+		texts[] = {"standard", "campaign", "markers", "test", "briefing"};
+		values[] = {0,1,2,3,4};
+		default = 1;
+	};
+	class OMTK_DURATION_OVERRIDE
+	{
+		title = "Mission duration override";
+		texts[] = {"disabled","15 min", "30 min","45 min"," 1 h","1 h 15 min","1 h 30 min","1 h 45 min"," 2 h"};
+		values[] = {0,900,1800,2700,3600,4500,5400,6300,7200};
 		default = 0;
 	};
-	class OFCRA_DURATION_OVERRIDE
+	class OMTK_MODULE_DIFFICULTY_CHECK
 	{
-		title = "Duree de mission forcee";
-		texts[] = {"desactive","15 min", "30 min","45 min"," 1 h","1 h 30 min"," 2 h"};
-		values[] = {0,900,1800,2700,3600,5400,7200};
+		title = "difficulty_check module";
+		texts[] = {"disabled","enabled"};
+		values[] = {0,1};
+		default = 1;
+	};
+	class OMTK_MODULE_IA_SKILLS
+	{
+		title = "IA_skills module";
+		texts[] = {"disabled","enabled"};
+		values[] = {0,1,2};
+		default = 1;
+	};
+	class OMTK_MODULE_INFANTRY_LOADOUTS
+	{
+		title = "infantry_loadouts module";
+		texts[] = {"disabled","human", "human+IA"};
+		values[] = {0,1,2};
 		default = 0;
 	};
-	class OFCRA_MODULE_DIFFICULTY_CHECK
+	class OMTK_MODULE_KILL_LOGGER
 	{
-		title = "Module difficulty_check";
-		texts[] = {"desactive","active"};
+		title = "kill_logger module";
+		texts[] = {"disabled","enabled"};
 		values[] = {0,1};
 		default = 1;
 	};
-	class OFCRA_MODULE_IA_SKILLS
+	class OMTK_MODULE_RADIO_LOCK
 	{
-		title = "Module IA_skills";
-		texts[] = {"desactive","active"};
+		title = "radio_lock module";
+		texts[] = {"disabled","enabled"};
 		values[] = {0,1};
 		default = 1;
 	};
-	class OFCRA_MODULE_INFANTRY_LOADOUTS
+	class OMTK_MODULE_SCORE_BOARD
 	{
-		title = "Module infantry_loadouts";
-		texts[] = {"desactive","active"};
+		title = "score_board module";
+		texts[] = {"disabled","enabled"};
 		values[] = {0,1};
 		default = 1;
 	};
-	class OFCRA_MODULE_KILL_LOGGER
+	class OMTK_MODULE_TACTICAL_PARADROP
 	{
-		title = "Module kill_logger";
-		texts[] = {"desactive","active"};
+		title = "tactical_paradrop module";
+		texts[] = {"disabled","BLUEFOR only", "REDFOR only", "BLUEFOR + REDFOR"};
+		values[] = {0,1,2,3};
+		default = 2;
+	};
+	class OMTK_MODULE_TACTICAL_PARADROP_ALTITUDE
+	{
+		title = "tactical_paradrop altitude";
+		texts[] = {"300 m","500 m","1000 m","1500 m","2500 m","3000 m","4000 m","5000 m"};
+		values[] = {300,500,1000,1500,2500,3000,4000,5000};
+		default = 3000;
+	};
+	class OMTK_MODULE_TACTICAL_PARADROP_TIME_LIMIT
+	{
+		title = "tactical_paradrop timeframe";
+		texts[] = {"1 min", "2 min", "3 min", "5 min", "10 min", "15 min", "20 min", "30 min", "unlimited"};
+		values[] = {1,2,3,5,10,15,20,30,9999};
+		default = 3;
+	};
+	class OMTK_MODULE_VEHICLES_CONFIGURATION
+	{
+		title = "vehicles_cargos module";
+		texts[] = {"disabled","enabled"};
 		values[] = {0,1};
 		default = 1;
 	};
-	class OFCRA_MODULE_RADIO_LOCK
+	class OMTK_MODULE_VEHICLES_CONFIGURATION_TIEQUIPMENTS_DISABLING
 	{
-		title = "Module radio_lock";
-		texts[] = {"desactive","active"};
+		title = "vehicles TIEquipments disabling";
+		texts[] = {"disabled","enabled"};
 		values[] = {0,1};
 		default = 1;
 	};
-	class OFCRA_MODULE_RADIO_SETTINGS
+	class OMTK_MODULE_VEHICLES_CONFIGURATION_UNKNOWN_EMPTYING
 	{
-		title = "Module radio_settings";
-		texts[] = {"desactive","active"};
+		title = "unkown vehicles cargo emptying";
+		texts[] = {"disabled","enabled"};
 		values[] = {0,1};
 		default = 1;
 	};
-	class OFCRA_MODULE_SCORE_BOARD
+	class OMTK_MODULE_WARM_UP
 	{
-		title = "Module score_board";
-		texts[] = {"desactive","active"};
-		values[] = {0,1};
-		default = 1;
+		title = "warm_up module";
+		texts[] = {"disabled","30 s","1 min","1 min 30 s","2 min","3 min","5 min","8 min","10 min","15 min","20 min","30 min"};
+		values[] = {0,30,60,90,120,180,300,480,600,900,1200,1800};
+		default = 90;
 	};
-	class OFCRA_MODULE_VEHICLES_CARGOS
+	class OMTK_MODULE_WARM_UP_DISTANCE
 	{
-		title = "Module vehicles_cargos";
-		texts[] = {"desactive","active"};
-		values[] = {0,1};
-		default = 1;
+		title = "warm_up zone restriction";
+		texts[] = {"10 m","30 m","50 m","100 m","150 m","200 m","300 m","400 m","500 m","800 m","1000 m","2000 m"};
+		values[] = {10,30,50,100,150,200,300,400,500,800,1000,2000};
+		default = 150;
 	};
-	class OFCRA_MODULE_WARM_UP
+};
+
+class CfgCommunicationMenu {
+    class OMTK_END_WARMUP_COM_MENU {
+    	text = "OMTK";
+    	submenu = "#USER:OMTKMENU";
+   		enable = "1";
+    	removeAfterExpressionCall = 1;
+	};
+};
+
+class CfgFunctions {
+	class OMTK
 	{
-		title = "Module warm_up";
-		texts[] = {"desactive","active"};
-		values[] = {0,1};
-		default = 1;
+		class StdLibrary
+		{
+			class myFunction {
+				preInit = 1;
+				file = "omtk\library.sqf";
+			};
+		};
 	};
 };

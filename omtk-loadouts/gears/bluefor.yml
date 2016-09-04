@@ -1,0 +1,113 @@
+default:
+  uniform: rhs_uniform_cu_ocp
+  vest: rhsusf_iotv_ocp_Rifleman
+  headgear: rhsusf_ach_helmet_ucp
+  backpack: rhsusf_assault_eagleaiii_ocp
+  googles:
+  face:
+
+cdc:
+  vest: rhsusf_iotv_ocp_Squadleader
+  backpack: tf_rt1523g_rhs
+  headgear: rhsusf_patrolcap_ocp
+
+cdg:
+  vest: rhsusf_iotv_ocp_Squadleader
+  backpack: tf_rt1523g_rhs
+
+cde:
+  vest: rhsusf_iotv_ocp_Teamleader
+  headgear: rhsusf_ach_helmet_ess_ocp
+
+medic:
+  vest: rhsusf_iotv_ocp_Medic
+
+grenadier:
+  vest: rhsusf_iotv_ocp_Grenadier
+
+grenadier_assistant:
+
+autorifleman:
+  vest: rhsusf_iotv_ucp_SAW
+
+autorifleman_assistant:
+
+gunner:
+  vest: rhsusf_iotv_ucp_SAW
+
+gunner_assistant:
+
+antitank:
+  vest: rhsusf_iotv_ucp_SAW
+  headgear: rhsusf_ach_helmet_headset_ess_ocp
+  backpack: B_Carryall_cbr
+
+antitank_assistant:
+  headgear: rhsusf_ach_helmet_ESS_ucp
+  backpack: B_Carryall_cbr
+
+antitank_light:
+  vest: rhsusf_iotv_ucp_SAW
+  headgear: rhsusf_ach_helmet_headset_ess_ocp
+
+antipersonnel_light:
+  vest: rhsusf_iotv_ucp_SAW
+  headgear: rhsusf_ach_helmet_headset_ess_ocp
+
+marksman:
+  headgear: rhs_Booniehat_ocp
+  face: WhiteHead_22_a
+  backpack:
+
+sniper:
+  headgear: rhs_Booniehat_ocp
+  face: WhiteHead_22_a
+  backpack:
+
+spotter:
+  headgear: rhs_Booniehat_ocp
+  face: WhiteHead_22_a
+
+explosive_specialist:
+
+rifleman:
+
+driver:
+  headgear: rhsusf_cvc_helmet
+  backpack:
+  vest: rhsusf_iotv_ocp
+
+ground_crew:
+  headgear: rhsusf_cvc_helmet
+  backpack:
+  vest: rhsusf_iotv_ocp
+
+pilot:
+  headgear: H_PilotHelmetHeli_B
+  backpack:
+  vest:
+
+air_crew:
+  headgear: H_PilotHelmetHeli_B
+  backpack:
+  vest:
+
+op_drone:
+  vest: rhsusf_iotv_ocp_Teamleader
+  backpack: B_MAV_B_BACKPACK
+
+op_radio:
+  vest: rhsusf_iotv_ocp_Teamleader
+  backpack: tf_rt1523g_rhs
+
+recon:
+  headgear: rhs_Booniehat_ocp
+  face: WhiteHead_22_a
+
+
+turret_tripod_carrier:
+  backpack: RHS_M2_Tripod_Bag
+
+
+turret_gun_carrier:
+  backpack: RHS_M2_Gun_Bag

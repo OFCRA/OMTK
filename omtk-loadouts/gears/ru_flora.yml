@@ -1,0 +1,102 @@
+default:
+  uniform: rhs_uniform_flora
+  vest: rhs_6b23_6sh92
+  headgear: rhs_6b27m
+  backpack: rhs_sidor
+  googles:
+  face:
+
+cdc:
+  headgear: H_Beret_blk
+  vest: rhs_6b23_6sh92_headset_mapcase
+  backpack: tf_mr3000_rhs
+
+cdg:
+  headgear: rhs_fieldcap_helm
+  vest: rhs_6b23_6sh92_headset_mapcase
+  backpack: tf_mr3000_rhs
+
+cde:
+  vest: rhs_6b23_6sh92_vog
+  headgear: rhs_6b27m_ess
+
+medic:
+  vest: rhs_6b23_medic
+
+grenadier:
+  vest: rhs_6b23_6sh92_vog
+  headgear: rhs_6b27m_ess
+
+grenadier_assistant:
+
+autorifleman:
+
+autorifleman_assistant:
+
+gunner:
+
+gunner_assistant:
+
+antitank:
+  backpack: rhs_rpg_empty
+  headgear: rhs_6b27m_ess
+
+antitank_assistant:
+  backpack: rhs_rpg_empty
+
+antitank_light:
+  headgear: rhs_6b27m_ess
+
+marksman:
+  headgear: rhs_Booniehat_flora
+  vest: rhs_6b23_sniper
+  face: GreekHead_A3_10_a
+  backpack:
+
+sniper:
+  headgear: rhs_Booniehat_flora
+  vest: rhs_6b23_sniper
+  face: GreekHead_A3_10_a
+  backpack:
+
+spotter:
+  headgear: rhs_Booniehat_flora
+  vest: rhs_6b23_sniper
+  face: GreekHead_A3_10_a
+
+explosive_specialist:
+  vest: rhs_6b23_engineer
+
+rifleman:
+
+driver:
+  vest: rhs_6b23_crewofficer
+  headgear: rhs_tsh4_ess
+  backpack:
+
+ground_crew:
+  vest: rhs_6b23_crew
+  headgear: rhs_tsh4_ess
+  backpack:
+
+pilot:
+  uniform: rhs_uniform_df15
+  headgear: rhs_zsh7a_mike
+  vest:
+  backpack:
+
+air_crew:
+  uniform: rhs_uniform_df15
+  headgear: rhs_zsh7a_mike
+  vest:
+  backpack:
+
+op_drone:
+  backpack: B_MAV_B_BACKPACK
+
+op_radio:
+  backpack: tf_mr3000_rhs
+
+recon:
+  headgear: rhs_Booniehat_flora
+  face: GreekHead_A3_10_a

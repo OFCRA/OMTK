@@ -1,0 +1,117 @@
+default:
+  uniform: rhs_uniform_cu_ucp
+  vest: rhsusf_iotv_ucp
+  headgear: rhsusf_ach_helmet_ucp
+  backpack:
+  googles:
+  face:
+
+cdc:
+  vest: rhsusf_iotv_ucp_Squadleader
+  backpack: tf_rt1523g_rhs
+
+cdg:
+  vest: rhsusf_iotv_ucp_Squadleader
+  backpack: tf_rt1523g_rhs
+
+cde:
+  vest: rhsusf_iotv_ucp_Teamleader
+  headgear: rhsusf_ach_helmet_ESS_ucp
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+medic:
+  vest: rhsusf_iotv_ucp_Medic
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+grenadier:
+  vest: rhsusf_iotv_ucp_Grenadier
+  headgear: rhsusf_ach_helmet_ESS_ucp
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+grenadier_assistant:
+  vest: rhsusf_iotv_ucp_rifleman
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+autorifleman:
+  vest: rhsusf_iotv_ucp_SAW
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+autorifleman_assistant:
+  vest: rhsusf_iotv_ucp_rifleman
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+gunner:
+  vest: rhsusf_iotv_ucp_SAW
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+gunner_assistant:
+  vest: rhsusf_iotv_ucp_rifleman
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+antitank:
+  vest: rhsusf_iotv_ucp_SAW
+  headgear: rhsusf_ach_helmet_ESS_ucp
+  backpack: B_Carryall_cbr
+
+antitank_assistant:
+  vest: rhsusf_iotv_ucp_rifleman
+  headgear: rhsusf_ach_helmet_ESS_ucp
+  backpack: B_Carryall_cbr
+
+antitank_light:
+  vest: rhsusf_iotv_ucp_SAW
+  headgear: rhsusf_ach_helmet_ESS_ucp
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+marksman:
+  vest: rhsusf_iotv_ucp_rifleman
+  headgear: rhs_Booniehat_ucp
+  face: WhiteHead_22_a
+
+sniper:
+  vest: rhsusf_iotv_ucp_rifleman
+  headgear: rhs_Booniehat_ucp
+  face: WhiteHead_22_a
+
+spotter:
+  vest: rhsusf_iotv_ucp_rifleman
+  headgear: rhs_Booniehat_ucp
+  face: WhiteHead_22_a
+
+explosive_specialist:
+  vest: rhsusf_iotv_ucp_rifleman
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+rifleman:
+  vest: rhsusf_iotv_ucp_rifleman
+  backpack: rhsusf_assault_eagleaiii_ucp
+
+driver:
+  vest: rhsusf_iotv_ucp
+  headgear: rhsusf_cvc_helmet
+
+ground_crew:
+  vest: rhsusf_iotv_ucp
+  headgear: rhsusf_cvc_helmet
+
+pilot:
+  vest: rhsusf_iotv_ucp
+  headgear: H_PilotHelmetHeli_B
+
+air_crew:
+  vest: rhsusf_iotv_ucp
+  headgear: H_PilotHelmetHeli_B
+
+op_drone:
+  vest: rhsusf_iotv_ucp_teamleader
+  backpack: B_MAV_B_BACKPACK
+
+op_radio:
+  vest: rhsusf_iotv_ucp_Squadleader
+  backpack: tf_rt1523g_rhs
+
+recon:
+  vest: rhsusf_iotv_ucp_rifleman
+  backpack: rhsusf_assault_eagleaiii_ucp
+  face: WhiteHead_22_a
+

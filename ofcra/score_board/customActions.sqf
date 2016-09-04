@@ -1,3 +1,0 @@
-doNothing = {
-	// ne fait rien
-};

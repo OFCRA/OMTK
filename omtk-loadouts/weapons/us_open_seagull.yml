@@ -1,0 +1,356 @@
+default:
+  weapon:
+  backpack:
+  cargo:
+    - 6x ACE_fieldDressing
+    - 2x ACE_morphine
+    - 2x rhs_mag_an_m8hc
+    - rhs_mag_m67
+    - ACE_Flashlight_KSF1
+    - ACE_EarPlugs
+  link_items:
+    - ItemMap
+    - ItemCompass
+    - ItemRadio
+    - tf_microdagr
+
+cdc:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_ACOG3
+    - rhsusf_weap_m1911a1:
+      ammo: rhsusf_mag_7x45acp_MHP
+    - lerca_1200_black
+  cargo:
+    - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - 3x rhsusf_mag_7x45acp_MHP
+    - 4x rhs_mag_m67
+    - 4x rhs_mag_an_m8hc
+    - ACE_MapTools
+    - ACE_microDAGR
+
+cdg:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_ACOG3
+    - rhsusf_weap_m1911a1:
+      ammo: rhsusf_mag_7x45acp_MHP
+    - lerca_1200_black
+  cargo:
+    - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - 3x rhsusf_mag_7x45acp_MHP
+    - 4x rhs_mag_m67
+    - 4x rhs_mag_an_m8hc
+    - ACE_MapTools
+    - ACE_microDAGR
+
+cde:
+  weapon:
+    - rhs_m4a1_m320 :
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_ACOG3
+    - Binocular
+  backpack:
+    - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - 6x rhs_mag_M441_HE
+    - 6x rhs_mag_M433_HEDP
+    - 4x rhs_mag_m714_White
+    - 2x rhs_mag_m662_red
+    - 2x rhs_mag_m661_green
+    - 4x rhs_mag_m67
+    - 4x rhs_mag_an_m8hc
+
+medic:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+  cargo:
+      - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - 40x ACE_fieldDressing
+      - 15x ACE_morphine
+      - 15x ACE_epinephrine
+      - 5x ACE_bloodIV
+      - 4x rhs_mag_m67
+      - 3x rhs_mag_an_m8hc
+      - rhs_ammo_m18_green
+
+grenadier:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_m203 :
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+    - rhs_weap_M136:
+      ammo: rhs_m136_mag
+  backpack:
+    - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - 6x rhs_mag_M441_HE
+    - 6x rhs_mag_M433_HEDP
+    - 4x rhs_mag_m714_White
+    - 2x rhs_mag_m662_red
+    - 2x rhs_mag_m661_green
+    - 4x rhs_mag_m67
+    - 4x rhs_mag_an_m8hc
+
+grenadier_assistant:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+    - rhs_weap_M136_hedp:
+      ammo: rhs_m136_hedp_mag
+  cargo:
+      - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - 4x rhs_mag_M441_HE
+      - 4x rhs_mag_M433_HEDP
+      - 4x rhs_mag_m662_red
+      - 4x rhs_mag_m67
+      - 4x rhs_mag_an_m8hc
+
+autorifleman:
+  weapon:
+    - rhs_weap_m249_pip_elcan:
+      ammo: rhsusf_100Rnd_556x45_soft_pouch
+      items:
+        - rhsusf_acc_compm4
+  cargo:
+      - 5x rhsusf_100Rnd_556x45_soft_pouch
+      - 4x rhs_mag_m67
+      - 4x rhs_mag_an_m8hc
+
+autorifleman_assistant:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+    - rhs_weap_M136_hedp:
+      ammo: rhs_m136_hedp_mag
+  cargo:
+      - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - 4x rhsusf_100Rnd_556x45_soft_pouch
+      - 3x rhs_mag_m67
+      - 3x rhs_mag_an_m8hc
+
+gunner:
+  weapon:
+    - rhs_weap_m240B:
+      ammo: rhsusf_100Rnd_762x51
+      items:
+        - rhsusf_acc_ELCAN
+  cargo:
+      - 4x rhsusf_100Rnd_762x51
+      - 4x rhs_mag_m67
+      - 4x rhs_mag_an_m8hc
+
+gunner_assistant:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+    - rhs_weap_M136_hedp:
+      ammo: rhs_m136_hedp_mag
+  cargo:
+      - 7x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - 4x rhsusf_100Rnd_762x51
+      - 3x rhs_mag_m67
+      - 3x rhs_mag_an_m8hc
+
+antitank:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+    - tf47_m3maaws:
+      ammo: tf47_m3maaws_HEAT
+  cargo:
+      - 8x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - tf47_m3maaws_HEAT
+      - tf47_m3maaws_HEDP
+      - 2x rhs_mag_m67
+      - 2x rhs_mag_an_m8hc
+
+antitank_assistant:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+    - rhs_weap_M136:
+      ammo: rhs_m136_mag
+  cargo:
+      - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - tf47_m3maaws_HEAT
+      - tf47_m3maaws_HEDP
+      - rhs_mag_m67
+      - rhs_mag_an_m8hc
+
+antitank_light:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+    - rhs_weap_M136:
+      ammo: rhs_m136_mag
+  cargo:
+      - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - 4x rhs_mag_m67
+      - 4x rhs_mag_an_m8hc
+
+marksman:
+  weapon:
+    - rhs_weap_m14ebrri:
+      ammo: rhsusf_20Rnd_762x51_m118_special_Mag
+      items:
+        - rhsusf_acc_LEUPOLDMK4
+    - lerca_1200_black
+  cargo:
+      - 9x rhsusf_20Rnd_762x51_m118_special_Mag
+      - ACE_RangeCard
+      - ACE_Kestrel4500
+      - ACE_ATragMX
+
+sniper:
+  weapon:
+    - rhs_weap_XM2010:
+      ammo: rhsusf_5Rnd_300winmag_xm2010
+      items:
+        - rhsusf_acc_LEUPOLDMK4
+    - ACE_Vector
+  cargo:
+      - 10x rhsusf_5Rnd_300winmag_xm2010
+      - ACE_RangeCard
+      - ACE_Kestrel4500
+      - ACE_ATragMX
+
+spotter:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_ACOG3
+    - ACE_Vector
+  cargo:
+    - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - ACE_RangeCard
+    - ACE_Kestrel4500
+    - ACE_ATragMX
+    - ACE_microDAGR
+    - 4x rhs_mag_m67
+    - 4x rhs_mag_an_m8hc
+
+explosive_specialist:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+    - rhs_weap_M136:
+      ammo: rhs_m136_mag
+  cargo:
+    - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - ACE_DefusalKit
+    - ACE_Clacker
+    - ACE_M26_Clacker
+    - 2x SatchelCharge_Remote_Mag
+    - 2x rhs_mag_m67
+    - 2x rhs_mag_an_m8hc
+
+rifleman:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+  cargo:
+    - 12x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - 4x rhs_mag_m67
+    - 4x rhs_mag_an_m8hc
+
+driver:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - rhsusf_weap_m1911a1:
+      ammo: rhsusf_mag_7x45acp_MHP
+    - Binocular
+  cargo:
+    - 4x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - 2x rhsusf_mag_7x45acp_MHP
+    - ACE_MapTools
+    - ACE_microDAGR
+
+ground_crew:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - Binocular
+  cargo:
+    - 4x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    - ACE_MapTools
+
+pilot:
+  weapon:
+    - rhsusf_weap_m1911a1:
+      ammo: rhsusf_mag_7x45acp_MHP
+  cargo:
+    - 2x rhsusf_mag_7x45acp_MHP
+    - ACE_MapTools
+    - ACE_microDAGR
+
+air_crew:
+  weapon:
+    - rhsusf_weap_m1911a1:
+      ammo: rhsusf_mag_7x45acp_MHP
+  cargo:
+    - 2x rhsusf_mag_7x45acp_MHP
+
+op_drone:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_ACOG3
+    - Binocular
+  cargo:
+      - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - 4x rhs_mag_m67
+      - 4x rhs_mag_an_m8hc
+      - ACE_MapTools
+      - ACE_microDAGR
+
+op_radio:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_compm4
+  cargo:
+      - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - 4x rhs_mag_m67
+      - 4x rhs_mag_an_m8hc
+
+recon:
+  weapon:
+    - rhs_weap_m4a1_carryhandle_grip:
+      ammo: rhs_mag_30Rnd_556x45_M855A1_Stanag
+      items:
+        - rhsusf_acc_ACOG3
+    - ACE_Yardage450
+  cargo:
+      - 10x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - 4x rhs_mag_m67
+      - 4x rhs_mag_an_m8hc
+      - ACE_MapTools
+      - ACE_microDAGR

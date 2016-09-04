@@ -1,0 +1,364 @@
+default:
+  weapon:
+  backpack:
+  uniform:
+    - 6x ACE_fieldDressing
+    - 2x ACE_morphine
+    - rhs_mag_rgd5
+    - rhs_mag_rdg2_white
+    - ACE_Flashlight_KSF1
+    - ACE_EarPlugs
+  link_items:
+    - ItemMap
+    - ItemCompass
+    - ItemRadio
+    - tf_microdagr
+
+cdc:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_1p29
+    - rhs_weap_makarov_pmm:
+      ammo: rhs_mag_9x18_12_57N181S
+    - Binocular
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 2x rhs_mag_9x18_12_57N181S
+    - rhs_mag_rgd5
+    - rhs_mag_rdg2_white
+    - ACE_MapTools
+    - ACE_microDAGR
+
+cdg:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_1p29
+    - rhs_weap_makarov_pmm:
+      ammo: rhs_mag_9x18_12_57N181S
+    - Binocular
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 2x rhs_mag_9x18_12_57N181S
+    - rhs_mag_rgd5
+    - rhs_mag_rdg2_white
+    - ACE_MapTools
+    - ACE_microDAGR
+
+cde:
+  weapon:
+    - rhs_weap_ak74m_gp25 :
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_1p29
+    - Binocular
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 6x rhs_VOG25
+    - 6x rhs_VOG25P
+    - 4x rhs_GRD40_White
+    - 2x rhs_GRD40_Green
+    - 2x rhs_GRD40_Red
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+medic:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - rhs_weap_rshg2:
+      ammo: rhs_rshg2_mag
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 40x ACE_fieldDressing
+    - 15x ACE_morphine
+    - 15x ACE_epinephrine
+    - 5x ACE_bloodIV
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+grenadier:
+  weapon:
+    - rhs_weap_ak74m_gp25 :
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_1p29
+    - Binocular
+    - rhs_weap_rpg26:
+      ammo: rhs_rpg26_mag
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 6x rhs_VOG25
+    - 6x rhs_VOG25P
+    - 4x rhs_GRD40_White
+    - 2x rhs_GRD40_Green
+    - 2x rhs_GRD40_Red
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+grenadier_assistant:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - rhs_weap_rshg2:
+      ammo: rhs_rshg2_mag
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 4x rhs_VOG25
+    - 4x rhs_VOG25P
+    - 4x rhs_GRD40_White
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+autorifleman:
+  weapon:
+    - CUP_arifle_RPK74M:
+      ammo: CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M
+      items:
+        - CUP_optic_Kobra
+  cargo:
+    - 7x CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+autorifleman_assistant:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - rhs_weap_rshg2:
+      ammo: rhs_rshg2_mag
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 4x CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+gunner:
+  weapon:
+    - rhs_weap_pkp:
+      ammo: rhs_100Rnd_762x54mmR
+  cargo:
+    - 4x rhs_100Rnd_762x54mmR
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+gunner_assistant:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - rhs_weap_rshg2:
+      ammo: rhs_rshg2_mag
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 2x rhs_100Rnd_762x54mmR
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+antitank:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - rhs_weap_rpg7:
+      ammo: rhs_rpg7_OG7V_mag
+      items:
+        - rhs_acc_pgo7v
+  cargo:
+    - 8x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_rpg7_PG7VL_mag
+    - 1x rhs_rpg7_OG7V_mag
+    - 2x rhs_mag_rgd5
+    - 2x rhs_mag_rdg2_white
+
+antitank_assistant:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - rhs_weap_rpg26:
+      ammo: rhs_rpg26_mag
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 2x rhs_rpg7_PG7VL_mag
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+antitank_light:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - rhs_weap_rpg26:
+      ammo: rhs_rpg26_mag
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+marksman:
+  weapon:
+    - CUP_srifle_SVD_des:
+      ammo: CUP_10Rnd_762x54_SVD_M
+      items:
+        - CUP_optic_PSO_1
+    - lerca_1200_black
+  cargo:
+    - 12x CUP_10Rnd_762x54_SVD_M
+    - ACE_RangeCard
+    - ACE_Kestrel4500
+    - ACE_ATragMX
+    - 2x rhs_mag_rgd5
+    - 2x rhs_mag_rdg2_white
+
+sniper:
+  weapon:
+    - CUP_srifle_SVD_des:
+      ammo: CUP_10Rnd_762x54_SVD_M
+      items:
+        - CUP_optic_PSO_1
+    - lerca_1200_black
+  cargo:
+    - 12x CUP_10Rnd_762x54_SVD_M
+    - ACE_RangeCard
+    - ACE_Kestrel4500
+    - ACE_ATragMX
+    - 2x rhs_mag_rgd5
+    - 2x rhs_mag_rdg2_white
+
+spotter:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - lerca_1200_black
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+explosive_specialist:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+  cargo:
+    - 10x rhs_30Rnd_545x39_7N10_AK
+    - 2x SatchelCharge_Remote_Mag
+    - 2x rhs_mag_rgd5
+    - 2x rhs_mag_rdg2_white
+    - ACE_DefusalKit
+    - ACE_Clacker
+    - ACE_M26_Clacker
+
+rifleman:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+  cargo:
+    - 12x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+driver:
+  weapon:
+    - rhs_weap_ak74m_folded_dtk:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+    - rhs_weap_makarov_pmm:
+      ammo: rhs_mag_9x18_12_57N181S
+    - Binocular
+  cargo:
+    - 4x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_mag_9x18_12_57N181S
+    - ACE_MapTools
+    - ACE_microDAGR
+
+ground_crew:
+  weapon:
+    - rhs_weap_ak74m_folded_dtk:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+  cargo:
+    - 4x rhs_30Rnd_545x39_7N10_AK
+    - ACE_MapTools
+
+pilot:
+  weapon:
+    - rhs_weap_ak74m_folded_dtk:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+    - rhs_weap_makarov_pmm:
+      ammo: rhs_mag_9x18_12_57N181S
+    - Binocular
+  cargo:
+    - 5x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_mag_9x18_12_57N181S
+    - ACE_MapTools
+    - ACE_microDAGR
+
+air_crew:
+  weapon:
+    - rhs_weap_ak74m_folded_dtk:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+    - rhs_weap_makarov_pmm:
+      ammo: rhs_mag_9x18_12_57N181S
+  cargo:
+    - 5x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_mag_9x18_12_57N181S
+    - rhs_mag_rgd5
+    - rhs_mag_rdg2_white
+
+op_drone:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - Binocular
+  cargo:
+    - 12x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+    - ACE_MapTools
+    - ACE_microDAGR
+
+op_radio:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+  cargo:
+    - 12x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+
+recon:
+  weapon:
+    - rhs_weap_ak74m:
+      ammo: rhs_30Rnd_545x39_7N10_AK
+      items:
+        - rhs_acc_ekp1
+    - Binocular
+  cargo:
+    - 12x rhs_30Rnd_545x39_7N10_AK
+    - 3x rhs_mag_rgd5
+    - 3x rhs_mag_rdg2_white
+    - ACE_MapTools
+    - ACE_microDAGR
+    - ACE_Yardage450

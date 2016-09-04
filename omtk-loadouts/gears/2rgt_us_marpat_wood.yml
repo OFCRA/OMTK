@@ -1,0 +1,89 @@
+default:
+  uniform: rhs_uniform_FROG01_wd
+  vest: rhsusf_spc
+  headgear: rhsusf_mich_helmet_marpatwd_headset
+  backpack:
+  googles:
+  face:
+
+cdc:
+  headgear: rhsusf_mich_helmet_marpatwd_norotos_arc
+  backpack: tf_rt1523g_rhs
+
+cdg:
+  headgear: rhsusf_mich_helmet_marpatwd_norotos_arc
+  backpack: tf_rt1523g_rhs
+
+cde:
+  backpack: B_Kitbag_mcamo
+
+medic:
+  backpack: B_Kitbag_mcamo
+
+grenadier:
+  backpack: B_Kitbag_mcamo
+
+grenadier_assistant:
+  backpack: B_Kitbag_mcamo
+
+autorifleman:
+  backpack: B_Kitbag_mcamo
+
+autorifleman_assistant:
+  backpack: B_Kitbag_mcamo
+
+gunner:
+  backpack: B_Kitbag_mcamo
+
+gunner_assistant:
+  backpack: B_Kitbag_mcamo
+
+antitank:
+  backpack: B_Kitbag_mcamo
+
+antitank_assistant:
+  backpack: B_Kitbag_mcamo
+
+antitank_light:
+  backpack: B_Kitbag_mcamo
+
+marksman:
+  headgear: rhs_Booniehat_marpatwd
+  face: WhiteHead_22_a
+
+sniper:
+  headgear: rhs_Booniehat_marpatwd
+  face: WhiteHead_22_a
+
+spotter:
+  headgear: rhs_Booniehat_marpatwd
+  face: WhiteHead_22_a
+
+explosive_specialist:
+  backpack: B_Kitbag_mcamo
+
+rifleman:
+  backpack: B_Kitbag_mcamo
+
+driver:
+  headgear: rhsusf_cvc_helmet
+
+ground_crew:
+  headgear: rhsusf_cvc_helmet
+
+pilot:
+  headgear: H_PilotHelmetHeli_B
+
+air_crew:
+  headgear: H_PilotHelmetHeli_B
+
+op_drone:
+  backpack: B_MAV_B_BACKPACK
+
+op_radio:
+  backpack: tf_rt1523g_rhs
+
+recon:
+  headgear: rhs_Booniehat_marpatwd
+  face: WhiteHead_22_a
+

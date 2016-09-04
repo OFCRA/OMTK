@@ -1,0 +1,110 @@
+default:
+  uniform: rhs_uniform_msv_emr
+  vest: rhs_6b23_digi_6sh92_headset
+  headgear: rhs_6b27m_digi
+  backpack:
+  googles:
+  face:
+
+cdc:
+  headgear: rhs_fieldcap_digi
+  vest: rhs_6b23_digi_6sh92_headset_mapcase
+  backpack: tf_mr3000_rhs
+
+cdg:
+  headgear: rhs_fieldcap_digi
+  vest: rhs_6b23_digi_6sh92_headset_mapcase
+  backpack: tf_mr3000_rhs
+
+cde:
+  vest: rhs_6b23_digi_6sh92_vog_headset
+  backpack: rhs_assault_umbts
+  headgear: rhs_6b27m_digi_ess
+
+medic:
+  vest: rhs_6b23_digi_medic
+  backpack: rhs_assault_umbts
+  backpack: rhs_assault_umbts
+
+grenadier:
+  vest: rhs_6b23_digi_6sh92_vog_headset
+  backpack: rhs_assault_umbts
+  headgear: rhs_6b27m_digi_ess
+
+grenadier_assistant:
+  backpack: rhs_assault_umbts
+
+autorifleman:
+  backpack: rhs_assault_umbts
+
+autorifleman_assistant:
+  backpack: rhs_assault_umbts
+
+gunner:
+  backpack: rhs_assault_umbts
+
+gunner_assistant:
+  backpack: rhs_assault_umbts
+
+antitank:
+  backpack: rhs_rpg_empty
+  headgear: rhs_6b27m_digi_ess
+
+antitank_assistant:
+  backpack: rhs_rpg_empty
+  headgear: rhs_6b27m_digi_ess
+
+antitank_light:
+  backpack: rhs_assault_umbts
+  headgear: rhs_6b27m_digi_ess
+
+marksman:
+  headgear: rhs_Booniehat_digi
+  vest: rhs_6b23_digi_sniper
+  face: GreekHead_A3_10_a
+
+sniper:
+  headgear: rhs_Booniehat_digi
+  vest: rhs_6b23_digi_sniper
+  face: GreekHead_A3_10_a
+
+spotter:
+  headgear: rhs_Booniehat_digi
+  face: GreekHead_A3_10_a
+  backpack: rhs_assault_umbts
+
+explosive_specialist:
+  backpack: rhs_assault_umbts
+
+rifleman:
+  backpack: rhs_assault_umbts
+
+driver:
+  vest: rhs_6b23_digi_crewofficer
+  headgear: rhs_tsh4_ess
+
+ground_crew:
+  vest: rhs_6b23_digi_crew
+  headgear: rhs_tsh4_ess
+
+pilot:
+  uniform: rhs_uniform_df15
+  headgear: H_PilotHelmetHeli_B
+  headgear: rhs_zsh7a_mike
+
+air_crew:
+  uniform: rhs_uniform_df15
+  headgear: H_PilotHelmetHeli_B
+  headgear: rhs_zsh7a_mike
+
+op_drone:
+  vest: rhs_6b23_digi_6sh92_headset_mapcase
+  backpack: B_MAV_B_BACKPACK
+
+op_radio:
+  backpack: tf_mr3000_rhs
+
+recon:
+  headgear: rhs_Booniehat_digi
+  face: GreekHead_A3_10_a
+

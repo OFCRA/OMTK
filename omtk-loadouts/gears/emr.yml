@@ -1,0 +1,109 @@
+default:
+  uniform: rhs_uniform_vdv_emr_des
+  vest: rhs_6b23_ML_6sh92_radio
+  headgear: rhs_6b27m_ml_ess
+  backpack: rhs_sidor
+  googles:
+  face:
+
+cdc:
+  headgear: rhs_beret_vdv2
+  vest: rhsgref_6b23_khaki_officer
+  backpack: tf_mr3000_multicam
+
+cdg:
+  vest: rhs_6b23_ML_6sh92_vog_headset
+  backpack: tf_mr3000_multicam
+
+cde:
+
+medic:
+  vest: rhs_6b23_ML_medic
+
+grenadier:
+vest: rhs_6b23_ML_6sh92_vog_headset
+
+grenadier_assistant:
+vest: rhs_6b23_ML_6sh92_vog_headset
+
+autorifleman:
+
+autorifleman_assistant:
+
+gunner:
+
+gunner_assistant:
+
+antitank:
+  backpack: rhs_rpg_empty
+  headgear: rhs_6b7_1m_ess
+
+antitank_assistant:
+  backpack: rhs_rpg_empty
+
+antitank_light:
+  headgear: rhs_6b27m_ml_ess
+
+antipersonnel_light:
+  headgear: rhs_6b27m_ml_ess
+
+marksman:
+  headgear: CUP_H_RUS_Bandana_HS
+  vest: rhsgref_6b23_khaki_sniper
+  face: GreekHead_A3_10_a
+  backpack:
+
+sniper:
+  headgear: CUP_H_RUS_Bandana_HS
+  vest: rhsgref_6b23_khaki_sniper
+  face: GreekHead_A3_10_a
+  backpack:
+
+spotter:
+  headgear: CUP_H_RUS_Bandana_HS
+  vest: rhsgref_6b23_khaki_sniper
+  face: GreekHead_A3_10_a
+
+explosive_specialist:
+  vest: rhsgref_6b23_khaki
+
+rifleman:
+
+driver:
+  vest: rhsgref_6b23_khaki_officer
+  headgear: rhs_tsh4_ess
+  backpack:
+
+ground_crew:
+  headgear: rhs_tsh4_ess
+  vest:
+  backpack:
+
+pilot:
+  uniform: rhs_uniform_df15
+  headgear: rhs_zsh7a_mike
+  vest:
+  backpack:
+
+air_crew:
+  uniform: rhs_uniform_df15
+  headgear: rhs_zsh7a_mike
+  vest:
+  backpack:
+
+op_drone:
+  backpack: B_MAV_B_BACKPACK
+
+op_radio:
+  backpack: tf_mr3000_multicam
+
+recon:
+  headgear: CUP_H_RUS_Bandana_HS
+  face: GreekHead_A3_10_a
+
+
+turret_tripod_carrier:
+  backpack: RHS_Kord_Tripod_Bag
+
+turret_gun_carrier:
+  backpack: RHS_Kord_Gun_Bag
