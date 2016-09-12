@@ -1,13 +1,15 @@
 author = "OFCRA";
-onLoadName = "TEMPLATE";      // TO BE DEFINED
+onLoadName = "TEMPLATE v2.0";      // TO BE DEFINED
 onLoadMission = "www.ofcra.org";
 loadScreen = "loadscreen.jpg";
 onLoadIntro = "Prepare for the fight !";
+Debriefing = 0;
+Saving = 0;
 
 respawn = "BASE";
 respawnDelay = 999999;
 
-enableDebugConsole = 0;
+onebugConsole = 0;
 disableChannels[]={0,5,6};
 
 
@@ -24,114 +26,117 @@ class Header {
 
 class Params
 {
-	class OMTK_LAUNCH_MODE
+	class OMTK_MODULE_SEPARATOR_0
 	{
-		title = "Mission mode";
-		texts[] = {"standard", "campaign", "markers", "test", "briefing"};
-		values[] = {0,1,2,3,4};
-		default = 1;
+		title = "----- FIRST CLASS PARAMETERS ----------------------------------------";
+		texts[] = {"---------"};
+		values[] = {0};
+		default = 0;
 	};
-	class OMTK_DURATION_OVERRIDE
+	class OMTK_MODULE_DYNAMIC_STARTUP
 	{
-		title = "Mission duration override";
-		texts[] = {"disabled","15 min", "30 min","45 min"," 1 h","1 h 15 min","1 h 30 min","1 h 45 min"," 2 h"};
-		values[] = {0,900,1800,2700,3600,4500,5400,6300,7200};
+		title = "Dynamic startup";
+		texts[] = {"off", "markers", "interactive"};
+		values[] = {0,1,2};
+		default = 0;
+	};
+	class OMTK_MODULE_MAP_EXPLORATION
+	{
+		title = "Map exploration";
+		texts[] = {"off","on"};
+		values[] = {0,1};
+		default = 0;
+	};
+	class OMTK_MODULE_RESPAWN_MODE
+	{
+		title = "Respawn";
+		texts[] = {"no-respawn", "3 s", "30s ","1 min","1 min 30 s","2 min","3 min","immortal"};
+		values[] = {999999,3,30,60,90,120,180,-1};
+		default = 999999;
+	};
+	class OMTK_MODULE_SCORE_BOARD
+	{
+		title = "Scoreboard";
+		texts[] = {"off","15 min", "30 min","45 min","1 h","1 h 15 min","1 h 30 min","1 h 45 min"," 2 h","2 h 15 min","2 h 30 min", "2 h 45 min", "3 h"};
+		values[] = {0,90,1800,2700,3600,4500,5400,6300,7200,8100,9000,9900,10800};
+		default = 7200;
+	};
+	class OMTK_MODULE_TACTICAL_PARADROP
+	{
+		title = "Tactical paradrop";
+		texts[] = {"off","BLUEFOR only", "REDFOR only", "BLUEFOR + REDFOR"};
+		values[] = {0,1,2,3};
+		default = 0;
+	};
+	class OMTK_MODULE_WARM_UP
+	{
+		title = "Warm-up";
+		texts[] = {"off","30 s","1 min","1 min 30 s","2 min","3 min","5 min","8 min","10 min","15 min","20 min","30 min"};
+		values[] = {0,30,60,90,120,180,300,480,600,900,1200,1800};
+		default = 1800;
+	};
+	class OMTK_MODULE_SEPARATOR_1
+	{
+		title = "----------------------------------------------------------------------------------";
+		texts[] = {"---------"};
+		values[] = {0};
 		default = 0;
 	};
 	class OMTK_MODULE_DIFFICULTY_CHECK
 	{
-		title = "difficulty_check module";
-		texts[] = {"disabled","enabled"};
+		title = "Difficulty check";
+		texts[] = {"off","on"};
 		values[] = {0,1};
 		default = 1;
 	};
 	class OMTK_MODULE_IA_SKILLS
 	{
-		title = "IA_skills module";
-		texts[] = {"disabled","enabled"};
-		values[] = {0,1,2};
+		title = "IA skills";
+		texts[] = {"off","on"};
+		values[] = {0,1};
 		default = 1;
-	};
-	class OMTK_MODULE_INFANTRY_LOADOUTS
-	{
-		title = "infantry_loadouts module";
-		texts[] = {"disabled","human", "human+IA"};
-		values[] = {0,1,2};
-		default = 0;
 	};
 	class OMTK_MODULE_KILL_LOGGER
 	{
-		title = "kill_logger module";
-		texts[] = {"disabled","enabled"};
+		title = "Kill logger";
+		texts[] = {"off","on"};
 		values[] = {0,1};
 		default = 1;
 	};
+
 	class OMTK_MODULE_RADIO_LOCK
 	{
-		title = "radio_lock module";
-		texts[] = {"disabled","enabled"};
+		title = "Radio lock";
+		texts[] = {"off","on"};
 		values[] = {0,1};
 		default = 1;
 	};
-	class OMTK_MODULE_SCORE_BOARD
-	{
-		title = "score_board module";
-		texts[] = {"disabled","enabled"};
-		values[] = {0,1};
-		default = 1;
-	};
-	class OMTK_MODULE_TACTICAL_PARADROP
-	{
-		title = "tactical_paradrop module";
-		texts[] = {"disabled","BLUEFOR only", "REDFOR only", "BLUEFOR + REDFOR"};
-		values[] = {0,1,2,3};
-		default = 2;
-	};
+
 	class OMTK_MODULE_TACTICAL_PARADROP_ALTITUDE
 	{
-		title = "tactical_paradrop altitude";
-		texts[] = {"300 m","500 m","1000 m","1500 m","2500 m","3000 m","4000 m","5000 m"};
-		values[] = {300,500,1000,1500,2500,3000,4000,5000};
+		title = "Tactical paradrop: altitude";
+		texts[] = {"300 m","500 m","1000 m","1500 m","2000 m","2500 m","3000 m","4000 m","5000 m"};
+		values[] = {300,500,1000,1500,2000,2500,3000,4000,5000};
 		default = 3000;
 	};
 	class OMTK_MODULE_TACTICAL_PARADROP_TIME_LIMIT
 	{
-		title = "tactical_paradrop timeframe";
+		title = "Tactical paradrop: timeframe";
 		texts[] = {"1 min", "2 min", "3 min", "5 min", "10 min", "15 min", "20 min", "30 min", "unlimited"};
 		values[] = {1,2,3,5,10,15,20,30,9999};
 		default = 3;
 	};
-	class OMTK_MODULE_VEHICLES_CONFIGURATION
+	class OMTK_MODULE_VEHICLES_THERMALIMAGING
 	{
-		title = "vehicles_cargos module";
-		texts[] = {"disabled","enabled"};
+		title = "Vehicles thermal imaging";
+		texts[] = {"off","on"};
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 	};
-	class OMTK_MODULE_VEHICLES_CONFIGURATION_TIEQUIPMENTS_DISABLING
-	{
-		title = "vehicles TIEquipments disabling";
-		texts[] = {"disabled","enabled"};
-		values[] = {0,1};
-		default = 1;
-	};
-	class OMTK_MODULE_VEHICLES_CONFIGURATION_UNKNOWN_EMPTYING
-	{
-		title = "unkown vehicles cargo emptying";
-		texts[] = {"disabled","enabled"};
-		values[] = {0,1};
-		default = 1;
-	};
-	class OMTK_MODULE_WARM_UP
-	{
-		title = "warm_up module";
-		texts[] = {"disabled","30 s","1 min","1 min 30 s","2 min","3 min","5 min","8 min","10 min","15 min","20 min","30 min"};
-		values[] = {0,30,60,90,120,180,300,480,600,900,1200,1800};
-		default = 90;
-	};
+
 	class OMTK_MODULE_WARM_UP_DISTANCE
 	{
-		title = "warm_up zone restriction";
+		title = "Warm-up: zone restriction";
 		texts[] = {"10 m","30 m","50 m","100 m","150 m","200 m","300 m","400 m","500 m","800 m","1000 m","2000 m"};
 		values[] = {10,30,50,100,150,200,300,400,500,800,1000,2000};
 		default = 150;
@@ -139,13 +144,20 @@ class Params
 };
 
 class CfgCommunicationMenu {
-    class OMTK_END_WARMUP_COM_MENU {
-    	text = "OMTK";
-    	submenu = "#USER:OMTKMENU";
-   		enable = "1";
-    	removeAfterExpressionCall = 1;
+	class OMTK_END_WARMUP_COM_MENU {
+		text = "OMTK";
+		submenu = "#USER:OMTK_WARMUP_MENU";
+		enable = "1";
+		removeAfterExpressionCall = 1;
+	};
+	class OMTK_MARKERS_COM_MENU {
+		text = "OMTK";
+		submenu = "#USER:OMTK_MARKERS_MENU";
+		enable = "1";
+		removeAfterExpressionCall = 1;
 	};
 };
+
 
 class CfgFunctions {
 	class OMTK

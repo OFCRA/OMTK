@@ -30,15 +30,15 @@ autorifleman:
   description: Fusilier-Automatique
 
 autorifleman_assistant:
-  class: O_Soldier_AAR_F	    	# CSAT\Men\Assit. Autorifleman
+  class: O_Soldier_AAR_F	    	    # CSAT\Men\Assit. Autorifleman
   description: Fusilier-Auto Assist.
 
 gunner:
-  class: O_support_GMG_F            # CSAT\Men (Support)\Gunner (GMG)
+  class: O_support_GMG_F            # CSAT\Men\Gunner (GMG)
   description: Mitrailleur
 
 gunner_assistant:
-  class: O_support_AMG_F	        # CSAT\Men (Support)\Asst. Gunner (HMG/GMG)
+  class: O_support_AMG_F	          # CSAT\Men\Asst. Gunner (HMG/GMG)
   description: Mitrailleur Assist.
 
 antitank:
@@ -74,16 +74,16 @@ explosive_specialist:
   description: Spécialiste Explosifs
 
 rifleman:
-  class: O_Soldier_F	            # CSAT\Men\Rifleman
+  class: O_Soldier_F	             # CSAT\Men\Rifleman
   description: Fusilier
 
 driver:
-  class: O_diver_TL_F	            # CSAT\Men (Diver)\Diver Team Leader
+  class: O_diver_TL_F	             # CSAT\Men (Diver)\Diver Team Leader
   description: Chef de Véhicule
   rank: MAJOR
 
 ground_crew:
-  class: O_crew_F	                # CSAT\Men\Crewman
+  class: O_crew_F	                  # CSAT\Men\Crewman
   description: Membre d'Équipage
 
 pilot:
@@ -92,11 +92,11 @@ pilot:
   rank: MAJOR
 
 air_crew:
-  class: O_helicrew_F	            # CSAT\Men\Helicopter Crew
+  class: O_helicrew_F	              # CSAT\Men\Helicopter Crew
   description: Membre d'Équipage
 
 op_drone:
-  class: O_soldier_UAV_F			# CSAT\Men\UAV Operator
+  class: O_soldier_UAV_F            # CSAT\Men\UAV Operator
   description: Opérateur Drone
 
 op_radio:
@@ -104,13 +104,12 @@ op_radio:
   description: Opérateur Radio
 
 recon:
-  class: O_recon_F		            # CSAT\Men (Recon)\Recon Scout
+  class: O_recon_F	                # CSAT\Men (Recon)\Recon Scout
   description: Fusilier Reconnaissance
 
 turret_gun_carrier:
   class: O_recon_LAT_F              # CSAT\Men (Special Forces)\Recon Scout (AT)
   description: Porteur tourelle (gun)
-
 
 turret_tripod_carrier:
   class: O_Pathfinder_F             # CSAT\Men (Special Forces)\Recon Pathfinder

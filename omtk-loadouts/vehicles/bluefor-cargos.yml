@@ -1,0 +1,180 @@
+common:
+  cargo:
+    weapons:
+    ammo:
+    items:
+      - 5x ACE_fieldDressing
+      - ACE_epinephrine
+      - ACE_morphine
+    backpacks:
+
+
+car:
+  classes:
+    - rhsusf_m1025_w_m2
+    - rhsusf_m998_w_4dr_fulltop
+    - rhsusf_m998_w_4dr_halftop
+    - rhsusf_m998_w_2dr_fulltop
+  cargo:
+    ammo:
+      - 2x rhs_mag_m67
+      - 2x rhs_mag_an_m8hc
+    items:
+      - 8x NVGoggles_OPFOR
+      - 8x rhsusf_acc_anpeq15
+
+
+truck:
+  classes:
+    - rhsusf_M1083A1P2_wd_fmtv_usarmy
+  cargo:
+    weapons:
+      - 2x rhs_weap_m4
+    ammo:
+      - 3x rhs_mag_m67
+      - 3x rhs_mag_an_m8hc
+      - 6x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - DemoCharge_Remote_Mag
+      - SatchelCharge_Remote_Mag
+    items:
+      - 15x NVGoggles_OPFOR
+      - 15x rhsusf_acc_anpeq15
+      - ACE_DefusalKit
+      - ACE_Clacker
+
+
+apc:
+  classes:
+    - rhsusf_m113_usarmy
+    - rhsusf_m113_usarmy_MK19
+    - rhsusf_M1117_W
+  cargo:
+    weapons:
+      - 3x rhs_weap_m4
+      - rhs_weap_M136
+    ammo:
+      - 3x rhs_mag_m67
+      - 3x rhs_mag_an_m8hc
+      - 9x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - rhs_m136_hedp_mag
+    items:
+      - 10x NVGoggles_OPFOR
+      - 10x rhsusf_acc_anpeq15
+
+
+ifv:
+  classes:
+    - RHS_M2A3_wd
+  cargo:
+    weapons:
+      - 3x rhs_weap_m4
+    ammo:
+      - 3x rhs_mag_m67
+      - 3x rhs_mag_an_m8hc
+      - 9x rhs_mag_30Rnd_556x45_M855A1_Stanag
+      - tf47_m3maaws_HEAT
+      - tf47_m3maaws_HE
+    items:
+      - 10x NVGoggles_OPFOR
+      - 10x rhsusf_acc_anpeq15
+
+
+mbt:
+  classes:
+    - rhs_tank_base
+  cargo:
+    weapons:
+      - 3x rhs_weap_m4
+    ammo:
+      - rhs_mag_m67
+      - rhs_mag_an_m8hc
+      - 9x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    items:
+      - 3x NVGoggles_OPFOR
+
+
+artillery:
+  classes:
+  cargo:
+    weapons:
+      - 3x rhs_weap_m4
+    ammo:
+      - 3x rhs_mag_m67
+      - 3x rhs_mag_an_m8hc
+      - 9x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    items:
+      - 3x NVGoggles_OPFOR
+
+
+anti-aircraft:
+  classes:
+  cargo:
+    weapons:
+      - 3x rhs_weap_m4
+    ammo:
+      - rhs_mag_m67
+      - rhs_mag_an_m8hc
+      - 9x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    items:
+      - 3x NVGoggles_OPFOR
+
+
+heli_transport:
+  classes:
+    - RHS_UH60M
+  cargo:
+    weapons:
+      - 4x rhs_weap_m4
+    ammo:
+      - 3x rhs_mag_m67
+      - 3x rhs_mag_an_m8hc
+      - 12x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    items:
+      - 15x NVGoggles_OPFOR
+      - 15x rhsusf_acc_anpeq15
+
+
+heli_attack:
+  classes:
+  cargo:
+    weapons:
+      - 2x rhs_weap_m4
+    ammo:
+      - 6x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    items:
+      - 2x NVGoggles_OPFOR
+
+
+plane_transport:
+  classes:
+  cargo:
+    weapons:
+      - 3x rhs_weap_m4
+    ammo:
+      - 5x rhs_mag_m67
+      - 5x rhs_mag_an_m8hc
+      - 9x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    items:
+      - 50x NVGoggles_OPFOR
+      - 50x rhsusf_acc_anpeq15
+
+
+plane_attack:
+  classes:
+    - Plane_Base_F
+  cargo:
+    weapons:
+      - 2x rhs_weap_m4
+    ammo:
+      - 6x rhs_mag_30Rnd_556x45_M855A1_Stanag
+    items:
+      - 2x NVGoggles_OPFOR
+
+
+boat:
+  classes:
+    - B_G_Boat_Transport_01_F
+    - rhsusf_mkvsoc
+  cargo:
+    items:
+     - 8x NVGoggles_OPFOR

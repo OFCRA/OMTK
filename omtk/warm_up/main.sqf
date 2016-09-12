@@ -153,25 +153,12 @@ if (isServer) then {
 if (hasInterface) then {
 	_omtk_wu_is_completed = missionNamespace getVariable ["omtk_wu_is_completed", false];
 	if (!_omtk_wu_is_completed) then {
-	
 		omtk_wu_spawn_location = getPos player;
-		if (("OMTK_MODULE_DYNAMIC_MARKERS" call BIS_fnc_getParamValue) > 0) then {
-			{
-				_mtext = markerText _x;
-    		_mpos = getMarkerPos _x;
-				switch(_mtext) do {
-			    	case "baseR": { if (side player == east) then { omtk_wu_spawn_location = _mpos; }; };
-   					case "baseB": { if (side player == west) then { omtk_wu_spawn_location = _mpos; }; };
-					default {};
-				};
-			} forEach allMapMarkers;
-		};
-	
 		[] call omtk_wu_start_warmup;
+
 		_class = typeOf player;
 		if (_class in OMTK_WU_CHIEF_CLASSES) then {
 			omtk_wu_com_menu_item_id = [player, "OMTK_END_WARMUP_COM_MENU", nil, nil, ""] call BIS_fnc_addCommMenuItem;
-			
 			if (call omtk_is_using_ACEmod) then {
 				_action = ["OMTK_END_WARMUP","End Warm-up","omtk\warm_up\img\warm_up-end.paa",{[] call omtk_wu_set_ready;},{true;}] call ace_interact_menu_fnc_createAction;
 				[player, 1, ["ACE_SelfActions"], _action] call ace_interact_menu_fnc_addActionToObject;

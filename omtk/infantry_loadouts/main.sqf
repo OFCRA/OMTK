@@ -35,7 +35,7 @@ omtk_li_set_unit_loadout = {
 };
 
 
-if (isDedicated) then {
+if (isServer) then {
 	_targeted_units = allUnits;
 	if (("OMTK_MODULE_INFANTRY_LOADOUTS" call BIS_fnc_getParamValue) == 2) then {
 		_targeted_units = playableUnits;

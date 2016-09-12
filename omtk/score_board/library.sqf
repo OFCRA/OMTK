@@ -6,7 +6,6 @@ omtk_sb_mission_end = {
 };
 
 omtk_sb_start_mission_end = {
-	//[[], "omtk_sb_mission_end"] call BIS_fnc_MP;
   remoteExecCall ["omtk_sb_mission_end"]; 
 };
 

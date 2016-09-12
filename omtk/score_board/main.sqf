@@ -6,17 +6,23 @@ waitUntil {isNull _handle};
 call omtk_rollback_to_start_time;
 
 if (isServer) then {
-	_endHour   = OMTK_SB_DUREE_MISSION select 0;
-	_endMinute = OMTK_SB_DUREE_MISSION select 1;
-	_endSecond = OMTK_SB_DUREE_MISSION select 2;
-	_omtk_mission_duration = 3600*_endHour + 60*_endMinute + _endSecond - 1;
-	
-	if (("OMTK_DURATION_OVERRIDE" call BIS_fnc_getParamValue) > 0) then {
-		_override = ("OMTK_DURATION_OVERRIDE" call BIS_fnc_getParamValue);
-		_omtk_mission_duration = _override - 1;
-		_endHour   = floor (_override/3600);
-		_endMinute = floor ((_override - (3600*_endHour)) / 60);
-		_endSecond = _override - (3600*_endHour) - (60*_endMinute);
+	_endHour = 0;
+	_endMinute = 0;
+	_endSecond = 0;
+	_omtk_mission_duration = 0;
+
+	_mission_duration_override = missionNamespace getVariable ["OMTK_SB_MISSION_DURATION_OVERRIDE", nil];
+	if (!isNil "_mission_duration_override") then {
+		_endHour   = OMTK_SB_MISSION_DURATION_OVERRIDE select 0;
+		_endMinute = OMTK_SB_MISSION_DURATION_OVERRIDE select 1;
+		_endSecond = OMTK_SB_MISSION_DURATION_OVERRIDE select 2;
+		_omtk_mission_duration = 3600*_endHour + 60*_endMinute + _endSecond - 1;
+	} else {
+		_mission_duration = ("OMTK_MODULE_SCORE_BOARD" call BIS_fnc_getParamValue);
+		_omtk_mission_duration = _mission_duration - 1;
+		_endHour   = floor (_mission_duration/3600);
+		_endMinute = floor ((_mission_duration - (3600*_endHour)) / 60);
+		_endSecond = _mission_duration - (3600*_endHour) - (60*_endMinute);
 	};
 
 	_initHour = floor daytime;
@@ -95,16 +101,14 @@ if (isServer) then {
 	publicVariable "omtk_sb_scores";
 	publicVariable "omtk_sb_objectives";
 	publicVariable "omtk_sb_flags";
-	
-	_pupu = 0;
-	missionNamespace setVariable ["omtk_sb_ready4result", _pupu];
+
+	missionNamespace setVariable ["omtk_sb_ready4result", 0];
 	publicVariable "omtk_sb_ready4result";
 };
 
 
 
 if (hasInterface) then {
-	
 	// Display end mission time to client
 	sleep 2;
 	_omtk_mEnd = missionNamespace getVariable "omtk_mission_end_time_txt";
@@ -113,7 +117,7 @@ if (hasInterface) then {
 		[_omtk_mEnd,0,0,10,2] spawn BIS_fnc_dynamicText;
 	};
 	
-	sleep 30;
+	sleep 10;
 
 	_omtk_sb_objectives = missionNamespace getVariable "omtk_sb_objectives";
 

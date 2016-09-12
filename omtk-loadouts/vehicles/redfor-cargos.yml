@@ -1,0 +1,160 @@
+common:
+  cargo:
+    weapons:
+    ammo:
+      - 2x rhs_mag_rgd5
+      - 2x rhs_mag_rdg2_white
+    items:
+      - 5x ACE_fieldDressing
+      - ACE_epinephrine
+      - ACE_morphine
+    backpacks:
+
+
+car:
+  classes:
+    - RHS_UAZ_MSV_01
+    - rhs_uaz_vdv
+    - rhs_tigr_vdv
+    - rhs_tigr_sts_vdv
+  cargo:
+    items:
+      - 8x NVGoggles_OPFOR
+
+
+truck:
+  classes:
+    - rhs_gaz66o_vdv
+  cargo:
+    weapons:
+      - 2x rhs_weap_ak74m_plummag_folded
+    ammo:
+      - 6x rhs_30Rnd_545x39_AK
+      - DemoCharge_Remote_Mag
+      - SatchelCharge_Remote_Mag
+    items:
+      - 15x NVGoggles_OPFOR
+      - ACE_DefusalKit
+      - ACE_Clacker
+
+
+apc:
+  classes:
+    - rhs_btr80a_vdv
+    - rhs_btr80a_msv
+  cargo:
+    weapons:
+      - 3x rhs_weap_ak74m_plummag_folded
+      - rhs_weap_rpg26
+    ammo:
+      - 9x rhs_30Rnd_545x39_AK
+      - rhs_rpg26_mag
+    items:
+      - 10x NVGoggles_OPFOR
+
+
+ifv:
+  classes:
+    - rhs_bmd4m_vdv
+  cargo:
+    weapons:
+      - 3x rhs_weap_ak74m_plummag_folded
+    ammo:
+      - 9x rhs_30Rnd_545x39_AK
+      - rhs_rpg7_PG7VL_mag
+      - rhs_rpg7_OG7V_mag
+    items:
+      - 10x NVGoggles_OPFOR
+
+
+mbt:
+  classes:
+    - rhs_tank_base
+  cargo:
+    weapons:
+      - 3x rhs_weap_ak74m_plummag_folded
+    ammo:
+      - 9x rhs_30Rnd_545x39_AK
+    items:
+      - 3x NVGoggles_OPFOR
+
+
+artillery:
+  classes:
+  cargo:
+    weapons:
+      - 3x rhs_weap_ak74m_plummag_folded
+    ammo:
+      - 9x rhs_30Rnd_545x39_AK
+    items:
+      - 3x NVGoggles_OPFOR
+
+
+anti-aircraft:
+  classes:
+    - rhs_zsutank_base
+    - rhs_a3t72tank_base
+    - rhs_a3spruttank_base
+  cargo:
+    weapons:
+      - 3x rhs_weap_ak74m_plummag_folded
+    ammo:
+      - 9x rhs_30Rnd_545x39_AK
+    items:
+      - 3x NVGoggles_OPFOR
+
+
+heli_transport:
+  classes:
+    - RHS_Mi8mt_vdv
+  cargo:
+    weapons:
+      - 4x rhs_weap_ak74m_plummag_folded
+    ammo:
+      - 12x rhs_30Rnd_545x39_AK
+    items:
+      - 15x NVGoggles_OPFOR
+
+
+heli_attack:
+  classes:
+    - RHS_Mi24_base
+    - RHS_Ka52_base
+  cargo:
+    weapons:
+      - 2x rhs_weap_ak74m_plummag_folded
+    ammo:
+      - 6x rhs_30Rnd_545x39_AK
+    items:
+      - 2x NVGoggles_OPFOR
+
+
+plane_transport:
+  classes:
+  cargo:
+    weapons:
+      - 3x rhs_weap_ak74m_plummag_folded
+    ammo:
+      - 9x rhs_30Rnd_545x39_AK
+    items:
+      - 50x NVGoggles_OPFOR
+
+
+plane_attack:
+  classes:
+    - Plane_Base_F
+  cargo:
+    weapons:
+      - 2x rhs_weap_ak74m_plummag_folded
+    ammo:
+      - 6x rhs_30Rnd_545x39_AK
+    items:
+      - 2x NVGoggles_OPFOR
+
+
+boat:
+  classes:
+    - B_Boat_Transport_01_F
+  cargo:
+    items:
+     - 8x NVGoggles_OPFOR
