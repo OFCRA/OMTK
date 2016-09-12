@@ -101,7 +101,7 @@ if (isServer) then {
 	publicVariable "omtk_sb_scores";
 	publicVariable "omtk_sb_objectives";
 	publicVariable "omtk_sb_flags";
-
+	
 	missionNamespace setVariable ["omtk_sb_ready4result", 0];
 	publicVariable "omtk_sb_ready4result";
 };

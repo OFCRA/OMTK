@@ -4,6 +4,7 @@ onLoadMission = "www.ofcra.org";
 loadScreen = "loadscreen.jpg";
 onLoadIntro = "Prepare for the fight !";
 Debriefing = 0;
+respawnOnStart = -1;
 Saving = 0;
 
 respawn = "BASE";

@@ -51,6 +51,7 @@ RscSpectator_allowFreeCam = true;
 #include "\task_force_radio\functions\common.sqf";
 tf_no_auto_long_range_radio = true;
 
+[player, [missionNamespace, "OMTK_LOADOUT"]] call BIS_fnc_saveInventory;
 
 //// OMTK EXECUTION
 execVM "omtk\load_modules.sqf";
