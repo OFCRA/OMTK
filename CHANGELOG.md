@@ -7,9 +7,19 @@
 !! security patch  
 
 ### v2.3.0 - 2016-09-12
+\+ [map_exploration] new module, formely _briefing_ mode in *launch_mode* module  
+\+ [respawn_mode] new module to handle separately respawn configuration  
+\+ [tactical_paradrop] zones restrictions implemented  
+\- [vehicles_configuration] module removed, no more cargo scripting available  
+\+ [vehicles_thermalimaging] module to enable/disable TI equipment  
+\+ [dynamic_markers] new commandMenu to process markers ()
 ~ Switch to English  
-~ Missions parameters: full refactoring
-~
+~ Missions parameters: full refactoring  
+~ Refactoring and cleaning of omtk-loadouts configuration folders and files  
+~ [launch_mode] renamed to dynamic_startup, enlightened to support markers and interactive modes only.  
+~ [score_board] default duration is provided by mission parameter, and can be overrided by *OMTK_SB_MISSION_DURATION_OVERRIDE* parameter in init.sqf  
+~ custom_scripts.sqf cleaned  
+@ [dynamic_startup] interactive mode loosing flag during teleport is fixed  
 
 ### v2.2.0 - 2016-08-07
 \+ ajout du changelog  
