@@ -78,14 +78,14 @@ First-class parameters are the ones which impact the most the gameplay. You shou
 * markers: wherever your current infantry units positions, whatever the objectives already defined, the startup will teleport units to markers and create capture zones and flags objectives reading markers that are drawn during the briefing on map, a few seconds before the mission start.
 * interactive: the mission is not started immediately, but specific flags provides actions to players to teleport them to the spawn of their choice among a prepared list, and vehicles set is also dynamically choosen among mission markers proposals. Once both sides are ready, the mission keeps going.
 
-
-[+info](https://github.com/OFCRA/OMTK/blob/master/omtk/dynamic_startup/README.md)  
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/dynamic_startup)  
 
 ### Map exploration
 
 * **off**
 * on: allow all players to teleport or paradrop via click on map, and provide vehicles to be spawn aside themselves. This is suitable for briefing only
 
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/map_exploration)  
 
 ### Respawn
 
@@ -93,57 +93,81 @@ First-class parameters are the ones which impact the most the gameplay. You shou
 * 3 s/30 s/1 min/1 min 30s/2 min/3 min (useful for trainings)
 * immortal: all players are immortal (useful to let your invitees test the @mods and check that they can connect to your server)
 
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/respawn_mode)  
+
 ### Scoreboard
 
 * off: neither objectives computation nor scoreboard display
 * 15 min/30 min/45 min/1 h/1 h 15 min/1 h 30 min/1 h 45 min/**2 h**/2 h 15 min/2 h 30 min/2 h 45 min/3 h: mission duration, followed by scoreboard display on all clients
+
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/score_board)  
 
 ### Tactical paradrop 
 
 * **off**
 * BLUEFOR only/REDFOR only/BLUEFOR + REDFOR: allow given factions players to paradrop at the begining of the mission.
 
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/tactical_paradrop)  
+
 ### Warm-up
 
 * off
 * 30 s/1 min/1 min 30s/2 min/3 min/5 min/8 min/10 min/15 min/20 min/**30 min**/45 min/1 h: warm-up duration, can be long to allow teams to brief in-game before the real mission start.
+
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/warm_up)  
 
 ### Difficulty check
 
 * off
 * **on**: enable difficulty_module
 
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/difficulty_check)  
+
 ### IA skills
 
 * off
 * on: enable ia_skills module
+
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/ia_skills)  
 
 ### Kill logger
 
 * off
 * on: enable kill_logger module
 
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/kill_logger)  
+
 ### Radio lock
 
 * off
 * on: enable radio_lock module
 
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/radio_lock)  
+
 ### Tactical paradrop altitude 
 
 * 300 m/500 m/1000 m/1500 m/2000 m/2500 m/**3000 m**/5000 m: altitude for tactical_paradrop module
 
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/tactical_paradrop)  
+
 ### Tactical paradrop: timeframe
 
 * 1 min/2 min/3 min/5 min/10 min/15 min/20 min/30 min/unlimited: timeframe at mission start to use the tactical paradrop feature.
+
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/tactical_paradrop)  
 
 ### Vehicles thermal imaging
 
 * **off**: disable TI equipment on all vehicles 
 * on
 
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/vehicles_thermalimaging)  
+
 ### Warm-up: zone restriction
 
 * 10 m/30 m/50 m/100 m/150 m/200 m/300 m/400 m/500 m/800 m/1000 m/2000 m: max. authorized distance for players walk around during the warm-up from their initial position.
+
+[+info](https://github.com/OFCRA/OMTK/tree/master/omtk/warm_up)  
 
 ## How to contribute
 
