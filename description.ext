@@ -1,3 +1,6 @@
+author = "OFCRA"; 	// TO BE DEFINED
+onLoadName = "TEMPLATE v2.0";	// TO BE DEFINED
+onLoadMission = "www.ofcra.org";	// TO BE DEFINED
 onLoadIntro = "Prepare for the fight !";	// TO BE DEFINED
 loadScreen = "loadscreen.jpg";
 Debriefing = 0;
