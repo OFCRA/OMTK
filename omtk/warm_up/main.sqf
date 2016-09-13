@@ -16,7 +16,7 @@ omtk_wu_start_warmup = {
 	_trg_out_action = "['Leaving spawn location', 'INFO'] call omtk_log;hint 'GO BACK TO YOUR POSITION !';
 	[omtk_wu_move_player_at_spawn_if_required, [], 10] call KK_fnc_setTimeout;";
 	omtk_wu_restrict_area_trigger setTriggerStatements ["player in thisList", "", _trg_out_action];
-   	
+
 	_omtk_mission_warmup_minute = floor(omtk_wu_time/60);
 	_omtk_mission_warmup_second = (omtk_wu_time - (60*_omtk_mission_warmup_minute));
 	_omtk_mission_warmup_txt = "";
@@ -136,7 +136,7 @@ if (isServer) then {
 			_trg = [omtk_wu_display_notification, [_x], (omtk_wu_time - _x)] call KK_fnc_setTimeout;
 			[_omtk_wu_notification_triggers, _trg] call BIS_fnc_arrayPush;
 		};
-	} forEach [0, 10, 30, 60, 120, 180, 300, 600, 900, 1200];
+	} forEach [0, 10, 30, 60, 120, 180, 300, 600, 900, 1200, 1800, 2700];
 	_trg = [omtk_wu_end_warmup_remote, [], omtk_wu_time] call KK_fnc_setTimeout;
 	[_omtk_wu_notification_triggers, _trg] call BIS_fnc_arrayPush;
 	missionNamespace setVariable ["omtk_wu_triggers", _omtk_wu_notification_triggers];
