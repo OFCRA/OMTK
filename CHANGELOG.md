@@ -6,6 +6,12 @@
 @ bug fix  
 !! security patch  
 
+
+### v2.3.1 - 2016-09-13
+\+ additional warm-up durations: 45 min and 1 h
+\~ improve README files
+@ respawning units without their inital loadout fixed
+
 ### v2.3.0 - 2016-09-12
 \+ [map_exploration] new module, formely _briefing_ mode in *launch_mode* module  
 \+ [respawn_mode] new module to handle separately respawn configuration  

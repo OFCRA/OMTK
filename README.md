@@ -1,50 +1,54 @@
-# OMTK: OFCRA Mission ToolKit
+![OMTK logo](https://raw.githubusercontent.com/OFCRA/OMTK/master/omtk/wiki/img/logo_omtk.png)  
+# OFCRA Mission ToolKit
 
 The mission toolkit created by [OFCRA](http://ofcrav2.org) aims at designing PvP missions with the smallest effort as possible. The initial goal was to build a tool for OFCRA missions only, but it can suit any PvP or TvT mission maker needs. Everything is set up for a specific TvT gameplay (the one we OFCRA use in all of our missions): no respawn hardcore missions in complex scenario.
 
-L'OMTK ne dépend pas de *@CBA_A3*, mais de *@ACEmod* (menu self-ACE pour le paradrop, la fin du warmup etc...)
+This toolkit also provides training capabilities, with respawn and other advanced features.
+
+Dependencies: the OMTK relies on *@RHSmod* only, it is plain Arma 3 scripting (even no *@CBA_A3*), so stability can be comprimized by changes on the game itself or changes in @RHSmod classes.
+ 
+ If you use *@ACEmod*, the OMTK is compatible and provide interaction via self-interaction menu for some features. Anyway, players can still interact via the default CommandMenu.
+
 
 ## Features
 
-There are harcoded settings and modular ones.
+There are splitted into two different categories: harcoded settings and modules.
 
 ### Settings
 
 Lots of settings come from description.ext/init.sqf/onPlayerKilled.sqf and so on.
 
-Here is the exhaustive list of features:
+Here is a non-exhaustive list of hardcoded settings:
 
 * respawn in [EG Spectator](https://community.bistudio.com/wiki/EG_Spectator_Mode) after the first death.
-* chat disabling on {Global/Direct/System} channels
+* Chat disabling on {Global/Direct/System} channels
 * DebugConsole disabled
 * Set terrain mesh to the highest quality
+* Respawn with initial loadout
+
 
 ### Modules
 
-* 3rd-parties: contient les modules et scripts externes à l'OMTK
-* difficulty_check: lève une alerte si la mission n'a pas été lancée en difficulté _elite_
-* IA_skill: rabaisse les capacités (skill) de l'IA
-* infantry_loadouts: équipe tous les slots automatiquement (exceptions possibles)
-* kill_logger: logs tous les hits de la partie dans le fichier RPT du serveur
-* launch_mode: permet d'initialiser la partie avec des comportements différents
-  * normal: la partie est lancée normalement (après le warmup) pour une durée fixe, avec affichage du tableau des scores
-  * teleport: idéal pour une campagne, gére le multi-spawn et les OB dynamiquement avec des actions sur drapeaux
-  * markers: idéal pour les trainings et missions simples, téléportes les unités et créer des objectifs en se basant sur des markers
-  * test: idéal pour que le public teste sa connexion au server avant les parties publiques, partie illimitée, sans tableau des scores, avec toutes les unités indestructibles
-  * briefing: idéal pour une soirée déploiement, 
-* radio_lock: empêche la récupération de radios ennemies
-* score_board: permet de définir les objectifs de la mission, avec notamment le tableau des scores final affichant le status des joueurs et les résultats des différents objectifs définis.
-* tactical_paradrop: permet d'activer un saut en chute libre pour les débuts de parties 
-* vehicles_cargos: charge les cargos de tous les types de véhicules automatiquement
-* warm_up: permet de définir un phase de préparation avant le démarrage de la partie de 30s à 30 min., avec impossibilité de sortir de plus de 150 m. de son lieu de spawn (sinon téléporté de force)
+* 3rd-parties: put here all external scripts (currently not used)
+* difficulty_check: print a warning message is launched in difficulty different from _elite_
+* IA_skill: lower IA skill and prevent from backfire
+* dynamic_startup: provides two modes to create dynamically the mission:  
+  * markers: markers are drawn on the map during the briefing, and it generates dynamically spawns locations, and objectives
+  * interactive: this usefull to bring flexibility inside a given scenario, sides can choose their spawn, and choose their vehicles (from lists prepared by the mission maker).
+* kill_logger: logs every HIT or KILL event inside the .RPT file
+* map_exploration: allow every player to teleport or paradrop via mouse clicks on the map, and spawn some vehicles aside themself to explore. Usefull for briefing makers.
+* radio lock: prevent from radio stealing
+* respawn_mode: defines how player life is handled
+* score_board: create mission objectives and display results in a scoreboard after a given time.
+* tactical_paradrop: allow players to paradrop at the begining of the mission
+* vehicle_thermalimaging: disable/enable vehicles TI equipement
+* warm_up: lock players at spawn for a limited time to let guys connect and/or brief
 
 ## Messages
 
-Les modules du mission_pack indiquent les erreurs généralement dans 2 endroits:
+OMTK loading is logged in the System chat. Every other logs are directly written to .RPT file. They look like:
 
-* System chat: des messages importants sont affichés directement dans le chat in-game, afin que le créateur ou les joueurs aient connaissance de ces informations.
-* fichier de log .rpt Arma3: dans C:\Users\_username_\AppData\Local\Arma3\ figurent les logs provenant du mission_pack, formattées de la facon suivante:
-__[OMTK] {ERROR|WARNING|INFO}: contenu_du_message__
+__HH:MM:SS [OMTK] {ERROR|WARNING|INFO|CHEAT}: message_content__
 
 ## Usage
 
@@ -52,13 +56,96 @@ __[OMTK] {ERROR|WARNING|INFO}: contenu_du_message__
 1. Create an empty mission with Eden editor (_load all the required @mods_) and save it in not-binarized format
 2. Download the [lastest OMTK version on github](https://github.com/OFCRA/OMTK/archive/master.zip).
 3. Unzip the archive content inside your empty mission folder (_should be something like My Documents\Arma 3\missions\your_mission_name_) aside the file mission.sqm
-3. Edit description.ext file
-4. Retournez dans l'éditeur pour ajouter simplement vos groupes d'infanterie et véhicules sans vous soucier de leur matériel, ainsi que vos objectifs (voir la section dediée du module __score_board__)
-5. Exécutez la commande suivante pour équiper vos infanteries à l'intérieur de votre fichier mission.sqm:
+4. Edit description.ext file
+5. Go back to editor to add your units, vehicles and others. To use loadouts, it is recommended to read [omtk-loadout documentation](https://github.com/OFCRA/OMTK/blob/master/omtk-loadouts/README.md).
+6. Add your mission objectives. To use score_board module objectives, please read the [module documentation](https://github.com/OFCRA/OMTK/blob/master/omtk/score_board/README.md).
+7. If you also plan to use the interactive mode of dynamic_startup module, [read it](https://github.com/OFCRA/OMTK/blob/master/omtk/dynamic_startup/README.md).
 
-        omtk-loadouts.exe loadouts add 
+Your mission is now ready to be tested and played !
+You can right now use your unique mission .PBO for different usages: training with your team, briefing on a running server to plan your tactics altogether, and last but not least, PvP/TvT matches.
 
-Votre mission est prête !
+## Mission Parameters
 
+Hereafter the parameters that you can customize in the lobby:
+
+![Mission Parameters](https://raw.githubusercontent.com/OFCRA/OMTK/master/omtk/wiki/img/mission_parameters.png)
+
+First-class parameters are the ones which impact the most the gameplay. You should take extra care with them before launching the mission. Default values in bold.
+
+### Dynamic Startup
+
+* **off**: the mission starts *normally* with no specific action required
+* markers: wherever your current infantry units positions, whatever the objectives already defined, the startup will teleport units to markers and create capture zones and flags objectives reading markers that are drawn during the briefing on map, a few seconds before the mission start.
+* interactive: the mission is not started immediately, but specific flags provides actions to players to teleport them to the spawn of their choice among a prepared list, and vehicles set is also dynamically choosen among mission markers proposals. Once both sides are ready, the mission keeps going.
+
+
+[+info](https://github.com/OFCRA/OMTK/blob/master/omtk/dynamic_startup/README.md)  
+
+### Map exploration
+
+* **off**
+* on: allow all players to teleport or paradrop via click on map, and provide vehicles to be spawn aside themselves. This is suitable for briefing only
+
+
+### Respawn
+
+* **no respawn**: one life, then spectator
+* 3 s/30 s/1 min/1 min 30s/2 min/3 min (useful for trainings)
+* immortal: all players are immortal (useful to let your invitees test the @mods and check that they can connect to your server)
+
+### Scoreboard
+
+* off: neither objectives computation nor scoreboard display
+* 15 min/30 min/45 min/1 h/1 h 15 min/1 h 30 min/1 h 45 min/**2 h**/2 h 15 min/2 h 30 min/2 h 45 min/3 h: mission duration, followed by scoreboard display on all clients
+
+### Tactical paradrop 
+
+* **off**
+* BLUEFOR only/REDFOR only/BLUEFOR + REDFOR: allow given factions players to paradrop at the begining of the mission.
+
+### Warm-up
+
+* off
+* 30 s/1 min/1 min 30s/2 min/3 min/5 min/8 min/10 min/15 min/20 min/**30 min**/45 min/1 h: warm-up duration, can be long to allow teams to brief in-game before the real mission start.
+
+### Difficulty check
+
+* off
+* **on**: enable difficulty_module
+
+### IA skills
+
+* off
+* on: enable ia_skills module
+
+### Kill logger
+
+* off
+* on: enable kill_logger module
+
+### Radio lock
+
+* off
+* on: enable radio_lock module
+
+### Tactical paradrop altitude 
+
+* 300 m/500 m/1000 m/1500 m/2000 m/2500 m/**3000 m**/5000 m: altitude for tactical_paradrop module
+
+### Tactical paradrop: timeframe
+
+* 1 min/2 min/3 min/5 min/10 min/15 min/20 min/30 min/unlimited: timeframe at mission start to use the tactical paradrop feature.
+
+### Vehicles thermal imaging
+
+* **off**: disable TI equipment on all vehicles 
+* on
+
+### Warm-up: zone restriction
+
+* 10 m/30 m/50 m/100 m/150 m/200 m/300 m/400 m/500 m/800 m/1000 m/2000 m: max. authorized distance for players walk around during the warm-up from their initial position.
 
 ## How to contribute
+
+1. Fork it on github
+2. Create atomic Pull-requests
