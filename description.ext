@@ -1,8 +1,5 @@
-author = "OFCRA";
-onLoadName = "TEMPLATE v2.0";      // TO BE DEFINED
-onLoadMission = "www.ofcra.org";
+onLoadIntro = "Prepare for the fight !";	// TO BE DEFINED
 loadScreen = "loadscreen.jpg";
-onLoadIntro = "Prepare for the fight !";
 Debriefing = 0;
 respawnOnStart = -1;
 Saving = 0;
