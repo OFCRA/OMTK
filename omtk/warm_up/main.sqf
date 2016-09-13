@@ -66,8 +66,7 @@ omtk_wu_end_warmup = {
 	};
 	
 	// Continue to load modules...
-	if (("OMTK_MODULE_TACTICAL_PARADROP" call BIS_fnc_getParamValue) > 0) then {	execVM "omtk\tactical_paradrop\main.sqf"; };
-	if (("OMTK_MODULE_SCORE_BOARD" call BIS_fnc_getParamValue) > 0) then { execVM "omtk\score_board\main.sqf"; };
+	call omtk_load_post_warmup;
 };
 
 

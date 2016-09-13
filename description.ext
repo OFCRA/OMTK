@@ -59,7 +59,7 @@ class Params
 	{
 		title = "Scoreboard";
 		texts[] = {"off","15 min", "30 min","45 min","1 h","1 h 15 min","1 h 30 min","1 h 45 min"," 2 h","2 h 15 min","2 h 30 min", "2 h 45 min", "3 h"};
-		values[] = {0,90,1800,2700,3600,4500,5400,6300,7200,8100,9000,9900,10800};
+		values[] = {0,900,1800,2700,3600,4500,5400,6300,7200,8100,9000,9900,10800};
 		default = 7200;
 	};
 	class OMTK_MODULE_TACTICAL_PARADROP
