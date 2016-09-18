@@ -6,6 +6,9 @@
 @ bug fix  
 !! security patch  
 
+### v2.3.2 - 2016-09-18
+\+ add code snippets in customScripts.sqf
+@ [dynamic_startup] fix helper text for markers
 
 ### v2.3.1 - 2016-09-13
 \+ additional warm-up durations: 45 min and 1 h
