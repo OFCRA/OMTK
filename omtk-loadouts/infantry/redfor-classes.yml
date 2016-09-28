@@ -1,5 +1,5 @@
 cdc:
-  class: O_officer_F	            # CSAT\Men\Officer
+  class: O_officer_F	              # CSAT\Men\Officer
   description: Chef de Camp
   rank: COLONEL
 
@@ -9,7 +9,7 @@ cdg:
   rank: MAJOR
 
 cde:
-  class: O_Soldier_TL_F 	      	# CSAT\Men\Team Leader
+  class: O_Soldier_TL_F 	          # CSAT\Men\Team Leader
   description: Chef d'Équipe
   rank: CAPTAIN
 
@@ -50,7 +50,7 @@ antitank_assistant:
   description: Fusilier AT Assist.
 
 antitank_light:
-  class: O_Soldier_LAT_F	        # CSAT\Men\Rifleman (AT)
+  class: O_Soldier_LAT_F	           # CSAT\Men\Rifleman (AT)
   description: Fusilier AT léger
 
 antipersonnel_light:
@@ -62,11 +62,11 @@ marksman:
   description: Marksman
 
 sniper:
-  class: O_sniper_F	                # CSAT\Men\Sniper
+  class: O_sniper_F	                # CSAT\Men (Special Forces)\Sniper
   description: Sniper
 
 spotter:
-  class: O_spotter_F                # CSAT\Men\Spotter
+  class: O_spotter_F                # CSAT\Men (Special Forces)\Spotter
   description: Spotter
 
 explosive_specialist:
@@ -78,7 +78,7 @@ rifleman:
   description: Fusilier
 
 driver:
-  class: O_diver_TL_F	             # CSAT\Men (Diver)\Diver Team Leader
+  class: O_diver_TL_F	             # CSAT\Men (Special Forces)\Diver Team Leader
   description: Chef de Véhicule
   rank: MAJOR
 
@@ -100,11 +100,11 @@ op_drone:
   description: Opérateur Drone
 
 op_radio:
-  class: O_recon_JTAC_F	            # CSAT\Men (Recon)\Recon JTAC
+  class: O_recon_JTAC_F	            # CSAT\Men (Special Forces)\Recon JTAC
   description: Opérateur Radio
 
 recon:
-  class: O_recon_F	                # CSAT\Men (Recon)\Recon Scout
+  class: O_recon_M_F	              # CSAT\Men (Special Forces)\Recon Marksman
   description: Fusilier Reconnaissance
 
 turret_gun_carrier:
@@ -112,5 +112,5 @@ turret_gun_carrier:
   description: Porteur tourelle (gun)
 
 turret_tripod_carrier:
-  class: O_Pathfinder_F             # CSAT\Men (Special Forces)\Recon Pathfinder
+  class: O_recon_F	                # CSAT\Men (Special Forces)\Recon Scout
   description: Porteur tourelle (trépied)

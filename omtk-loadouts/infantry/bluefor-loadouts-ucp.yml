@@ -13,7 +13,7 @@ default:
       name:
       magazine:
   uniform:
-    name:  rhs_uniform_cu_ocp
+    name:  rhs_uniform_cu_ucp_10th
     magazines:
       - rhs_mag_m67
       - rhs_mag_an_m8hc
@@ -22,11 +22,11 @@ default:
       - 2x ACE_morphine
       - ACE_EarPlugs
   vest:
-    name: rhsusf_iotv_ocp_Rifleman
+    name: rhsusf_iotv_ucp_Rifleman
     magazines:
     items:
   backpack:
-    name: rhsusf_assault_eagleaiii_ocp
+    name: rhsusf_assault_eagleaiii_ucp
     magazines:
     items:
   binocular:
@@ -51,7 +51,7 @@ cdc:
       - ACE_MapTools
       - ACE_microDAGR
   vest:
-    name: rhsusf_iotv_ocp_Squadleader
+    name: rhsusf_iotv_ucp_Squadleader
     magazines:
       - 2x rhs_mag_an_m8hc
       - 2x 7#rhsusf_mag_7x45acp_MHP
@@ -59,7 +59,7 @@ cdc:
   backpack:
     name: tf_rt1523g_rhs
   binocular: Binocular
-  headgear: rhsusf_ach_helmet_headset_ocp
+  headgear: rhsusf_ach_helmet_headset_ucp
 
 
 cdg:
@@ -74,7 +74,7 @@ cdg:
       - ACE_MapTools
       - ACE_microDAGR
   vest:
-    name: rhsusf_iotv_ocp_Squadleader
+    name: rhsusf_iotv_ucp_Squadleader
     magazines:
       - 2x rhs_mag_an_m8hc
       - 2x 7#rhsusf_mag_7x45acp_MHP
@@ -82,7 +82,7 @@ cdg:
   backpack:
     name: tf_rt1523g_rhs
   binocular: Binocular
-  headgear: rhsusf_ach_helmet_headset_ocp
+  headgear: rhsusf_ach_helmet_headset_ucp
 
 
 cde:
@@ -91,7 +91,7 @@ cde:
       name: rhs_m4a1_m320
       optics: rhsusf_acc_ACOG3
   vest:
-    name: rhsusf_iotv_ocp_Grenadier
+    name: rhsusf_iotv_ucp_Grenadier
     magazines:
       - 4x rhs_mag_M441_HE
       - 4x rhs_mag_M433_HEDP
@@ -105,7 +105,7 @@ cde:
 
 medic:
   vest:
-    name: rhsusf_iotv_ocp_Medic
+    name: rhsusf_iotv_ucp_Medic
     items:
       - 40x ACE_fieldDressing
       - 15x ACE_morphine
@@ -116,7 +116,7 @@ medic:
       - 8x 30#rhs_mag_30Rnd_556x45_M855A1_Stanag
       - 4x rhs_mag_an_m8hc
       - rhs_mag_m18_red
-  headgear: rhsusf_ach_helmet_headset_ocp
+  headgear: rhsusf_ach_helmet_headset_ucp
 
 
 grenadier:
@@ -124,7 +124,7 @@ grenadier:
     primary:
       name: rhs_m4a1_m320
   vest:
-    name: rhsusf_iotv_ocp_Grenadier
+    name: rhsusf_iotv_ucp_Grenadier
     magazines:
       - 4x rhs_mag_M441_HE
       - 4x rhs_mag_M433_HEDP
@@ -218,7 +218,7 @@ antitank:
   vest:
     magazines:
       - 8x 30#rhs_mag_30Rnd_556x45_M855A1_Stanag
-  headgear: rhsusf_ach_helmet_headset_ess_ocp
+  headgear: rhsusf_ach_helmet_headset_ess_ucp
 
 
 antitank_assistant:
@@ -244,7 +244,7 @@ antitank_light:
       - rhs_mag_m67
       - rhs_mag_an_m8hc
   backpack:
-  headgear: rhsusf_ach_helmet_headset_ess_ocp
+  headgear: rhsusf_ach_helmet_headset_ess_ucp
 
 
 antipersonnel_light:
@@ -258,7 +258,7 @@ antipersonnel_light:
       - rhs_mag_m67
       - rhs_mag_an_m8hc
   backpack:
-  headgear: rhsusf_ach_helmet_headset_ess_ocp
+  headgear: rhsusf_ach_helmet_headset_ess_ucp
 
 
 marksman:
@@ -281,7 +281,7 @@ marksman:
       - 10x 20#rhsusf_20Rnd_762x51_m118_special_Mag
   backpack:
   binocular: ACE_Vector
-  headgear: rhs_Booniehat_ocp
+  headgear: rhs_Booniehat_ucp
   face: WhiteHead_22_a
 
 
@@ -305,7 +305,7 @@ sniper:
       - 9x 5#rhsusf_5Rnd_300winmag_xm2010
   backpack:
   binocular: ACE_Vector
-  headgear: rhs_Booniehat_ocp
+  headgear: rhs_Booniehat_ucp
   face: WhiteHead_22_a
 
 
@@ -326,7 +326,7 @@ spotter:
       - ACE_ATragMX
   backpack:
   binocular: ACE_Vector
-  headgear: rhs_Booniehat_ocp
+  headgear: rhs_Booniehat_ucp
   face: WhiteHead_22_a
 
 
@@ -365,7 +365,7 @@ driver:
       - ACE_MapTools
       - ACE_microDAGR
   vest:
-    name: rhsusf_iotv_ocp
+    name: rhsusf_iotv_ucp
     magazines:
       - 2x 7#rhsusf_mag_7x45acp_MHP
   backpack:
@@ -380,7 +380,7 @@ ground_crew:
       name: rhsusf_weap_m1911a1
       magazine: 7#rhsusf_mag_7x45acp_MHP
   vest:
-    name: rhsusf_iotv_ocp
+    name: rhsusf_iotv_ucp
     magazines:
       - 2x 7#rhsusf_mag_7x45acp_MHP
   backpack:
@@ -426,7 +426,7 @@ op_drone:
       - ACE_MapTools
       - ACE_microDAGR
   vest:
-    name: rhsusf_iotv_ocp_Teamleader
+    name: rhsusf_iotv_ucp_Teamleader
     magazines:
       - 8x 30#rhs_mag_30Rnd_556x45_M855A1_Stanag
       - rhs_mag_m67
@@ -438,7 +438,7 @@ op_drone:
 
 op_radio:
   vest:
-    name: rhsusf_iotv_ocp_Teamleader
+    name: rhsusf_iotv_ucp_Teamleader
     magazines:
       - 8x 30#rhs_mag_30Rnd_556x45_M855A1_Stanag
       - rhs_mag_m67
@@ -460,7 +460,7 @@ recon:
       - 8x 30#rhs_mag_30Rnd_556x45_M855A1_Stanag
   backpack:
   binocular: ACE_Yardage450
-  headgear: rhs_Booniehat_ocp
+  headgear: rhs_Booniehat_ucp
   face: WhiteHead_22_a
 
 

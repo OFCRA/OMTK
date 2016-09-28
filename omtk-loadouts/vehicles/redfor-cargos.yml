@@ -13,35 +13,130 @@ common:
 
 car:
   classes:
-    - RHS_UAZ_MSV_01
-    - rhs_uaz_vdv
+    - rhs_tigr_msv
+    - rhs_tigr_3camo_msv
+    - rhs_tigr_sts_msv
+    - rhs_tigr_sts_3camo_msv
+    - rhs_tigr_m_msv
     - rhs_tigr_vdv
+    - rhs_tigr_3camo_vdv
     - rhs_tigr_sts_vdv
+    - rhs_tigr_sts_3camo_vdv
+    - rhs_tigr_m_vdv
+    - rhs_tigr_m_3camo_vdv
+    - rhs_tigr_m_3camo_msv
+    - rhs_tigr_vmf
+    - rhs_tigr_3camo_vmf
+    - rhs_tigr_sts_vmf
+    - rhs_tigr_sts_3camo_vmf
+    - rhs_tigr_m_vmf
+    - rhs_tigr_m_3camo_vmf
+    - rhs_tigr_vv
+    - rhs_tigr_3camo_vv
+    - rhs_tigr_sts_vv
+    - rhs_tigr_sts_3camo_vv
+    - rhs_tigr_m_vv
+    - rhs_tigr_m_3camo_vv
+    - RHS_UAZ_MSV_01
+    - rhs_uaz_open_MSV_01
+    - rhs_uaz_vdv
+    - rhs_uaz_open_vdv
+    - rhs_uaz_vmf
+    - rhs_uaz_open_vmf
+    - rhs_uaz_vv
+    - rhs_uaz_open_vv
   cargo:
     items:
-      - 8x NVGoggles_OPFOR
+      - 8x ACE_NVG_Gen4
+      - 8x ACE_Chemlight_HiYellow
+      - 8x ACE_Chemlight_HiRed
 
 
 truck:
   classes:
+    - rhs_gaz66_msv
+    - rhs_gaz66_ammo_msv
+    - rhs_gaz66_flat_msv
+    - rhs_gaz66o_msv
+    - rhs_gaz66o_flat_msv
+    - rhs_gaz66_r142_msv
+    - rhs_gaz66_ap2_msv
+    - rhs_gaz66_repair_msv
+    - rhs_gaz66_vdv
+    - rhs_gaz66_ammo_vdv
+    - rhs_gaz66_flat_vdv
     - rhs_gaz66o_vdv
+    - rhs_gaz66o_flat_vdv
+    - rhs_gaz66_r142_vdv
+    - rhs_gaz66_ap2_vdv
+    - rhs_gaz66_repair_vdv
+    - rhs_gaz66_vmf
+    - rhs_gaz66_ammo_vmf
+    - rhs_gaz66_flat_vmf
+    - rhs_gaz66o_vmf
+    - rhs_gaz66o_flat_vmf
+    - rhs_gaz66_r142_vmf
+    - rhs_gaz66_ap2_vmf
+    - rhs_gaz66_repair_vmf
+    - rhs_gaz66_vv
+    - rhs_gaz66_ammo_vv
+    - rhs_gaz66_flat_vv
+    - rhs_gaz66_r142_vv
+    - rhs_gaz66o_vv
+    - rhs_gaz66o_flat_vv
+    - rhs_gaz66_ap2_vv
+    - rhs_gaz66_repair_vv
+    - rhs_typhoon_vdv
+    - RHS_Ural_MSV_01
+    - RHS_Ural_Flat_MSV_01
+    - RHS_Ural_Open_MSV_01
+    - RHS_Ural_Open_Flat_MSV_01
+    - RHS_Ural_VDV_01
+    - RHS_Ural_Flat_VDV_01
+    - RHS_Ural_Fuel_VDV_01
+    - RHS_Ural_Open_VDV_01
+    - RHS_Ural_Open_Flat_VDV_01
+    - RHS_Ural_Fuel_MSV_01
+    - RHS_Ural_VMF_01
+    - RHS_Ural_Flat_VMF_01
+    - RHS_Ural_Fuel_VMF_01
+    - RHS_Ural_Open_Flat_VMF_01
+    - RHS_Ural_Open_VMF_01
+    - RHS_Ural_VV_01
+    - RHS_Ural_Flat_VV_01
+    - RHS_Ural_Fuel_VV_01
+    - RHS_Ural_Open_VV_01
+    - RHS_Ural_Open_Flat_VV_01
   cargo:
     weapons:
       - 2x rhs_weap_ak74m_plummag_folded
     ammo:
       - 6x rhs_30Rnd_545x39_AK
-      - DemoCharge_Remote_Mag
-      - SatchelCharge_Remote_Mag
     items:
-      - 15x NVGoggles_OPFOR
-      - ACE_DefusalKit
-      - ACE_Clacker
+      - 15x ACE_NVG_Gen4
+      - 15x ACE_Chemlight_HiYellow
+      - 15x ACE_Chemlight_HiRed
 
 
 apc:
   classes:
-    - rhs_btr80a_vdv
+    - rhs_btr60_msv
+    - rhs_btr70_msv
+    - rhs_btr80_msv
     - rhs_btr80a_msv
+    - rhs_btr60_vdv
+    - rhs_btr70_vdv
+    - rhs_btr80_vdv
+    - rhs_btr80a_vdv
+    - rhs_btr60_vmf
+    - rhs_btr70_vmf
+    - rhs_btr80a_vmf
+    - rhs_btr80_vmf
+    - rhs_btr60_vv
+    - rhs_btr70_vv
+    - rhs_btr80_vv
+    - rhs_btr80a_vv
+    - rhs_pts_vmf
   cargo:
     weapons:
       - 3x rhs_weap_ak74m_plummag_folded
@@ -50,12 +145,106 @@ apc:
       - 9x rhs_30Rnd_545x39_AK
       - rhs_rpg26_mag
     items:
-      - 10x NVGoggles_OPFOR
+      - 10x ACE_NVG_Gen4
+      - 10x ACE_Chemlight_HiYellow
+      - 10x ACE_Chemlight_HiRed
+
+
+mrap:
+  classes:
+    - rhsgref_BRDM2_msv
+    - rhsgref_BRDM2_ATGM_msv
+    - rhsgref_BRDM2UM_msv
+    - rhsgref_BRDM2_HQ_msv
+    - rhsgref_BRDM2_vdv
+    - rhsgref_BRDM2_ATGM_vdv
+    - rhsgref_BRDM2UM_vdv
+    - rhsgref_BRDM2_HQ_vdv
+    - rhsgref_BRDM2_vmf
+    - rhsgref_BRDM2_ATGM_vmf
+    - rhsgref_BRDM2UM_vmf
+    - rhsgref_BRDM2_HQ_vmf
+  cargo:
+    weapons:
+      - 3x rhs_weap_ak74m_plummag_folded
+      - rhs_weap_rpg26
+    ammo:
+      - 9x rhs_30Rnd_545x39_AK
+      - rhs_rpg26_mag
+    items:
+      - 10x ACE_NVG_Gen4
+      - 10x ACE_Chemlight_HiYellow
+      - 10x ACE_Chemlight_HiRed
 
 
 ifv:
   classes:
+    - rhs_bmp1_msv
+    - rhs_bmp1d_msv
+    - rhs_bmp1k_msv
+    - rhs_bmp1p_msv
+    - rhs_bmp2e_msv
+    - rhs_bmp2_msv
+    - rhs_bmp2d_msv
+    - rhs_bmp2k_msv
+    - rhs_bmp3_msv
+    - rhs_bmp3_late_msv
+    - rhs_bmp3m_msv
+    - rhs_bmp3mera_msv
+    - rhs_brm1k_msv
+    - rhs_Ob_681_2
+    - rhs_prp3_msv
+    - rhs_bmp1_tv
+    - rhs_bmp1d_tv
+    - rhs_bmp1k_tv
+    - rhs_bmp1p_tv
+    - rhs_bmp2e_tv
+    - rhs_bmp2_tv
+    - rhs_bmp2d_tv
+    - rhs_bmp2k_tv
+    - rhs_brm1k_tv
+    - rhs_prp3_tv
+    - rhs_bmd1
+    - rhs_bmd1k
+    - rhs_bmd1p
+    - rhs_bmd1pk
+    - rhs_bmd1r
+    - rhs_bmd2
+    - rhs_bmd2k
+    - rhs_bmd2m
+    - rhs_bmd4_vdv
     - rhs_bmd4m_vdv
+    - rhs_bmd4ma_vdv
+    - rhs_bmp1_vdv
+    - rhs_bmp1d_vdv
+    - rhs_bmp1k_vdv
+    - rhs_bmp1p_vdv
+    - rhs_bmp2e_vdv
+    - rhs_bmp2_vdv
+    - rhs_bmp2d_vdv
+    - rhs_bmp2k_vdv
+    - rhs_brm1k_vdv
+    - rhs_prp3_vdv
+    - rhs_bmp1_vmf
+    - rhs_bmp1d_vmf
+    - rhs_bmp1k_vmf
+    - rhs_bmp1p_vmf
+    - rhs_bmp2e_vmf
+    - rhs_bmp2_vmf
+    - rhs_bmp2d_vmf
+    - rhs_bmp2k_vmf
+    - rhs_brm1k_vmf
+    - rhs_prp3_vmf
+    - rhs_bmp1_vv
+    - rhs_bmp1d_vv
+    - rhs_bmp1k_vv
+    - rhs_bmp1p_vv
+    - rhs_bmp2e_vv
+    - rhs_bmp2_vv
+    - rhs_bmp2d_vv
+    - rhs_bmp2k_vv
+    - rhs_brm1k_vv
+    - rhs_prp3_vv
   cargo:
     weapons:
       - 3x rhs_weap_ak74m_plummag_folded
@@ -64,69 +253,164 @@ ifv:
       - rhs_rpg7_PG7VL_mag
       - rhs_rpg7_OG7V_mag
     items:
-      - 10x NVGoggles_OPFOR
+      - 10x ACE_NVG_Gen4
+      - 10x ACE_Chemlight_HiYellow
+      - 10x ACE_Chemlight_HiRed
 
 
 mbt:
   classes:
-    - rhs_tank_base
+    - rhs_t72ba_tv
+    - rhs_t72bb_tv
+    - rhs_t72bc_tv
+    - rhs_t72bd_tv
+    - rhs_t80
+    - rhs_t80a
+    - rhs_t80b
+    - rhs_t80bk
+    - rhs_t80bv
+    - rhs_t80bvk
+    - rhs_t80u
+    - rhs_t80u45m
+    - rhs_t80ue1
+    - rhs_t80uk
+    - rhs_t80um
+    - rhs_t90_tv
+    - rhs_t90a_tv
+    - rhs_sprut_vdv
   cargo:
     weapons:
       - 3x rhs_weap_ak74m_plummag_folded
     ammo:
       - 9x rhs_30Rnd_545x39_AK
     items:
-      - 3x NVGoggles_OPFOR
+      - 3x ACE_NVG_Gen4
+      - 3x ACE_Chemlight_HiYellow
+      - 3x ACE_Chemlight_HiRed
 
 
 artillery:
   classes:
+    - rhs_9k79_K
+    - rhs_9k79_B
+    - rhs_9k79
+    - rhs_2s3_tv
+    - RHS_BM21_MSV_01
+    - RHS_BM21_VDV_01
+    - RHS_BM21_VMF_01
+    - RHS_BM21_VV_01
   cargo:
     weapons:
       - 3x rhs_weap_ak74m_plummag_folded
     ammo:
       - 9x rhs_30Rnd_545x39_AK
     items:
-      - 3x NVGoggles_OPFOR
+      - 3x ACE_NVG_Gen4
+      - 3x ACE_Chemlight_HiYellow
+      - 3x ACE_Chemlight_HiRed
 
 
 anti-aircraft:
   classes:
-    - rhs_zsutank_base
-    - rhs_a3t72tank_base
-    - rhs_a3spruttank_base
+    - RHS_Ural_Zu23_MSV_01
+    - rhs_gaz66_zu23_msv
+    - rhs_gaz66_zu23_vdv
+    - RHS_Ural_Zu23_VDV_01
+    - rhs_gaz66_zu23_vmf
+    - RHS_Ural_Zu23_VMF_01
+    - rhs_zsu234_aa
+    - rhs_gaz66_zu23_vv
+    - RHS_Ural_Zu23_VV_01
   cargo:
     weapons:
       - 3x rhs_weap_ak74m_plummag_folded
     ammo:
       - 9x rhs_30Rnd_545x39_AK
     items:
-      - 3x NVGoggles_OPFOR
+      - 3x ACE_NVG_Gen4
+      - 3x ACE_Chemlight_HiYellow
+      - 3x ACE_Chemlight_HiRed
 
 
 heli_transport:
   classes:
+    - RHS_Mi8AMT_vdv
+    - RHS_Mi8AMT_vvs
+    - RHS_Mi8AMT_vvsc
+    - RHS_Mi8mt_Cargo_vdv
+    - RHS_Mi8mt_Cargo_vv
+    - RHS_Mi8mt_Cargo_vvs
+    - RHS_Mi8mt_Cargo_vvsc
     - RHS_Mi8mt_vdv
+    - RHS_Mi8mt_vv
+    - RHS_Mi8mt_vvs
+    - RHS_Mi8mt_vvsc
+    - rhs_ka60_c
+    - rhs_ka60_grey
   cargo:
     weapons:
       - 4x rhs_weap_ak74m_plummag_folded
     ammo:
       - 12x rhs_30Rnd_545x39_AK
     items:
-      - 15x NVGoggles_OPFOR
+      - 15x ACE_NVG_Gen4
+      - 15x ACE_Chemlight_HiYellow
+      - 15x ACE_Chemlight_HiRed
 
 
 heli_attack:
   classes:
-    - RHS_Mi24_base
-    - RHS_Ka52_base
+    - RHS_Ka52_UPK23_vvs
+    - RHS_Ka52_UPK23_vvsc
+    - RHS_Ka52_vvs
+    - RHS_Ka52_vvsc
+    - RHS_Mi24P_AT_vdv
+    - RHS_Mi24P_AT_vvs
+    - RHS_Mi24P_AT_vvsc
+    - RHS_Mi24P_CAS_vdv
+    - RHS_Mi24P_CAS_vvs
+    - RHS_Mi24P_CAS_vvsc
+    - RHS_Mi24P_vdv
+    - RHS_Mi24P_vvs
+    - RHS_Mi24P_vvsc
+    - RHS_Mi24V_AT_vdv
+    - RHS_Mi24V_AT_vvs
+    - RHS_Mi24V_AT_vvsc
+    - RHS_Mi24V_FAB_vdv
+    - RHS_Mi24V_FAB_vvs
+    - RHS_Mi24V_FAB_vvsc
+    - RHS_Mi24V_UPK23_vdv
+    - RHS_Mi24V_UPK23_vvs
+    - RHS_Mi24V_UPK23_vvsc
+    - RHS_Mi24V_vdv
+    - RHS_Mi24V_vvs
+    - RHS_Mi24V_vvsc
+    - RHS_Mi24Vt_vvs
+    - RHS_Mi24Vt_vvsc
+    - RHS_Mi8AMTSh_FAB_vvs
+    - RHS_Mi8AMTSh_FAB_vvsc
+    - RHS_Mi8AMTSh_UPK23_vvs
+    - RHS_Mi8AMTSh_UPK23_vvsc
+    - RHS_Mi8AMTSh_vvs
+    - RHS_Mi8AMTSh_vvsc
+    - RHS_Mi8MTV3_FAB_vdv
+    - RHS_Mi8MTV3_FAB_vvs
+    - RHS_Mi8MTV3_FAB_vvsc
+    - RHS_Mi8MTV3_UPK23_vdv
+    - RHS_Mi8MTV3_UPK23_vvs
+    - RHS_Mi8MTV3_UPK23_vvsc
+    - RHS_Mi8MTV3_vdv
+    - RHS_Mi8MTV3_vvs
+    - RHS_Mi8MTV3_vvsc
   cargo:
     weapons:
       - 2x rhs_weap_ak74m_plummag_folded
     ammo:
       - 6x rhs_30Rnd_545x39_AK
     items:
-      - 2x NVGoggles_OPFOR
+      - 2x ACE_NVG_Gen4
+      - 2x ACE_Chemlight_HiYellow
+      - 2x ACE_Chemlight_HiRed
 
 
 plane_transport:
@@ -137,24 +421,47 @@ plane_transport:
     ammo:
       - 9x rhs_30Rnd_545x39_AK
     items:
-      - 50x NVGoggles_OPFOR
+      - 50x ACE_NVG_Gen4
+      - 50x ACE_Chemlight_HiYellow
+      - 50x ACE_Chemlight_HiRed
 
 
 plane_attack:
   classes:
-    - Plane_Base_F
+    - RHS_Su25SM_CAS_vvs
+    - RHS_Su25SM_CAS_vvsc
+    - RHS_Su25SM_KH29_vvs
+    - RHS_Su25SM_KH29_vvsc
+    - RHS_Su25SM_vvs
+    - RHS_Su25SM_vvsc
+    - RHS_T50_vvs_051
+    - RHS_T50_vvs_052
+    - RHS_T50_vvs_053
+    - RHS_T50_vvs_054
+    - RHS_T50_vvs_blueonblue
+    - RHS_T50_vvs_generic
   cargo:
     weapons:
       - 2x rhs_weap_ak74m_plummag_folded
     ammo:
       - 6x rhs_30Rnd_545x39_AK
     items:
-      - 2x NVGoggles_OPFOR
+      - 2x ACE_NVG_Gen4
+      - 2x ACE_Chemlight_HiYellow
+      - 2x ACE_Chemlight_HiRed
 
 
 boat:
   classes:
-    - B_Boat_Transport_01_F
+    - O_Boat_Armed_01_hmg_F
+    - O_Boat_Transport_01_F
+    - O_G_Boat_Transport_01_F
+    - O_Lifeboat
+    - O_T_Boat_Armed_01_hmg_F
+    - O_T_Boat_Transport_01_F
+    - O_T_Lifeboat
   cargo:
     items:
-     - 8x NVGoggles_OPFOR
+      - 4x ACE_NVG_Gen4
+      - 4x ACE_Chemlight_HiYellow
+      - 4x ACE_Chemlight_HiRed

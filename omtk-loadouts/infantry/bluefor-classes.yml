@@ -1,5 +1,5 @@
 cdc:
-  class: B_officer_F	            # NATO\Men\Officer
+  class: B_officer_F	              # NATO\Men\Officer
   description: Chef de Camp
   rank: COLONEL
 
@@ -9,7 +9,7 @@ cdg:
   rank: MAJOR
 
 cde:
-  class: B_Soldier_TL_F		        # NATO\Men\Squad Leader
+  class: B_Soldier_TL_F	            # NATO\Men\Squad Leader
   description: Chef d'Équipe
   rank: CAPTAIN
 
@@ -22,23 +22,23 @@ grenadier:
   description: Grenadier
 
 grenadier_assistant:
-  class: B_Soldier_A_F		        # NATO\Men\Ammo Bearer
+  class: B_Soldier_A_F	            # NATO\Men\Ammo Bearer
   description: Grenadier Assist.
 
 autorifleman:
-  class: B_soldier_AR_F		        # NATO\Men\Autorifleman
+  class: B_soldier_AR_F	            # NATO\Men\Autorifleman
   description: Fusilier-Automatique
 
 autorifleman_assistant:
-  class: B_soldier_AAR_F		    # NATO\Men (Support)\Asst. Autorifleman
+  class: B_soldier_AAR_F	          # NATO\Men\Asst. Autorifleman
   description: Fusilier-Auto Assist.
 
 gunner:
-  class: B_support_GMG_F		    # NATO\Men (Support)\Gunner (GMG)
+  class: B_support_GMG_F	          # NATO\Men\Gunner (GMG)
   description: Mitrailleur
 
 gunner_assistant:
-  class: B_support_AMG_F            # NATO\Men (Support)\Asst. Gunner (HMG/GMG)
+  class: B_support_AMG_F            # NATO\Men\Asst. Gunner (HMG/GMG)
   description: Mitrailleur Assist.
 
 antitank:
@@ -46,7 +46,7 @@ antitank:
   description: Fusilier Anti-Tank
 
 antitank_assistant:
-  class: B_soldier_AAT_F            # NATO\Men (Support)\Asst. Missile Specialist (AT)
+  class: B_soldier_AAT_F            # NATO\Men\Asst. Missile Specialist (AT)
   description: Fusilier AT Assist.
 
 antitank_light:
@@ -62,11 +62,11 @@ marksman:
   description: Marksman
 
 sniper:
-  class: B_sniper_F	                # NATO\Men (Sniper)\Sniper
+  class: B_sniper_F	                # NATO\Men (Special Forces)\Sniper
   description: Sniper
 
 spotter:
-  class: B_spotter_F                # NATO\Men (Sniper)\Spotter
+  class: B_spotter_F                # NATO\Men (Special Forces)\Spotter
   description: Spotter
 
 explosive_specialist:
@@ -78,7 +78,7 @@ rifleman:
   description: Fusilier
 
 driver:
-  class: B_diver_TL_F               # NATO\Men (Diver)\Diver Team leader
+  class: B_diver_TL_F               # NATO\Men (Special Forces)\Diver Team leader
   description: Chef de Véhicule
   rank: MAJOR
 
@@ -100,11 +100,11 @@ op_drone:
   description: Opérateur Drone
 
 op_radio:
-  class: B_recon_JTAC_F             # NATO\Men (Recon)\Recon JTAC
+  class: B_recon_JTAC_F             # NATO\Men (Special Forces)\Recon JTAC
   description: Opérateur Radio
 
 recon:
-  class: B_recon_F                  # NATO\Men (Recon)\Recon Scout
+  class: B_recon_M_F                # NATO\Men (Special Forces)\Recon Marksman
   description: Fusilier Reconnaissance
 
 turret_gun_carrier:
@@ -112,5 +112,5 @@ turret_gun_carrier:
   description: Porteur tourelle (gun)
 
 turret_tripod_carrier:
-  class: B_Recon_Sharpshooter_F           # NATO\Men (Special Forces)\Recon Sharpshooter
+  class: B_recon_F                  # NATO\Men (Special Forces)\Recon Scout
   description: Porteur tourelle (trépied)

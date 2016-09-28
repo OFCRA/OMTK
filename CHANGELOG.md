@@ -6,14 +6,26 @@
 @ bug fix  
 !! security patch  
 
+### V2.3.3 - 2016-09-28
+~ [omtk-loadouts] upgrade omtk-loadouts.exe to v1.0.1
+~ [omtk-loadouts] add all RHS vehicles in vehicle cargos definition
+\+ [omtk-loadouts] add M-88 camo for REDFOR
+\+ [omtk-loadouts] add yellow gorka camo for REDFOR
+\+ [omtk-loadouts] add UCP camo for BLUEFOR
+~ [omtk-loadouts] rename default BLUEFOR loadouts file to bluefor-loadouts-ocp.yml
+~ [omtk-loadouts] rename default REDFOR loadouts file to redfor-loadouts-gorka-green.yml
+~ [omtk-loadouts] change recon vanilla class to Recon Marksman for BLUEFOR and REDFOR
+~ [omtk-loadouts] change tripod_turret_carrier vanilla class to Recon Scout for BLUEFOR and REDFOR
+@ [omtk-loadouts] commented path to units in BLUEFOR and REDFOR infantry class files
+
 ### v2.3.2 - 2016-09-18
 \+ add code snippets in customScripts.sqf
 @ [dynamic_startup] fix helper text for markers
 
 ### v2.3.1 - 2016-09-13
 \+ additional warm-up durations: 45 min and 1 h
-\~ improve README files
-\~ change default loadscreen.jpg
+~ improve README files
+~ change default loadscreen.jpg
 @ respawning units without their inital loadout fixed
 
 ### v2.3.0 - 2016-09-12
