@@ -40,8 +40,8 @@ omtk_ds_mk_add_capture_area = {
 	_trg setTriggerArea [_radius, _radius, 0, false];
 	_trg setVariable ["name", _markerName];
 			
-	_obj = [_points, "BLUEFOR+REDFOR", "DANS_ZONE", "Capture Area" + str (omtk_ds_mk_trigger_index), _trg, ["DIFF", 1]];
-	OMTK_SB_LISTE_OBJECTIFS pushBack _obj;
+	_obj = [_points, "BLUEFOR+REDFOR", "INSIDE", "Capture Area" + str (omtk_ds_mk_trigger_index), _trg, ["DIFF", 1]];
+	OMTK_SB_LIST_OBJECTIFS pushBack _obj;
 	(_this select 2) setMarkerText "CAP " + str (omtk_ds_mk_trigger_index);
 };
 
@@ -76,7 +76,7 @@ omtk_ds_mk_add_objective = {
 	_flag = _flag_class createVehicle (_this select 0);
 
 	_obj = [3, _side_name, "ACTION", "Flag " + str(omtk_ds_mk_objective_index), _flag, 0, {[] call omtk_ds_mk_objective_notify;}];
-	OMTK_SB_LISTE_OBJECTIFS pushBack _obj;
+	OMTK_SB_LIST_OBJECTIFS pushBack _obj;
 	(_this select 2) setMarkerText "Flag " + str (omtk_ds_mk_objective_index);
 	(_this select 2) setMarkerColor _marker_color;
 };
@@ -108,8 +108,8 @@ omtk_ds_process_markers_mode = {
 	missionNamespace setVariable ["omtk_ds_teleports_completed", 0];
 	publicVariable "omtk_ds_teleports_completed";
 	
-	OMTK_SB_LISTE_OBJECTIFS = [];
-	publicVariable "OMTK_SB_LISTE_OBJECTIFS";
+	OMTK_SB_LIST_OBJECTIFS = [];
+	publicVariable "OMTK_SB_LIST_OBJECTIFS";
 	
 	_spawn_locations = [nil,nil,nil];
 	_idx = 0;
@@ -189,6 +189,12 @@ omtk_ds_process_markers_mode = {
 
 
 omtk_ds_markers_mode = {
-	sleep 1;
-	[player, "OMTK_MARKERS_COM_MENU", nil, nil, ""] call BIS_fnc_addCommMenuItem;
+	if (hasInterface) then {
+		[player, "OMTK_MARKERS_COM_MENU", nil, nil, ""] call BIS_fnc_addCommMenuItem;	
+	};
+
+	if (isServer) then {
+		[] call omtk_ds_process_markers_mode;
+	};
+	
 };

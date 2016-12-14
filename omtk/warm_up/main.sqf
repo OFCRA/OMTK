@@ -57,12 +57,7 @@ omtk_wu_end_warmup = {
 	if (isServer) then {
 		missionNamespace setVariable ["omtk_wu_is_completed", true];
 		publicVariable "omtk_wu_is_completed";
-		{
-			_locked_by_omtk = _x getVariable ["omtk_lock", 0];
-			if (_locked_by_omtk > 0) then {
-				_x lock 0;
-			};
-	 	} foreach vehicles;
+		call omtk_unlock_vehicles;
 	};
 	
 	// Continue to load modules...
@@ -140,13 +135,7 @@ if (isServer) then {
 	[_omtk_wu_notification_triggers, _trg] call BIS_fnc_arrayPush;
 	missionNamespace setVariable ["omtk_wu_triggers", _omtk_wu_notification_triggers];
 	publicVariableServer "omtk_wu_triggers";
-	
-	{
-		if ( (locked _x) < 2) then {
-			_x lock 2;
-			_x setVariable ['omtk_lock', 1];
-		};
-	 } foreach vehicles;
+	call omtk_lock_vehicles;
 };
 
 if (hasInterface) then {

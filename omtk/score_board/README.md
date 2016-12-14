@@ -29,9 +29,9 @@ At the start of the mission, a message provide the local time (in-game clock) wh
 
 #### Mission Objectives
 
-First, you need to describe the objectives for both sides. This is done inside file *init.sqf* inside the OMTK_SB_LISTE_OBJECTIFS array. 
+First, you need to describe the objectives for both sides. This is done inside file *init.sqf* inside the OMTK_SB_LIST_OBJECTIFS array. 
 
-    OMTK_SB_LISTE_OBJECTIFS = [  
+    OMTK_SB_LIST_OBJECTIFS = [  
 	    objective1,  
 	    objective2,  
 	    ...,  
@@ -77,11 +77,11 @@ Example:
 
 Full example: 
 
-    OMTK_SB_LISTE_OBJECTIFS = [  
+    OMTK_SB_LIST_OBJECTIFS = [  
 	    [4, "BLUEFOR+REDFOR", "IN", "Capture the church ", "church_area", ["DIFF", 1]],  
-	    [1, "BLUEFOR", "DESTRUCTION", "Kill the priest", ["LISTE", ["priest"]] ],  
-	    [1, "BLUEFOR", "OUT", "Deliver Cpt. Clark", ["LISTE", ["clark"]] ],  
-	    [1, "REDFOR", "SURVIVAL", "Protect the bridge", ["LISTE", ["bridge"]] ],  
+	    [1, "BLUEFOR", "DESTRUCTION", "Kill the priest", ["LIST", ["priest"]] ],  
+	    [1, "BLUEFOR", "OUT", "Deliver Cpt. Clark", ["LIST", ["clark"]] ],  
+	    [1, "REDFOR", "SURVIVAL", "Protect the bridge", ["LIST", ["bridge"]] ],  
 	    [5, "BLUEFOR", "DESTRUCTION", "Domination bonus", ["REDFOR",5] ],  
 	    [5, "REDFOR", "DESTRUCTION", "Domination bonus", ["BLUEFOR",5] ]  
     ];  

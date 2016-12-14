@@ -1,6 +1,6 @@
 ////// OMTK CONFIGURATION
 
-// tactical_paradrop: définition des limitations de zones (optionnelles)
+// tactical_paradrop: area restriction (optional)
 OMTK_TP_BLUEFOR_RESTRICTIONS = [
   //[x_coordinate, y_coordinate, radius_in_m],
 ];
@@ -9,7 +9,11 @@ OMTK_TP_REDFOR_RESTRICTIONS = [
   //[x_coordinate, y_coordinate, radius_in_m],
 ];
 
-// score_board: définition du tableau des scores et des objectifs
+// tactical_paradrop: delay before enabling paradrop feature (optional)
+OMTK_TP_BLUEFOR_DELAY = 0; // delay in seconds
+OMTK_TP_REDFOR_DELAY = 0; // delay in seconds
+
+// score_board: objectives and mission duration
 // OMTK_SB_MISSION_DURATION_OVERRIDE = [0, 0, 0]; // [hours, minutes, seconds]
 
 execVM "customScripts.sqf";
@@ -51,7 +55,3 @@ tf_no_auto_long_range_radio = true;
 
 //// OMTK EXECUTION
 execVM "omtk\load_modules.sqf";
-
-
-////// SERVER MODS
-// @CBA_A3;@CUP_Terrains_Core;@ace;@Ace-server;@RHSAFRF;@RHSUSAF;@RHSGREF;@OFCRA;@task_force_radio;@RHS_Compat;

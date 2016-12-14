@@ -21,9 +21,13 @@ class Header {
 };
 
 
-// Definition du tableau des scores
-#include "omtk\score_board\defines.hpp"
-#include "omtk\score_board\dialogs.hpp"
+// Include UI panels
+#include "omtk\ui\defines.hpp"
+
+#include "omtk\score_board\dialog_action_progress.hpp"
+#include "omtk\score_board\dialog_scoreboard.hpp"
+#include "omtk\dynamic_startup\dialog_interactive_startup.hpp"
+
 
 class Params
 {

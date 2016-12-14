@@ -5,8 +5,9 @@ omtk_sb_mission_end = {
 	};
 };
 
+
 omtk_sb_start_mission_end = {
-  remoteExecCall ["omtk_sb_mission_end"]; 
+  remoteExec ["omtk_sb_mission_end"]; 
 };
 
 
@@ -19,8 +20,9 @@ omtk_sb_computing_display = {
 	};
 };
 
+
 omtk_sb_compute_scoreboard = {
-	remoteExecCall ["omtk_sb_computing_display"];
+	remoteExec ["omtk_sb_computing_display"];
 	omtk_sb_bluefor_survivors = [];
 	omtk_sb_redfor_survivors = [];
 	
@@ -31,14 +33,14 @@ omtk_sb_compute_scoreboard = {
 		_dmg = damage _x;
 
 		if(_side==east) then {
-			if (alive _x) then { [omtk_sb_redfor_survivors, _name] call BIS_fnc_arrayPush; };
+			if ((damage player) < 0.975) then { [omtk_sb_redfor_survivors, _name] call BIS_fnc_arrayPush; };
 		}
 		else {
 			if(_side==west) then { 
-				if (alive _x) then { [omtk_sb_bluefor_survivors, _name] call BIS_fnc_arrayPush; };
+				if ((damage player) < 0.975) then { [omtk_sb_bluefor_survivors, _name] call BIS_fnc_arrayPush; };
 			};
 		};
-	} forEach allUnits;
+	} forEach allPlayers;
 	
 	missionNamespace setVariable ["omtk_sb_bluefor_survivors", omtk_sb_bluefor_survivors];
 	missionNamespace setVariable ["omtk_sb_redfor_survivors", omtk_sb_redfor_survivors];
@@ -85,18 +87,18 @@ omtk_sb_getObjectiveResult = {
 	_res = false;
 	
 	switch(_type) do {
-		case "SURVIE":	{ 
+		case "SURVIVAL":	{ 
 			_res = [_obj select 4, _side, 1] call omtk_isAlive;
 		};
 		case "DESTRUCTION":	{
 			_res = [_obj select 4, _side, 0] call omtk_isAlive;
 			//["objectif BLUEFOR","INFO",false] call omtk_log;
 		};
-		case "DANS_ZONE":	{
+		case "INSIDE":	{
 			//["objectif " + (str (_obj select 3)) + " for SIDE=" + (str _side),"INFO",false] call omtk_log;
 			_res = [_obj select 5, _side, 1, _obj select 4] call omtk_isInArea;
 		};
-		case "HORS_ZONE":	{
+		case "OUTSIDE":	{
 			_res = [_obj select 5, _side, 0, _obj select 4] call omtk_isInArea;
 			//["objectif BLUEFOR","INFO",false] call omtk_log;
 		};
@@ -105,13 +107,14 @@ omtk_sb_getObjectiveResult = {
 			_res = (_omtk_sb_scores select _index);
 			//["objectif BLUEFOR","INFO",false] call omtk_log;
 		};
-		case "ACTION_DISPUTEE":	{
+		case "TRIGGER":	{
 			//["objectif BLUEFOR","INFO",false] call omtk_log;
 		};
 		case "FLAG":	{
 			_res = true;
 			_omtk_sb_flags = missionNamespace getVariable "omtk_sb_flags";
 			{
+				_x = _x select 0;
 				_log = "Get " + str _x + " / " + str (count _omtk_sb_flags) + " : " + str (_omtk_sb_flags select _x);
 				//[ _log, "INFO",false] call omtk_log;
 				if (!(_omtk_sb_flags select _x)) then { _res = false; };
@@ -120,7 +123,7 @@ omtk_sb_getObjectiveResult = {
 		};
 		
 		default	{
-			["type d'objectif inconnu","ERROR",true] call omtk_log;
+			["unkown objective type","ERROR",true] call omtk_log;
 		};
 	};
 	
@@ -193,7 +196,7 @@ omtk_isInArea = {
 			if (_mode < 1) then { _res = !_res; };
 		};
 		
-		case "LISTE": {
+		case "LIST": {
 			{
 				_target = missionNamespace getVariable [_x , objNull];
 				_areaObj = missionNamespace getVariable [_area , objNull];	
@@ -262,7 +265,7 @@ omtk_isAlive = {
 			else {_res = (_rEff - _bEff) >= _value; };
 		};
 		
-		case "LISTE": {
+		case "LIST": {
 			_res = true;
 			{
 				_target = nil;
@@ -300,7 +303,7 @@ omtk_isAlive = {
 		
 		default	{
 			_res = false;
-			["Sujet de l'objectif inconnu: %1", _subject] call BIS_fnc_error;		
+			["Objective target is not found: %1", _subject] call BIS_fnc_error;		
 		};		
 	};
 	_res;
@@ -336,7 +339,18 @@ omtk_closeAction = {
 	_proc = _this select 3 select 1;
 	_index = _this select 3 select 2;
 	
-	// TODO Display progress bar using _dur, then..
+	if (_dur > 0) then {
+		createDialog "ActionProgress";
+		
+		_delay = 10;
+		for "_i" from 0 to _delay do {
+			sleep 1;
+			((uiNamespace getVariable "InteractiveStartUp") displayCtrl 1999) progressSetPosition (_i / _delay);
+			((uiNamespace getVariable "InteractiveStartUp") displayCtrl 1999) progressSetPosition (_i / _delay);
+		};
+		closeDialog 0;	
+	};// TODO Display progress bar using _dur, then..
+	
 	["action: " + str(_id) + " is done", "OBJECTIVE", false] call omtk_log;
 	
 	_obj removeAction _id;

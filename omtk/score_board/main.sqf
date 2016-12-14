@@ -49,7 +49,15 @@ if (isServer) then {
 	// SCHEDULE EVENTS
 	[omtk_sb_compute_scoreboard, [], _omtk_mission_duration] call KK_fnc_setTimeout;
 	[omtk_sb_start_mission_end, [], _omtk_mission_duration+2] call KK_fnc_setTimeout;
-
+	
+	omtk_unlock_helis = {
+		{
+			_heli = missionNamespace getVariable [_x, objNull];
+			if (!isnil("_heli")) then { _heli lock 0; };
+		} forEach ["blackhawk01","blackhawk02","mi801","mi802"];
+	};
+		
+	[omtk_unlock_helis, [], 600] call KK_fnc_setTimeout; // unlock helis 10 min. later
 	
 	// OBJ
 	_omtk_sb_objectives = [];
@@ -82,17 +90,17 @@ if (isServer) then {
 				[_omtk_sb_scores, false]  call BIS_fnc_arrayPush;
 			};
 			default	{
-				["camp inconnu pour la creation de l'objectif","ERROR",true] call omtk_log;
+				["unknown side for objective creation","ERROR",true] call omtk_log;
 			};
 		};
 		
 		if (_type == "FLAG") then {
 			{
-				_omtk_sb_flags	set [_x, false];
+				_omtk_sb_flags	set [_x select 0, _x select 1];
 			} forEach _values;
 		};
 		
-	} foreach OMTK_SB_LISTE_OBJECTIFS;
+	} foreach OMTK_SB_LIST_OBJECTIFS;
 	
 	missionNamespace setVariable ["omtk_sb_objectives", _omtk_sb_objectives];
 	missionNamespace setVariable ["omtk_sb_scores", _omtk_sb_scores];

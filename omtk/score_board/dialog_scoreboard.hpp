@@ -12,7 +12,7 @@ class ScoreBoard {
 	
 	class controls {
 		
-		class MainContainer: omtk_sb_BOX {
+		class MainContainer: omtk_BOX {
 			idc = 1800;
 			x = 0.276563 * safezoneW + safezoneX;
 			y = 0.236103 * safezoneH + safezoneY;
@@ -22,7 +22,7 @@ class ScoreBoard {
 		
 		
 
-class BlueforLogo: omtk_sb_RscPicture
+class BlueforLogo: omtk_RscPicture
 {
 	idc = 1200;
 	text = "omtk\score_board\img\bluefor.jpg";
@@ -31,7 +31,7 @@ class BlueforLogo: omtk_sb_RscPicture
 	w = 0.0802083 * safezoneW;
 	h = 0.0989614 * safezoneH;
 };
-class RedforLogo: omtk_sb_RscPicture
+class RedforLogo: omtk_RscPicture
 {
 	idc = 1201;
 	text = "omtk\score_board\img\redfor.jpg";
@@ -40,7 +40,7 @@ class RedforLogo: omtk_sb_RscPicture
 	w = 0.0802083 * safezoneW;
 	h = 0.0989614 * safezoneH;
 };
-class Banner: omtk_sb_RscPicture
+class Banner: omtk_RscPicture
 {
 	idc = 1202;
 	text = "omtk\score_board\img\banner.jpg";
@@ -51,7 +51,7 @@ class Banner: omtk_sb_RscPicture
 };
 
 
-		class Objectives: omtk_sb_RscText {
+		class Objectives: omtk_RscText {
 			idc = 1510;
 			x = 0 * safezoneW + safezoneX;
 			y = 0.30 * safezoneH + safezoneY;
@@ -59,7 +59,7 @@ class Banner: omtk_sb_RscPicture
 			h = 0.1 * safezoneH;
 		};
 		
-		class BlueForObjectifs: omtk_sb_RscListbox {
+		class BlueForObjectifs: omtk_RscListbox {
 			idc = 1511;
 			x = 0.276563 * safezoneW + safezoneX;
 			y = 0.37 * safezoneH + safezoneY;
@@ -67,7 +67,7 @@ class Banner: omtk_sb_RscPicture
 			h = 0.09 * safezoneH;
 		};
 		
-		class RedForObjectifs: omtk_sb_RscListbox {
+		class RedForObjectifs: omtk_RscListbox {
 			idc = 1512;
 			x = 0.511458 * safezoneW + safezoneX;
 			y = 0.37 * safezoneH + safezoneY;
@@ -75,7 +75,7 @@ class Banner: omtk_sb_RscPicture
 			h = 0.09 * safezoneH;
 		};
 
-		class Survivors: omtk_sb_RscText {
+		class Survivors: omtk_RscText {
 			idc = 1520;
 			x = 0 * safezoneW + safezoneX;
 			y = 0.43 * safezoneH + safezoneY;
@@ -85,7 +85,7 @@ class Banner: omtk_sb_RscPicture
 		};
 				
 
-		class BlueforListSurvivors: omtk_sb_RscListbox {
+		class BlueforListSurvivors: omtk_RscListbox {
 			idc = 1521;
 			x = 0.276563 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
@@ -93,7 +93,7 @@ class Banner: omtk_sb_RscPicture
 			h = 0.23 * safezoneH;
 		};
 		
-		class RedForSurvivors: omtk_sb_RscListbox {
+		class RedForSurvivors: omtk_RscListbox {
 			idc = 1522;
 			x = 0.511458 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
@@ -101,7 +101,7 @@ class Banner: omtk_sb_RscPicture
 			h = 0.23 * safezoneH;
 		};
 		
-		class QuitButtonMenu: omtk_sb_RscButton {
+		class QuitButtonMenu: omtk_RscButton {
 			idc = -1;
 			x = 0.477080 * safezoneW + safezoneX;
 			y = 0.741906 * safezoneH + safezoneY;

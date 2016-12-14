@@ -94,9 +94,9 @@ omtk_mkd_mass_teleport = {
 // distance: distance in-between objects new locations
 //
 omtk_mass_teleport = {
-    
-  _distance = _this select 2;
-  _angle = 0;
+
+	_distance = _this select 2;
+	_angle = 0;
   _round_limit = 360;
   {
     if (_angle >= _round_limit) then {
@@ -134,6 +134,16 @@ omtk_unlock_vehicles = {
 		_locked_by_omtk = _x getVariable ["omtk_lock", 0];
 		if (_locked_by_omtk > 0) then {
 			_x lock 0;
+		};
+	} foreach vehicles;
+};
+
+
+omtk_lock_vehicles = {
+	{
+		if ( (locked _x) < 2) then {
+			_x lock 2;
+			_x setVariable ['omtk_lock', 1];
 		};
 	} foreach vehicles;
 };
